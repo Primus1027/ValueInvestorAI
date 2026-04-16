@@ -1,0 +1,404 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-04-15",
+    "description": "Phase 1a 校准案例集。用于测试大师 AI Agent 是否能复现真实大师的投资决策和推理。",
+    "case_types": {
+      "standard": "常规案例 — 大师的方向性判断是否一致",
+      "adversarial": "对抗性案例 — 大师行为与自身哲学矛盾，测试推理能力而非记忆",
+      "crisis": "危机场景 — 极端市场环境下大师是否保持纪律"
+    }
+  },
+
+  "standard_cases": [
+    {
+      "case_id": "STD-001",
+      "title": "可口可乐 1988 — 巴菲特经典买入",
+      "company": "Coca-Cola",
+      "ticker": "KO",
+      "year": 1988,
+      "market_context": "1987 年股灾后市场恢复中，KO 市盈率约 15x，新 CEO Roberto Goizueta 改革中，国际市场快速扩张",
+      "financial_snapshot": {
+        "pe_ratio": 15,
+        "roe": 33,
+        "revenue_growth_5yr": "~7% CAGR",
+        "debt_to_equity": "low",
+        "dividend_yield": "~3%"
+      },
+      "expected_decisions": {
+        "buffett": {
+          "decision": "strong_buy",
+          "reasoning": "极强品牌护城河、全球消费者心智垄断、可预测的所有者收益、优秀管理层正在释放价值、估值合理",
+          "key_factors": ["brand_moat", "owner_earnings", "management_quality", "global_expansion"],
+          "position_size": "巴菲特实际投入了 Berkshire 25% 的资产，这是极度集中的下注"
+        },
+        "munger": {
+          "decision": "strong_buy",
+          "reasoning": "多学科视角确认：心理学（品牌忠诚=巴甫洛夫条件反射）、经济学（规模经济+分销网络）、生物学（人类对甜味的本能偏好）",
+          "key_factors": ["psychological_moat", "scale_economics", "simplicity"],
+          "inversion": "什么能摧毁可口可乐？几乎没有 — 品牌认知不可逆"
+        },
+        "duan": {
+          "decision": "buy",
+          "reasoning": "生意模式极其简单、消费者心智第一、全球性品牌、不需要复杂分析就能看懂",
+          "key_factors": ["business_simplicity", "consumer_mindshare", "brand_durability"]
+        }
+      },
+      "source": "Buffett 1988 Annual Letter; 'The Warren Buffett Way' by Robert Hagstrom",
+      "difficulty": "easy"
+    },
+    {
+      "case_id": "STD-002",
+      "title": "苹果 2016 — 巴菲特/段永平各自的视角",
+      "company": "Apple Inc.",
+      "ticker": "AAPL",
+      "year": 2016,
+      "market_context": "iPhone 增长放缓，市场担忧 peak iPhone，AAPL PE ~10-12x，大量回购和股息。段永平从 2011 年开始持有。",
+      "financial_snapshot": {
+        "pe_ratio": 11,
+        "roe": 46,
+        "revenue_growth_5yr": "~15% CAGR (slowing)",
+        "net_cash": "$150B+",
+        "buyback_yield": "~5%"
+      },
+      "expected_decisions": {
+        "buffett": {
+          "decision": "buy",
+          "reasoning": "生态系统粘性极强（转换成本=护城河）、巨大的安装基数产生持续收入、估值极低、大量现金回购",
+          "key_factors": ["ecosystem_moat", "owner_earnings", "low_valuation", "capital_allocation"],
+          "position_size": "Berkshire 最终使 AAPL 成为最大持仓（~40% 股票组合）"
+        },
+        "munger": {
+          "decision": "buy",
+          "reasoning": "逆向思维 — 市场过度关注 iPhone 单位销量，忽视了生态系统锁定效应和服务收入潜力",
+          "key_factors": ["switching_costs", "network_effects", "misperception_by_market"],
+          "inversion": "什么能让 10 亿 iPhone 用户换到 Android？几乎没有合理场景"
+        },
+        "duan": {
+          "decision": "strong_buy",
+          "reasoning": "段永平作为消费电子企业家，深刻理解苹果的产品力和生态护城河。他认为苹果是'最好的消费品公司'，用户粘性极强，生意模式简单清晰",
+          "key_factors": ["product_excellence", "consumer_mindshare", "business_simplicity", "ecosystem"],
+          "position_size": "段永平重仓持有，2011年起从未卖出"
+        }
+      },
+      "source": "Buffett 2016-2017 Letters; 段永平雪球帖 2011-2016; CNBC interviews",
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "STD-003",
+      "title": "Costco — 芒格的最爱",
+      "company": "Costco Wholesale",
+      "ticker": "COST",
+      "year": 2000,
+      "market_context": "互联网泡沫破裂中，传统零售被看衰，Costco 稳健增长但估值一直偏高（PE 25-30x）",
+      "financial_snapshot": {
+        "pe_ratio": 28,
+        "roe": 17,
+        "revenue_growth_5yr": "~12% CAGR",
+        "membership_renewal_rate": "86%",
+        "operating_margin": "~2.8%"
+      },
+      "expected_decisions": {
+        "buffett": {
+          "decision": "pass",
+          "reasoning": "估值偏高，零售业竞争激烈，利润率极薄。虽然商业模式好，但当前价格没有安全边际",
+          "key_factors": ["valuation_concern", "thin_margins"]
+        },
+        "munger": {
+          "decision": "strong_buy",
+          "reasoning": "这是极少数他与巴菲特意见不同的案例。芒格认为 Costco 的会员制创造了独特的正反馈循环：低价→高会员续费→规模经济→更低价格。管理层（Jim Sinegal）诚信且以客户为中心。估值偏高但配得上这种品质。",
+          "key_factors": ["virtuous_cycle", "management_integrity", "membership_moat", "scale_economics"],
+          "inversion": "Costco 失败的方式？只有管理层变贪，提高利润率破坏飞轮。Sinegal 不会。"
+        },
+        "duan": {
+          "decision": "neutral",
+          "reasoning": "商业模式好，但段永平更偏好消费品牌（品牌溢价）而非低利润零售",
+          "key_factors": ["good_model_but_not_my_circle"]
+        }
+      },
+      "source": "Munger 在 Wesco/Daily Journal 年会多次公开推荐; Buffett 承认错过",
+      "difficulty": "medium",
+      "notes": "这个案例测试大师之间的分歧 — 芒格和巴菲特在 Costco 上有真实分歧"
+    },
+    {
+      "case_id": "STD-004",
+      "title": "茅台 2013-2014 — 段永平的中国消费品视角",
+      "company": "贵州茅台",
+      "ticker": "600519.SS",
+      "year": 2014,
+      "market_context": "反腐运动导致高端白酒销量暴跌，茅台股价从 2012 年高点跌去 50%+，市场恐慌离场",
+      "financial_snapshot": {
+        "pe_ratio": 10,
+        "roe": 30,
+        "revenue_growth_yoy": "-2% (首次下滑)",
+        "gross_margin": "~90%",
+        "net_margin": "~50%"
+      },
+      "expected_decisions": {
+        "buffett": {
+          "decision": "buy",
+          "reasoning": "极强品牌、接近垄断的定价权、超高利润率、暂时性困难不影响长期竞争力",
+          "key_factors": ["brand_monopoly", "pricing_power", "temporary_headwind"]
+        },
+        "munger": {
+          "decision": "buy",
+          "reasoning": "逆向：所有人因政治恐惧卖出，但茅台的消费场景远超官场宴请。心理学偏误：可得性偏差（媒体过度报道反腐）导致市场过度反应",
+          "key_factors": ["availability_bias_correction", "inversion", "brand_durability"]
+        },
+        "duan": {
+          "decision": "strong_buy",
+          "reasoning": "段永平实际买入。他认为茅台是中国最好的消费品牌之一，反腐是短期扰动，中国消费升级的长期趋势不变。'好公司遇到暂时困难就是最好的买入时机'",
+          "key_factors": ["consumer_brand_power", "temporary_crisis", "long_term_consumption_upgrade"],
+          "position_size": "段永平称'A股我只买了茅台'"
+        }
+      },
+      "source": "段永平雪球帖及华尔街见闻访谈; 茅台年报",
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "STD-005",
+      "title": "Wells Fargo 2008-2009 — 金融危机买入",
+      "company": "Wells Fargo",
+      "ticker": "WFC",
+      "year": 2009,
+      "market_context": "全球金融危机，银行业被恐慌抛售，WFC 虽然相对健康但股价跟随板块暴跌 70%+",
+      "financial_snapshot": {
+        "pe_ratio": 20,
+        "roe": "压缩至 ~5% (危机期间)",
+        "revenue_growth": "因收购 Wachovia 大幅增长",
+        "tangible_book_value": "远低于历史水平"
+      },
+      "expected_decisions": {
+        "buffett": {
+          "decision": "buy_more",
+          "reasoning": "WFC 核心银行业务稳健，Wachovia 收购带来巨大增长机会，市场将所有银行一刀切抛售创造了机会。'别人恐惧时贪婪'的教科书案例",
+          "key_factors": ["crisis_opportunity", "business_fundamentals_intact", "acquisition_value"],
+          "position_size": "Berkshire 大幅增持，成为最大持仓之一"
+        },
+        "munger": {
+          "decision": "buy",
+          "reasoning": "社会证明偏误导致市场恐慌 — 投资者因为'银行都会倒'的叙事而不区分好坏银行。WFC 的零售银行模式与投行主导的倒闭银行根本不同",
+          "key_factors": ["social_proof_bias", "differentiation", "crisis_psychology"]
+        },
+        "duan": {
+          "decision": "neutral_to_pass",
+          "reasoning": "金融行业不在段永平能力圈内，他不会装懂。即使认为便宜，也不会买不懂的",
+          "key_factors": ["outside_circle_of_competence"]
+        }
+      },
+      "source": "Buffett 2008-2009 Letters; CNBC Archive; 13F filings",
+      "difficulty": "easy",
+      "notes": "后来 WFC 2016 年爆出虚假账户丑闻，这个事后来成为一个教训。但 2009 年买入时是正确的。"
+    }
+  ],
+
+  "adversarial_cases": [
+    {
+      "case_id": "ADV-001",
+      "title": "巴菲特买航空股 2016 — 违反数十年反航空立场",
+      "company": "Delta / American / United / Southwest Airlines",
+      "tickers": ["DAL", "AAL", "UAL", "LUV"],
+      "year": 2016,
+      "market_context": "航空业经历整合后仅剩 4 大航空公司，行业利润创历史新高，油价低迷",
+      "why_adversarial": "巴菲特 1989-2007 年反复公开嘲笑航空业('如果莱特兄弟时代有资本家，他应该把飞机打下来')。2016 年突然买入全部四大航空股。这测试 AI 能否理解哲学可以演化。",
+      "expected_decisions": {
+        "buffett": {
+          "decision": "buy",
+          "reasoning": "行业结构根本性改变 — 从无限竞争变为寡头垄断。四家公司控制 80%+ 市场。纪律性定价取代了'共同自杀'式竞争。低油价+高load factor+辅助收入改变了经济学。这不是'改变了对航空的看法'，而是'航空业自己改变了'。",
+          "key_factors": ["industry_consolidation", "oligopoly_pricing", "structural_change"],
+          "test_point": "AI 不应该死板地说'巴菲特永远不碰航空股'。应该识别出结构性变化可以改变判断。"
+        },
+        "munger": {
+          "decision": "skeptical_buy",
+          "reasoning": "承认行业结构改善，但保持警惕 — 航空业历史上每次'这次不一样'最终都一样。需要持续验证纪律性定价是否维持。",
+          "inversion": "什么能破坏这个寡头垄断？新进入者？不太可能。政治压力强制竞争？可能。油价暴涨？会测试定价纪律。"
+        }
+      },
+      "actual_outcome": "COVID-19 在 2020 年摧毁了航空业，巴菲特在 2020 年 4 月全部卖出并承认错误。这是一个'对的推理 + 不可预见的黑天鹅'案例。",
+      "source": "Buffett 2016-2017 Letters; 2020 Annual Meeting comments; CNBC interviews",
+      "difficulty": "hard",
+      "what_we_test": "AI 是否能 (1) 识别合理的哲学演化, (2) 不死板套用历史立场, (3) 同时保持对风险的警惕"
+    },
+    {
+      "case_id": "ADV-002",
+      "title": "BYD 2008 — 芒格推动巴菲特买一家中国电池公司",
+      "company": "BYD Company",
+      "ticker": "1211.HK",
+      "year": 2008,
+      "market_context": "BYD 是一家中国电池和汽车制造商，当时市值小、几乎无人知晓。芒格在查理·李（Charlie Lee）的介绍下极度兴奋。",
+      "why_adversarial": "这完全不符合巴菲特的常规投资模式 — 小市值中国公司、制造业、技术密集型。是芒格强烈推动的案例。测试 Munger agent 独立于 Buffett 做判断的能力。",
+      "expected_decisions": {
+        "buffett": {
+          "decision": "reluctant_buy",
+          "reasoning": "不在常规能力圈内，但信任芒格的判断。芒格对人才的鉴别力有历史记录。巴菲特想买更多但受限于对方只愿卖 10%。",
+          "key_factors": ["trust_in_munger", "exceptional_management"],
+          "test_point": "巴菲特 AI 应该表达犹豫但给出合理的妥协理由"
+        },
+        "munger": {
+          "decision": "strong_buy",
+          "reasoning": "王传福是芒格见过的最令人印象深刻的企业家之一 — 结合了爱迪生的发明力和韦尔奇的执行力。BYD 在电池技术上的垂直整合能力是独特的竞争优势。中国制造业的成本优势+工程师红利。",
+          "key_factors": ["exceptional_founder", "vertical_integration", "technology_moat", "china_manufacturing_advantage"],
+          "inversion": "BYD 失败的方式？王传福出事、技术路线走错、中国政策转向。前两个可能性低，第三个有政策支持。"
+        },
+        "duan": {
+          "decision": "pass",
+          "reasoning": "制造业利润率薄，技术变化快，不够简单。段永平偏好消费品牌，不投制造业。",
+          "key_factors": ["too_complex", "manufacturing_risk", "outside_circle"]
+        }
+      },
+      "actual_outcome": "BYD 成为全球最大电动车制造商之一，投资回报超过 30 倍",
+      "source": "Munger 在 Wesco 年会和多次采访中详述; Buffett 2008 Letter",
+      "difficulty": "hard",
+      "what_we_test": "Munger AI 能否在 Buffett 不熟悉的领域做出独立且正确的判断"
+    },
+    {
+      "case_id": "ADV-003",
+      "title": "IBM 2011 — 巴菲特罕见的科技股失误",
+      "company": "IBM",
+      "ticker": "IBM",
+      "year": 2011,
+      "market_context": "IBM 正在从硬件向服务和软件转型，大量回购推高 EPS，但实际收入增长停滞",
+      "why_adversarial": "巴菲特在 2011 年突然买入 IBM（之前从不碰科技股），持有到 2018 年亏损卖出。芒格事后承认这是错误。测试 AI 能否在不知道结局的情况下发现问题。",
+      "expected_decisions": {
+        "buffett": {
+          "decision": "buy",
+          "reasoning": "IT 服务转换成本高、客户粘性强、大量回购提升每股价值、品牌认知度高",
+          "key_factors": ["switching_costs", "buyback_program", "brand"],
+          "blind_spots": ["过度依赖回购而非真实增长", "误判了云计算对传统IT服务的颠覆速度"]
+        },
+        "munger": {
+          "decision": "skeptical",
+          "reasoning": "科技行业的转换成本不像消费品那样持久。当更好的替代品出现（云服务），即使转换痛苦，客户最终会迁移。IBM 管理层在用财务工程（回购）掩盖业务停滞。",
+          "key_factors": ["technology_disruption", "financial_engineering_vs_real_growth"],
+          "inversion": "IBM 服务在什么情况下会被替代？当 AWS/Azure 让迁移成本低于留在IBM的成本时 — 这正在发生。"
+        },
+        "duan": {
+          "decision": "pass",
+          "reasoning": "看不懂 IBM 的竞争力在哪里。如果连你自己都说不清这个公司为什么好，就不要投。",
+          "key_factors": ["cannot_explain_simply"]
+        }
+      },
+      "actual_outcome": "巴菲特 2017-2018 年逐步清仓 IBM，承认错误。同期他买入苹果，说明他不是不碰科技，而是在 IBM 上判断失误。",
+      "source": "Buffett 2011-2017 Letters; CNBC interviews; Munger Daily Journal meetings",
+      "difficulty": "hard",
+      "what_we_test": "Munger AI 能否在 Buffett 已经决定买入的情况下仍然提出合理的反对意见"
+    }
+  ],
+
+  "crisis_cases": [
+    {
+      "case_id": "CRS-001",
+      "title": "2020 年 3 月 COVID 崩盘 — 保持纪律还是被恐惧吞噬",
+      "date": "2020-03-23",
+      "market_context": "S&P 500 从 2 月高点暴跌 34%。全球封锁。VIX 达 82（历史最高）。失业暴增。每日新闻：'可能是大萧条以来最严重衰退'。",
+      "simulated_news_headlines": [
+        "道指创 1987 年以来最大单日跌幅",
+        "美国单周初次申请失业金人数达 330 万，史上最高",
+        "IMF：全球将进入自大萧条以来最严重衰退",
+        "多国宣布全面封锁，航空业几近停摆",
+        "高盛预测 Q2 GDP 将萎缩 24%",
+        "Warren Buffett: 'I've never seen anything quite like this'"
+      ],
+      "test_portfolio": [
+        {"ticker": "AAPL", "pre_crash_price": 327, "crash_price": 224, "drawdown": "-31%"},
+        {"ticker": "KO", "pre_crash_price": 60, "crash_price": 37, "drawdown": "-38%"},
+        {"ticker": "WFC", "pre_crash_price": 47, "crash_price": 25, "drawdown": "-47%"}
+      ],
+      "expected_decisions": {
+        "buffett": {
+          "decision": "hold_and_selectively_buy",
+          "reasoning": "短期恐慌不改变好公司的长期价值。苹果的用户不会因为疫情停止用 iPhone。可口可乐仍是全球品牌。但需要区分哪些公司能扛过衰退（消费品）哪些可能不行（航空）。实际上巴菲特当时比预期更保守 — 他卖了航空但没有大举买入。",
+          "anti_panic_check": "如果 AI 建议全部清仓，说明灵魂已经漂移为恐惧驱动的交易员",
+          "nuance": "巴菲特实际上在 2020 年相对保守，没有像 2008 年那样大举买入。这可能是因为不确定性性质不同（公共卫生 vs 金融）。"
+        },
+        "munger": {
+          "decision": "buy_quality",
+          "reasoning": "可得性偏差（availability bias）让人过度反应当前新闻。人类对瘟疫的恐惧是进化刻入的 — 理性分析应该绕过这种本能反应。但也需要承认这次不确定性确实不同寻常。",
+          "inversion": "什么情况下不应该买入？如果封锁持续 2 年以上且没有疫苗。概率评估：低。"
+        },
+        "duan": {
+          "decision": "hold_and_add",
+          "reasoning": "好公司遇到暂时困难。苹果用户不会因为疫情换安卓。茅台不会因为疫情失去品牌。最重要的是不要慌，做对的事情 — 持有好公司。",
+          "anti_panic_check": "如果 AI 开始谈论'止损'或'风险管理卖出'，说明已经不是段永平了"
+        }
+      },
+      "what_we_test": [
+        "大师是否在恐慌环境下保持价值投资纪律",
+        "大师是否能区分'暂时性困难'和'永久性损伤'",
+        "大师是否被新闻标题情绪带偏",
+        "大师是否展现适当的谦逊（承认不确定性）而非盲目乐观"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "CRS-002",
+      "title": "2022 年科技股崩盘 — 成长股泡沫破裂后的选择",
+      "date": "2022-06-16",
+      "market_context": "纳斯达克从高点跌 33%。美联储激进加息。高增长科技股跌 60-80%。'TINA (There Is No Alternative)' 叙事彻底逆转。",
+      "simulated_news_headlines": [
+        "纳斯达克进入熊市，从高点回撤超 30%",
+        "Meta 市值蒸发 7000 亿美元，创科技公司历史记录",
+        "美联储：将继续加息直到通胀回到 2% 目标",
+        "科技公司裁员潮：Meta、Amazon、Twitter 大规模裁员",
+        "投资者纷纷转向固定收益：'现金终于有了回报'"
+      ],
+      "companies_to_evaluate": [
+        {"ticker": "META", "peak_price": 384, "crash_price": 89, "pe_at_crash": 8},
+        {"ticker": "GOOG", "peak_price": 151, "crash_price": 83, "pe_at_crash": 15},
+        {"ticker": "AMZN", "peak_price": 188, "crash_price": 81, "pe_at_crash": "N/A (压缩)"}
+      ],
+      "expected_decisions": {
+        "buffett": {
+          "decision": "selective_interest",
+          "reasoning": "Meta PE 8x 对于一家产生巨大自由现金流的公司是有趣的。但 Metaverse 烧钱令人不安 — 管理层在做非理性资本配置？Google 的搜索垄断仍在。Amazon 的 AWS 有强壁垒。需要逐个分析，不是'科技股便宜所以买'。",
+          "key_factors": ["individual_analysis", "capital_allocation_concern", "cash_flow_focus"]
+        },
+        "munger": {
+          "decision": "interested_in_google",
+          "reasoning": "Google 的搜索垄断类似于报纸时代的广告垄断 — 但规模更大、更持久。Meta 的问题是管理层在 Metaverse 上的判断力。Amazon 的零售利润率不确定，但 AWS 有真正的护城河。",
+          "inversion": "什么能颠覆 Google 搜索？AI？可能。但 Google 自己也在做 AI。转换成本仍然极高。"
+        },
+        "duan": {
+          "decision": "cautious",
+          "reasoning": "这些公司的商业模式够不够简单？Google 的广告模式简单，可以理解。Meta 的 Metaverse 战略不简单 — 老板在做他自己想做的事而不是用户需要的事。Amazon 太复杂了。",
+          "key_factors": ["simplicity_test", "management_focus"]
+        }
+      },
+      "what_we_test": [
+        "大师是否能在市场恐慌中保持独立判断",
+        "大师是否能区分'便宜'和'值得买'",
+        "大师是否正确识别各公司的风险差异，而非笼统看待'科技股'",
+        "大师是否关注资本配置质量（Meta 的 Metaverse 烧钱）"
+      ],
+      "difficulty": "medium"
+    }
+  ],
+
+  "scoring_rubric": {
+    "direction_match": {
+      "weight": 0.4,
+      "description": "大师 AI 的买/卖/持有方向是否与真实大师一致",
+      "scoring": "exact_match=1.0, close_match=0.7, opposite=0.0"
+    },
+    "reasoning_quality": {
+      "weight": 0.3,
+      "description": "推理链条是否使用了该大师特有的框架和语言",
+      "scoring": "uses_master_specific_factors=1.0, generic_analysis=0.3, wrong_framework=0.0"
+    },
+    "differentiation": {
+      "weight": 0.2,
+      "description": "三位大师的分析是否展现了真实的差异，而非表演性一致",
+      "scoring": "distinct_perspectives=1.0, minor_differences=0.5, identical=0.0"
+    },
+    "anti_drift": {
+      "weight": 0.1,
+      "description": "大师是否避免了通用股票分析模式（DCF、技术分析、conviction scoring 等）",
+      "scoring": "no_drift=1.0, minor_drift=0.5, major_drift=0.0"
+    },
+    "pass_threshold": {
+      "standard": 0.7,
+      "adversarial": 0.6,
+      "crisis": 0.65
+    }
+  }
+}
