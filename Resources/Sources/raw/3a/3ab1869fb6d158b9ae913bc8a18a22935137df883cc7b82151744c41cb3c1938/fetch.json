@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_3ab1869fb6d158b9ae913bc8a18a22935137df883cc7b82151744c41cb3c1938",
+  "content_sha256": "3ab1869fb6d158b9ae913bc8a18a22935137df883cc7b82151744c41cb3c1938",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/cnbc_charlie_munger_a_life_of_wit_and_wisdom_final_interview_nov_2023.txt",
+  "fetched_at": "2026-04-19T14:04:15.365623+00:00",
+  "http_status": 200,
+  "byte_size": 10659,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "cnbc_charlie_munger_a_life_of_wit_and_wisdom_final_interview_nov_2023",
+    "type": "source",
+    "path": "sources/cnbc_charlie_munger_a_life_of_wit_and_wisdom_final_interview_nov_2023.md",
+    "index_order": 97
+  }
+}

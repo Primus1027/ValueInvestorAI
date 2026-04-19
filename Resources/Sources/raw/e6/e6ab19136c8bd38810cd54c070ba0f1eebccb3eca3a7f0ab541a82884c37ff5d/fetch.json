@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_e6ab19136c8bd38810cd54c070ba0f1eebccb3eca3a7f0ab541a82884c37ff5d",
+  "content_sha256": "e6ab19136c8bd38810cd54c070ba0f1eebccb3eca3a7f0ab541a82884c37ff5d",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/intellectual_virtues.txt",
+  "fetched_at": "2026-04-19T13:58:53.660417+00:00",
+  "http_status": 200,
+  "byte_size": 37885,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "intellectual_virtues",
+    "type": "concept",
+    "path": "concepts/intellectual_virtues.md",
+    "index_expected_size": 37885,
+    "index_order": 27
+  }
+}

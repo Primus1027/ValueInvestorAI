@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_cf48344701d4ab65a9709312b5e5e38bffb597b71a98d5f835d7b837bf3f9118",
+  "content_sha256": "cf48344701d4ab65a9709312b5e5e38bffb597b71a98d5f835d7b837bf3f9118",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/wesco_financial_charlie_munger_letters_1983_2009.txt",
+  "fetched_at": "2026-04-19T14:04:17.829829+00:00",
+  "http_status": 200,
+  "byte_size": 36903,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "wesco_financial_charlie_munger_letters_1983_2009",
+    "type": "source",
+    "path": "sources/wesco_financial_charlie_munger_letters_1983_2009.md",
+    "index_order": 107
+  }
+}

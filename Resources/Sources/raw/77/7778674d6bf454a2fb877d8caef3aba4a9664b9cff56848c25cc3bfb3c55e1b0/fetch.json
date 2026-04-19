@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_7778674d6bf454a2fb877d8caef3aba4a9664b9cff56848c25cc3bfb3c55e1b0",
+  "content_sha256": "7778674d6bf454a2fb877d8caef3aba4a9664b9cff56848c25cc3bfb3c55e1b0",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/syntheses/capital_allocation_masterclass.txt",
+  "fetched_at": "2026-04-19T14:01:08.968452+00:00",
+  "http_status": 200,
+  "byte_size": 11263,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "capital_allocation_masterclass",
+    "type": "synthesis",
+    "path": "syntheses/capital_allocation_masterclass.md",
+    "index_expected_size": 11263,
+    "index_order": 111
+  }
+}

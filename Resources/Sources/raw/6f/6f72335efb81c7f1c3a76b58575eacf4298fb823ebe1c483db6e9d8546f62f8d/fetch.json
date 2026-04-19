@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_6f72335efb81c7f1c3a76b58575eacf4298fb823ebe1c483db6e9d8546f62f8d",
+  "content_sha256": "6f72335efb81c7f1c3a76b58575eacf4298fb823ebe1c483db6e9d8546f62f8d",
+  "url": "https://value-investing-gurus.pages.dev/api/en/articles/entities/charlie_munger.txt",
+  "fetched_at": "2026-04-19T14:04:21.115618+00:00",
+  "http_status": 200,
+  "byte_size": 10002,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "en",
+    "id": "charlie_munger",
+    "type": "entity",
+    "path": "entities/charlie_munger.md",
+    "index_order": 63
+  }
+}

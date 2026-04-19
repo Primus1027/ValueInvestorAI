@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_5037797f284bb25e00497f37872544e21f23a7c64b537827d1fdec99dfd9a34f",
+  "content_sha256": "5037797f284bb25e00497f37872544e21f23a7c64b537827d1fdec99dfd9a34f",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/inflation.txt",
+  "fetched_at": "2026-04-19T14:03:48.198946+00:00",
+  "http_status": 200,
+  "byte_size": 38624,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "inflation",
+    "type": "concept",
+    "path": "concepts/inflation.md",
+    "index_order": 23
+  }
+}

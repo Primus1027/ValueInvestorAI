@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_4c7732bdcc9c669cd7213315d2068435bc8661d79ed2c28f7968380445e80e4a",
+  "content_sha256": "4c7732bdcc9c669cd7213315d2068435bc8661d79ed2c28f7968380445e80e4a",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/learning_and_growth.txt",
+  "fetched_at": "2026-04-19T14:03:55.981134+00:00",
+  "http_status": 200,
+  "byte_size": 40616,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "learning_and_growth",
+    "type": "concept",
+    "path": "concepts/learning_and_growth.md",
+    "index_order": 30
+  }
+}

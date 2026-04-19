@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_a4599d5f1ecacb6d1e0bfbf96e195cc75fafb9358c4c72a86772cf63ecdb73e9",
+  "content_sha256": "a4599d5f1ecacb6d1e0bfbf96e195cc75fafb9358c4c72a86772cf63ecdb73e9",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/management_quality.txt",
+  "fetched_at": "2026-04-19T13:59:11.155516+00:00",
+  "http_status": 200,
+  "byte_size": 45215,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "management_quality",
+    "type": "concept",
+    "path": "concepts/management_quality.md",
+    "index_expected_size": 45215,
+    "index_order": 36
+  }
+}

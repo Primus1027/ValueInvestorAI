@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_a0b438325f0af5693abe104d10ffb2c776eaab9bf7b73835f29f60ca1f6aa6a7",
+  "content_sha256": "a0b438325f0af5693abe104d10ffb2c776eaab9bf7b73835f29f60ca1f6aa6a7",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/partnership_principles.txt",
+  "fetched_at": "2026-04-19T14:04:00.645351+00:00",
+  "http_status": 200,
+  "byte_size": 39857,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "partnership_principles",
+    "type": "concept",
+    "path": "concepts/partnership_principles.md",
+    "index_order": 45
+  }
+}

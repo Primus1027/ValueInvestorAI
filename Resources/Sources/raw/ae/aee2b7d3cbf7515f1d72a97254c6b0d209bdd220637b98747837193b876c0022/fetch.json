@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_aee2b7d3cbf7515f1d72a97254c6b0d209bdd220637b98747837193b876c0022",
+  "content_sha256": "aee2b7d3cbf7515f1d72a97254c6b0d209bdd220637b98747837193b876c0022",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/special_situations.txt",
+  "fetched_at": "2026-04-19T14:04:05.076566+00:00",
+  "http_status": 200,
+  "byte_size": 24674,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "special_situations",
+    "type": "concept",
+    "path": "concepts/special_situations.md",
+    "index_order": 57
+  }
+}

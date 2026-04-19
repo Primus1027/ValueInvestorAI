@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_b3be5025d2267991de552f231905f2b3fea87fe763f587b0f9801d41183bf33d",
+  "content_sha256": "b3be5025d2267991de552f231905f2b3fea87fe763f587b0f9801d41183bf33d",
+  "url": "https://value-investing-gurus.pages.dev/api/en/articles/syntheses/mistakes_and_lessons.txt",
+  "fetched_at": "2026-04-19T14:04:25.415284+00:00",
+  "http_status": 200,
+  "byte_size": 12130,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "en",
+    "id": "mistakes_and_lessons",
+    "type": "synthesis",
+    "path": "syntheses/mistakes_and_lessons.md",
+    "index_order": 116
+  }
+}

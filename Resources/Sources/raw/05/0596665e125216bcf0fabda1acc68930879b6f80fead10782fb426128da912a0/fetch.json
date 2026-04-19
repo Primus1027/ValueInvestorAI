@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_0596665e125216bcf0fabda1acc68930879b6f80fead10782fb426128da912a0",
+  "content_sha256": "0596665e125216bcf0fabda1acc68930879b6f80fead10782fb426128da912a0",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/charlie_munger_caltech_dubridge_lecture_2008.txt",
+  "fetched_at": "2026-04-19T14:00:34.967009+00:00",
+  "http_status": 200,
+  "byte_size": 5786,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "charlie_munger_caltech_dubridge_lecture_2008",
+    "type": "source",
+    "path": "sources/charlie_munger_caltech_dubridge_lecture_2008.md",
+    "index_expected_size": 5786,
+    "index_order": 90
+  }
+}

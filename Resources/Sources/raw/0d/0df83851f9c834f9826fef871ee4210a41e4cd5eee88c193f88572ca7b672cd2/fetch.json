@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_0df83851f9c834f9826fef871ee4210a41e4cd5eee88c193f88572ca7b672cd2",
+  "content_sha256": "0df83851f9c834f9826fef871ee4210a41e4cd5eee88c193f88572ca7b672cd2",
+  "url": "https://value-investing-gurus.pages.dev/api/en/articles/syntheses/berkshire_organizational_model.txt",
+  "fetched_at": "2026-04-19T14:04:25.766745+00:00",
+  "http_status": 200,
+  "byte_size": 14778,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "en",
+    "id": "berkshire_organizational_model",
+    "type": "synthesis",
+    "path": "syntheses/berkshire_organizational_model.md",
+    "index_order": 108
+  }
+}

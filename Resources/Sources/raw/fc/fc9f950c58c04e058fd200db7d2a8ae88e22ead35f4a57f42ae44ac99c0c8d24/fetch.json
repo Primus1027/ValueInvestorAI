@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_fc9f950c58c04e058fd200db7d2a8ae88e22ead35f4a57f42ae44ac99c0c8d24",
+  "content_sha256": "fc9f950c58c04e058fd200db7d2a8ae88e22ead35f4a57f42ae44ac99c0c8d24",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/friction_costs.txt",
+  "fetched_at": "2026-04-19T14:03:50.313551+00:00",
+  "http_status": 200,
+  "byte_size": 32856,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "friction_costs",
+    "type": "concept",
+    "path": "concepts/friction_costs.md",
+    "index_order": 20
+  }
+}

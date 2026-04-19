@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_5f8f0ab39f755e8ae838c1a8219ee9cab5e9fcb9487890ea7269b8e6878f2d77",
+  "content_sha256": "5f8f0ab39f755e8ae838c1a8219ee9cab5e9fcb9487890ea7269b8e6878f2d77",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/daily_journal_corporation_annual_meeting_2023_charlie_munger.txt",
+  "fetched_at": "2026-04-19T14:00:50.681659+00:00",
+  "http_status": 200,
+  "byte_size": 25833,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "daily_journal_corporation_annual_meeting_2023_charlie_munger",
+    "type": "source",
+    "path": "sources/daily_journal_corporation_annual_meeting_2023_charlie_munger.md",
+    "index_expected_size": 25833,
+    "index_order": 100
+  }
+}

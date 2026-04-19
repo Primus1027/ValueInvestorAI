@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_732c6cd400590c876ae16f39e27f5e700dae5b05556b6b3b8295e5a4498e0c5f",
+  "content_sha256": "732c6cd400590c876ae16f39e27f5e700dae5b05556b6b3b8295e5a4498e0c5f",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/management.txt",
+  "fetched_at": "2026-04-19T14:03:55.942470+00:00",
+  "http_status": 200,
+  "byte_size": 40046,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "management",
+    "type": "concept",
+    "path": "concepts/management.md",
+    "index_order": 35
+  }
+}

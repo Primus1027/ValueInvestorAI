@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_33e4f14efa63ccabd1653503d7a598bc7c02e0815392da77201851ebe12a11ff",
+  "content_sha256": "33e4f14efa63ccabd1653503d7a598bc7c02e0815392da77201851ebe12a11ff",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/temperament_and_discipline.txt",
+  "fetched_at": "2026-04-19T14:04:06.943440+00:00",
+  "http_status": 200,
+  "byte_size": 37697,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "temperament_and_discipline",
+    "type": "concept",
+    "path": "concepts/temperament_and_discipline.md",
+    "index_order": 59
+  }
+}

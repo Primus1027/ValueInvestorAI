@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_28c59a25e4ebcc1b2f86014528f66342f40cc08711945e057874a6788c476659",
+  "content_sha256": "28c59a25e4ebcc1b2f86014528f66342f40cc08711945e057874a6788c476659",
+  "url": "https://value-investing-gurus.pages.dev/api/en/articles/syntheses/valuation_in_practice.txt",
+  "fetched_at": "2026-04-19T14:04:35.783513+00:00",
+  "http_status": 200,
+  "byte_size": 12688,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "en",
+    "id": "valuation_in_practice",
+    "type": "synthesis",
+    "path": "syntheses/valuation_in_practice.md",
+    "index_order": 119
+  }
+}

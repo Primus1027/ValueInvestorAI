@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_7e66087dd4b20f54e4d832f9086215b1179c30b128855b8c9bcf25681c413935",
+  "content_sha256": "7e66087dd4b20f54e4d832f9086215b1179c30b128855b8c9bcf25681c413935",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/buffett_partnership_letters_1957_70.txt",
+  "fetched_at": "2026-04-19T14:00:33.599949+00:00",
+  "http_status": 200,
+  "byte_size": 2822,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "buffett_partnership_letters_1957_70",
+    "type": "source",
+    "path": "sources/buffett_partnership_letters_1957_70.md",
+    "index_expected_size": 2822,
+    "index_order": 89
+  }
+}

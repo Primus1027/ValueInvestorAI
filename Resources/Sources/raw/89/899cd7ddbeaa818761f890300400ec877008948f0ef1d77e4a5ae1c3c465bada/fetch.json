@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_899cd7ddbeaa818761f890300400ec877008948f0ef1d77e4a5ae1c3c465bada",
+  "content_sha256": "899cd7ddbeaa818761f890300400ec877008948f0ef1d77e4a5ae1c3c465bada",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/scale_economics.txt",
+  "fetched_at": "2026-04-19T13:59:38.604520+00:00",
+  "http_status": 200,
+  "byte_size": 34065,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "scale_economics",
+    "type": "concept",
+    "path": "concepts/scale_economics.md",
+    "index_expected_size": 34065,
+    "index_order": 54
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_fcb8e18f86d42a20abc2e72a845b3ab366eb7998524ddbaaa85d7383afcaa8bd",
+  "content_sha256": "fcb8e18f86d42a20abc2e72a845b3ab366eb7998524ddbaaa85d7383afcaa8bd",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/circle_of_competence.txt",
+  "fetched_at": "2026-04-19T14:03:37.231530+00:00",
+  "http_status": 200,
+  "byte_size": 40200,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "circle_of_competence",
+    "type": "concept",
+    "path": "concepts/circle_of_competence.md",
+    "index_order": 7
+  }
+}

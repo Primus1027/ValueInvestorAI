@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_6620028f8472ae7bd046a417b7aeb9fce028e3a3829646a313c881a12cda9139",
+  "content_sha256": "6620028f8472ae7bd046a417b7aeb9fce028e3a3829646a313c881a12cda9139",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/warren_buffett_talk_at_notre_dame_1991.txt",
+  "fetched_at": "2026-04-19T14:00:59.114668+00:00",
+  "http_status": 200,
+  "byte_size": 34566,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "warren_buffett_talk_at_notre_dame_1991",
+    "type": "source",
+    "path": "sources/warren_buffett_talk_at_notre_dame_1991.md",
+    "index_expected_size": 34566,
+    "index_order": 105
+  }
+}

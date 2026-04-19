@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_0be7fb9566b7cbccb7c5520f83c9bb4c54d2f926126f9d131908f831e219e85b",
+  "content_sha256": "0be7fb9566b7cbccb7c5520f83c9bb4c54d2f926126f9d131908f831e219e85b",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/operational_excellence.txt",
+  "fetched_at": "2026-04-19T13:59:19.387425+00:00",
+  "http_status": 200,
+  "byte_size": 28505,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "operational_excellence",
+    "type": "concept",
+    "path": "concepts/operational_excellence.md",
+    "index_expected_size": 28505,
+    "index_order": 41
+  }
+}

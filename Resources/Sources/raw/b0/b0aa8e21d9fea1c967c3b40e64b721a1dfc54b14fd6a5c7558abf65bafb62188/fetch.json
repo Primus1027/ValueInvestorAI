@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_b0aa8e21d9fea1c967c3b40e64b721a1dfc54b14fd6a5c7558abf65bafb62188",
+  "content_sha256": "b0aa8e21d9fea1c967c3b40e64b721a1dfc54b14fd6a5c7558abf65bafb62188",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/passive_vs_active_investing.txt",
+  "fetched_at": "2026-04-19T14:04:02.445039+00:00",
+  "http_status": 200,
+  "byte_size": 29924,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "passive_vs_active_investing",
+    "type": "concept",
+    "path": "concepts/passive_vs_active_investing.md",
+    "index_order": 46
+  }
+}

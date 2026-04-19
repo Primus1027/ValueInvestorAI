@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_49f534380134490b79b5af281df5e5ecfaa805e25129bb49ac88289604c122f6",
+  "content_sha256": "49f534380134490b79b5af281df5e5ecfaa805e25129bb49ac88289604c122f6",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/berkshire_hathaway_annual_meeting_2024.txt",
+  "fetched_at": "2026-04-19T14:00:11.349227+00:00",
+  "http_status": 200,
+  "byte_size": 31191,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "berkshire_hathaway_annual_meeting_2024",
+    "type": "source",
+    "path": "sources/berkshire_hathaway_annual_meeting_2024.md",
+    "index_expected_size": 31191,
+    "index_order": 71
+  }
+}

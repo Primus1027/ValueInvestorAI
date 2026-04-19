@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_eddafb1d14a27fa8f4c8b31e5160ce1c45335230368bf9c4f4d3d1a318534ec8",
+  "content_sha256": "eddafb1d14a27fa8f4c8b31e5160ce1c45335230368bf9c4f4d3d1a318534ec8",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/berkshire_hathaway_letters_to_shareholders_1965_2012_warren_buffett.txt",
+  "fetched_at": "2026-04-19T14:00:13.942982+00:00",
+  "http_status": 200,
+  "byte_size": 4414,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "berkshire_hathaway_letters_to_shareholders_1965_2012_warren_buffett",
+    "type": "source",
+    "path": "sources/berkshire_hathaway_letters_to_shareholders_1965_2012_warren_buffett.md",
+    "index_expected_size": 4414,
+    "index_order": 75
+  }
+}

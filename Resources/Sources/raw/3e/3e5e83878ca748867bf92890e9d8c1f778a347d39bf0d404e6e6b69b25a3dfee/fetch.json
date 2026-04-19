@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_3e5e83878ca748867bf92890e9d8c1f778a347d39bf0d404e6e6b69b25a3dfee",
+  "content_sha256": "3e5e83878ca748867bf92890e9d8c1f778a347d39bf0d404e6e6b69b25a3dfee",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/berkshire_hathaway_shareholder_letter_2025.txt",
+  "fetched_at": "2026-04-19T14:04:17.488184+00:00",
+  "http_status": 200,
+  "byte_size": 15856,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "berkshire_hathaway_shareholder_letter_2025",
+    "type": "source",
+    "path": "sources/berkshire_hathaway_shareholder_letter_2025.md",
+    "index_order": 88
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_602be63c0340df8214d8b63ea04a559fe20fbeb42960acfffbdc9e95e774b17f",
+  "content_sha256": "602be63c0340df8214d8b63ea04a559fe20fbeb42960acfffbdc9e95e774b17f",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/competitive_moat.txt",
+  "fetched_at": "2026-04-19T14:03:39.399530+00:00",
+  "http_status": 200,
+  "byte_size": 41472,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "competitive_moat",
+    "type": "concept",
+    "path": "concepts/competitive_moat.md",
+    "index_order": 11
+  }
+}

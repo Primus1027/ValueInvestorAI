@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_1becd6e264fd60c593640a2fb71d366071816d17ddd4e5018a125738cc544bc7",
+  "content_sha256": "1becd6e264fd60c593640a2fb71d366071816d17ddd4e5018a125738cc544bc7",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/market_psychology.txt",
+  "fetched_at": "2026-04-19T14:03:59.185616+00:00",
+  "http_status": 200,
+  "byte_size": 39711,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "market_psychology",
+    "type": "concept",
+    "path": "concepts/market_psychology.md",
+    "index_order": 39
+  }
+}

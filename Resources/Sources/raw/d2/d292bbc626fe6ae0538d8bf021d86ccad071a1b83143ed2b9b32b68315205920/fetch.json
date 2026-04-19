@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_d292bbc626fe6ae0538d8bf021d86ccad071a1b83143ed2b9b32b68315205920",
+  "content_sha256": "d292bbc626fe6ae0538d8bf021d86ccad071a1b83143ed2b9b32b68315205920",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/insurance_economics.txt",
+  "fetched_at": "2026-04-19T14:03:52.294064+00:00",
+  "http_status": 200,
+  "byte_size": 31256,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "insurance_economics",
+    "type": "concept",
+    "path": "concepts/insurance_economics.md",
+    "index_order": 25
+  }
+}

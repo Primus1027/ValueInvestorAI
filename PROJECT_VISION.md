@@ -4,6 +4,22 @@
 
 ---
 
+> ⚠️ **术语更新通告（2026-04-19）**
+>
+> 本文档是项目早期愿景叙述（v0.2, 2026-04-05 撰写），部分措辞（"数字灵魂"、"AI 就是投资者本身"、"以大师的思维框架做出投资决策"）仅用于**内部设计讨论**。
+>
+> 经 2026-04-05 AI Debate 决议 + 2026-04-19 Claude Usage Policy 实证，**对外措辞与所有 prompt 层实现必须改用：**
+> - "投资方法论研究工具 / Investment methodology research tool"
+> - "应用 X 方法论的分析框架"
+> - "decision-style modeling" / "结构化决策风格仿真"
+>
+> **不使用**：
+> - "扮演 Buffett/芒格/段永平"、"你是 X 大师"、"AI 就是大师本人"、"灵魂封装"、"数字灵魂"
+>
+> 原因：Anthropic Usage Policy 禁止 AI 扮演真实在世人物 + 针对真实 ticker 给投资建议。这也呼应了 AI Debate 共识第 1/2 条。详见 `Designs/prompt-framing-guidelines.md`。
+
+---
+
 ## 一、背景来源
 
 ### 1. AIStartupOS — AI-Native 公司形态探索

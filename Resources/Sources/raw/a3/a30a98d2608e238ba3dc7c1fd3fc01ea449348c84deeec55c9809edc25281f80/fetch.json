@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_a30a98d2608e238ba3dc7c1fd3fc01ea449348c84deeec55c9809edc25281f80",
+  "content_sha256": "a30a98d2608e238ba3dc7c1fd3fc01ea449348c84deeec55c9809edc25281f80",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/margin_of_safety.txt",
+  "fetched_at": "2026-04-19T14:03:57.598960+00:00",
+  "http_status": 200,
+  "byte_size": 38845,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "margin_of_safety",
+    "type": "concept",
+    "path": "concepts/margin_of_safety.md",
+    "index_order": 37
+  }
+}

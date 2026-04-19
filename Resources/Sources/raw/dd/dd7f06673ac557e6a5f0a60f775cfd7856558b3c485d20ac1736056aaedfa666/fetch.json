@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_dd7f06673ac557e6a5f0a60f775cfd7856558b3c485d20ac1736056aaedfa666",
+  "content_sha256": "dd7f06673ac557e6a5f0a60f775cfd7856558b3c485d20ac1736056aaedfa666",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/opportunity_cost.txt",
+  "fetched_at": "2026-04-19T14:04:00.123459+00:00",
+  "http_status": 200,
+  "byte_size": 41147,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "opportunity_cost",
+    "type": "concept",
+    "path": "concepts/opportunity_cost.md",
+    "index_order": 42
+  }
+}

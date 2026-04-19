@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_da19c9371a5810edcd580dbf0ad0ec1726f9aa665f64c946eb0eb3adee3beb91",
+  "content_sha256": "da19c9371a5810edcd580dbf0ad0ec1726f9aa665f64c946eb0eb3adee3beb91",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/leverage_and_risk.txt",
+  "fetched_at": "2026-04-19T14:03:54.548132+00:00",
+  "http_status": 200,
+  "byte_size": 42249,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "leverage_and_risk",
+    "type": "concept",
+    "path": "concepts/leverage_and_risk.md",
+    "index_order": 31
+  }
+}

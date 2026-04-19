@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_1182192e3a992cf7902bab4f299576977679da5abac80bad7c59a83ef4e4c3b3",
+  "content_sha256": "1182192e3a992cf7902bab4f299576977679da5abac80bad7c59a83ef4e4c3b3",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/syntheses/intrinsic_value_theory_and_practice.txt",
+  "fetched_at": "2026-04-19T14:01:11.163948+00:00",
+  "http_status": 200,
+  "byte_size": 12449,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "intrinsic_value_theory_and_practice",
+    "type": "synthesis",
+    "path": "syntheses/intrinsic_value_theory_and_practice.md",
+    "index_expected_size": 12449,
+    "index_order": 113
+  }
+}

@@ -1,0 +1,129 @@
+---
+title: "Charlie Munger"
+type: entity
+entity_type: person
+date: 2026-04-07
+tags: [behavioral, business_analysis, capital_allocation, competitive_strategy, earnings_quality]
+---
+
+# Charlie Munger
+
+Vice Chairman of Berkshire Hathaway from 1978 until his death in 2023 at age 99. Buffett's intellectual partner, foil, and conscience for 60 years. More than anyone else, responsible for Buffett's shift from cigar-butt Graham-style value investing to "great businesses at fair prices" thinking. Trained as a lawyer, self-educated across psychology, physics, evolutionary biology, and mathematics.
+
+**Born**: 1924, Omaha, Nebraska
+**Died**: November 28, 2023, Santa Barbara, California
+**Works referenced in this wiki**: 12 primary sources
+**Total extracted insights**: 1,131
+**Core partner**: [[warren_buffett]]
+
+## Thought Evolution
+
+Munger's thinking was largely formed by age 40. Unlike [[warren_buffett]], whose strategy evolved through four distinct phases, Munger arrived at his core frameworks early and refined them through relentless reading and live decision-making at Wesco Financial, Blue Chip Stamps, and Berkshire.
+
+**Foundations (1940s-1960s)**
+Harvard Law School without a college degree. Early investment partnership (1962-1975) with returns of ~19%/year. First mega-decision: concentrating on a handful of stocks, including Blue Chip Stamps, New America Fund, and Wesco Financial. Core insight formed: great businesses, even at fair prices, compound far beyond cigar butts.
+
+**The Munger-Buffett Merge (1970s-1980s)**
+Introduction to See's Candies (1972) as the decisive practical test. Wesco Financial letters (1983-2009) document how Munger refined his quality-first philosophy in real time. Key source: [[sources/wesco_financial_charlie_munger_letters_1983_2009|Wesco Financial Letters 1983-2009]].
+
+**The Mental Models Period (1990s-2000s)**
+Munger formalized his latticework-of-mental-models approach in public lectures at USC, Harvard, and Caltech. Key sources: [[sources/a_lesson_on_elementary_worldly_wisdom_charlie_munger_usc_1994|Elementary Worldly Wisdom (USC 1994)]], [[sources/academic_economics_strengths_and_faults_charlie_munger_ucsb_2003|Academic Economics (UCSB 2003)]], [[sources/charlie_munger_caltech_dubridge_lecture_2008|Caltech DuBridge Lecture (2008)]], and the 25 cognitive biases speech (later published as [[sources/the_psychology_of_human_misjudgment_charlie_munger|The Psychology of Human Misjudgment]]).
+
+**Late-Career Oracle (2010-2023)**
+Daily Journal meetings became an annual pilgrimage for serious investors. Key sources: [[sources/daily_journal_corporation_annual_meeting_2023_charlie_munger|DJC Annual Meeting 2023]], [[sources/charlie_munger_fireside_chat_with_todd_combs_singleton_prize_2022|Fireside Chat with Todd Combs]], [[sources/acquired_podcast_charlie_munger_dinner_interview_oct_2023|Acquired Podcast Dinner Interview (Oct 2023)]], and [[sources/cnbc_charlie_munger_a_life_of_wit_and_wisdom_final_interview_nov_2023|CNBC Final Interview (Nov 2023)]].
+
+## Essential Readings
+
+**Start here**:
+- [[sources/poor_charlies_almanack_expanded_third_edition|Poor Charlie's Almanack (Expanded Third Edition)]] — the canonical single-volume Munger. Read cover to cover, then revisit annually.
+- [[sources/the_psychology_of_human_misjudgment_charlie_munger|The Psychology of Human Misjudgment]] — the 25 cognitive biases that explain almost every bad business decision.
+
+**Then read**:
+- [[sources/a_lesson_on_elementary_worldly_wisdom_charlie_munger_usc_1994|Elementary Worldly Wisdom (USC 1994)]] — the best single introduction to his mental-models approach.
+- [[sources/how_to_guarantee_a_life_of_misery_charlie_munger_harvard_1986|How to Guarantee a Life of Misery (Harvard 1986)]] — inversion as a life-design framework.
+
+**Long-form interviews**:
+- [[sources/acquired_podcast_charlie_munger_dinner_interview_oct_2023|Acquired Podcast Dinner Interview (Oct 2023)]] — one of his last and most wide-ranging interviews
+- [[sources/cnbc_charlie_munger_a_life_of_wit_and_wisdom_final_interview_nov_2023|CNBC Final Interview (Nov 2023)]] — recorded days before his death
+- [[sources/charlie_munger_fireside_chat_with_todd_combs_singleton_prize_2022|Fireside Chat with Todd Combs (2022)]]
+- [[sources/daily_journal_corporation_annual_meeting_2023_charlie_munger|Daily Journal 2023]]
+
+**Deeper cuts**:
+- [[sources/academic_economics_strengths_and_faults_charlie_munger_ucsb_2003|Academic Economics (UCSB 2003)]] — Munger's critique of mainstream economics
+- [[sources/wesco_financial_charlie_munger_letters_1983_2009|Wesco Financial Letters (1983-2009)]] — real-time capital allocation thinking
+
+## Core Concept Network
+
+**Mental models and reasoning**
+- [[mental_models_lattice]] — the latticework framework, Munger's most famous contribution
+- [[mental_models]] — individual frameworks from psychology, physics, biology
+- [[inversion]] — "all I want to know is where I'm going to die, so I never go there"
+- [[checklist_approach]] — borrowed from aviation and surgery
+- [[circle_of_competence]] — shared with Buffett but more explicitly bounded in Munger's work
+
+**Psychology and behavior**
+- [[cognitive_biases]] — the 25-bias taxonomy from Psychology of Human Misjudgment
+- [[behavioral]] — the umbrella lens Munger applied everywhere
+- [[incentives]] — "never think about anything else when you can think about incentives"
+- [[institutional_imperative]] — why smart organizations do dumb things
+- [[lollapalooza_effect]] — when multiple biases converge, force multiplies catastrophically
+
+**Investment philosophy**
+- [[business_quality]] — the shift from quantitative cheapness to qualitative excellence
+- [[competitive_moat]] — the durability test
+- [[concentration]] — "bet heavily on your best bets"
+- [[patience]] — "the big money is not in the buying and the selling, but in the waiting"
+- [[multidisciplinary_approach]] — "if all you have is a hammer, everything looks like a nail"
+
+**Life design**
+- [[temperament_and_discipline]] — the 90% factor
+- [[integrity_and_ethics]] — "take the high road; it's far less crowded"
+- [[learning_machine]] — the obligation to compound knowledge, not just capital
+- [[worldly_wisdom]] — the umbrella category for everything above
+
+## Notable Mistakes and Corrections
+
+Munger, like Buffett, discussed his errors publicly. He saw error-analysis as the primary mechanism for improvement.
+
+**The Baltimore department store (Diversified Retailing, 1966)**
+Munger and Buffett bought a Baltimore department store they quickly realized was a dying business. Rather than doubling down, they reversed and took the losses immediately. Munger cited this as the foundational lesson in cutting losses fast. See [[mistakes_and_lessons]].
+
+**Passing on technology stocks**
+Munger publicly regretted missing most of the technology wave in the 2000s. Partially corrected when Berkshire bought Apple in 2016 — Munger later said Apple was the one technology position he was comfortable with because it was really a consumer-products business.
+
+**Overconfidence during early successes**
+Munger's Wheeler-Munger partnership (1962-1975) had a brutal 1973-74 drawdown that nearly ended the partnership. He credited this period with teaching him that even great investors must respect position sizing and psychological resilience.
+
+**Being too clever at the wrong time**
+Munger often warned that his own intellectual self-confidence could become overconfidence. He cited the Wesco investment in Freddie Mac (sold before the crisis) as a case where getting out was lucky rather than smart.
+
+## High-Frequency Themes
+
+**"Invert, always invert"**
+Munger's core reasoning move, borrowed from mathematician Carl Gustav Jacob Jacobi. Applied to business, investing, life design, and even marriage. Ask not how to succeed; ask how to fail, then avoid that. See [[inversion]].
+
+**Mental models as a latticework**
+No single framework is enough. A serious thinker needs 80-90 major models from every major discipline — physics, biology, psychology, statistics, economics — and must learn to use them together. See [[mental_models_lattice]].
+
+**Incentives explain almost everything**
+From 2+20 hedge fund fees to CEO stock options to government subsidies, Munger insisted that if you can't explain a behavior, you haven't found the right incentive. See [[incentive_structures]].
+
+**Academic economics is half-wrong**
+Munger's long-running critique: mainstream economics ignores psychology, evolutionary biology, and the failure modes of large organizations. See [[sources/academic_economics_strengths_and_faults_charlie_munger_ucsb_2003|Academic Economics: Strengths and Faults]].
+
+**Ethics as practical, not just moral**
+Munger's ethics were consequentialist: honesty and integrity are the best long-term strategies because the alternative compounds into disaster. "Take the high road; it's far less crowded." See [[integrity_and_ethics]].
+
+**Patience and concentration as twin disciplines**
+"The big money is not in the buying and the selling, but in the waiting." Most investors mistake activity for skill. Munger's answer: sit on your hands until a fat pitch appears, then bet heavily. See [[patience]] and [[concentration]].
+
+**The curse of knowing too little psychology**
+Munger repeatedly said he made "huge mistakes" early because he hadn't yet absorbed the full list of cognitive biases. This is why the Psychology of Human Misjudgment speech became his most-shared work.
+
+## Related
+
+- Partner: [[warren_buffett]] (60-year partnership)
+- Influenced by: Benjamin Franklin, Charles Darwin, Cialdini (on persuasion), Kahneman (indirectly)
+- Key portfolios: Wheeler-Munger Partnership, Wesco Financial, Blue Chip Stamps, Berkshire Hathaway, Daily Journal Corporation
+- Intellectual heirs: Li Lu, Todd Combs, Guy Spier, Mohnish Pabrai
+- See also the original compiled volume: [[sources/poor_charlies_almanack_charlie_munger|Poor Charlie's Almanack (original compilation)]]

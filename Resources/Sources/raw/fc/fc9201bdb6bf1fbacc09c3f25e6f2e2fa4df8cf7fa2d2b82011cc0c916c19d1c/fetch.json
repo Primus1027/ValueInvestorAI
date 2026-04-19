@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_fc9201bdb6bf1fbacc09c3f25e6f2e2fa4df8cf7fa2d2b82011cc0c916c19d1c",
+  "content_sha256": "fc9201bdb6bf1fbacc09c3f25e6f2e2fa4df8cf7fa2d2b82011cc0c916c19d1c",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/decision_making.txt",
+  "fetched_at": "2026-04-19T14:03:45.950221+00:00",
+  "http_status": 200,
+  "byte_size": 39876,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "decision_making",
+    "type": "concept",
+    "path": "concepts/decision_making.md",
+    "index_order": 16
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_f56fb23ad0ff8b13e9ffd614470e6813e79dd199e29702346dea930426bb6734",
+  "content_sha256": "f56fb23ad0ff8b13e9ffd614470e6813e79dd199e29702346dea930426bb6734",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/acquired_podcast_berkshire_hathaway_part_i.txt",
+  "fetched_at": "2026-04-19T14:04:06.836650+00:00",
+  "http_status": 200,
+  "byte_size": 31171,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "acquired_podcast_berkshire_hathaway_part_i",
+    "type": "source",
+    "path": "sources/acquired_podcast_berkshire_hathaway_part_i.md",
+    "index_order": 67
+  }
+}

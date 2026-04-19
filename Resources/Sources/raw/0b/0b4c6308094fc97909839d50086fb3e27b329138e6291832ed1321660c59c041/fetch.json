@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_0b4c6308094fc97909839d50086fb3e27b329138e6291832ed1321660c59c041",
+  "content_sha256": "0b4c6308094fc97909839d50086fb3e27b329138e6291832ed1321660c59c041",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/cnbc_buffett_from_japan_on_trading_companies_apr_2023.txt",
+  "fetched_at": "2026-04-19T14:04:13.387455+00:00",
+  "http_status": 200,
+  "byte_size": 24215,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "cnbc_buffett_from_japan_on_trading_companies_apr_2023",
+    "type": "source",
+    "path": "sources/cnbc_buffett_from_japan_on_trading_companies_apr_2023.md",
+    "index_order": 93
+  }
+}

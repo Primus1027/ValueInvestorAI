@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_295fc2c3e0166bec50dedefe282dd8f93ff9dbb94bda08dda9805d5c7de3b415",
+  "content_sha256": "295fc2c3e0166bec50dedefe282dd8f93ff9dbb94bda08dda9805d5c7de3b415",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/lollapalooza_effect.txt",
+  "fetched_at": "2026-04-19T14:03:56.287571+00:00",
+  "http_status": 200,
+  "byte_size": 10128,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "lollapalooza_effect",
+    "type": "concept",
+    "path": "concepts/lollapalooza_effect.md",
+    "index_order": 33
+  }
+}

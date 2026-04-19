@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_cdd85c8be3cc970731166fff22dabb7986605fb57acd0bf6b0640902fdbe4a68",
+  "content_sha256": "cdd85c8be3cc970731166fff22dabb7986605fb57acd0bf6b0640902fdbe4a68",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/berkshire_hathaway_annual_meeting_transcripts_1994_2022.txt",
+  "fetched_at": "2026-04-19T14:00:13.625648+00:00",
+  "http_status": 200,
+  "byte_size": 39701,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "berkshire_hathaway_annual_meeting_transcripts_1994_2022",
+    "type": "source",
+    "path": "sources/berkshire_hathaway_annual_meeting_transcripts_1994_2022.md",
+    "index_expected_size": 39701,
+    "index_order": 73
+  }
+}

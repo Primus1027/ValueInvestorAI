@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_d39299904dcdbcb9dbe446a330638a8c777f3fc4853b94cb9f3da6407bbe560a",
+  "content_sha256": "d39299904dcdbcb9dbe446a330638a8c777f3fc4853b94cb9f3da6407bbe560a",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/warren_buffett_talk_at_university_of_florida_1998.txt",
+  "fetched_at": "2026-04-19T14:04:18.364411+00:00",
+  "http_status": 200,
+  "byte_size": 20047,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "warren_buffett_talk_at_university_of_florida_1998",
+    "type": "source",
+    "path": "sources/warren_buffett_talk_at_university_of_florida_1998.md",
+    "index_order": 106
+  }
+}

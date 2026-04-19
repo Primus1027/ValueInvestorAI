@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_e4b8c6daa58be7dd026e415dc8725e1f642d8878f8f54c077b000c9b3bbe6780",
+  "content_sha256": "e4b8c6daa58be7dd026e415dc8725e1f642d8878f8f54c077b000c9b3bbe6780",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/free_cash_flow.txt",
+  "fetched_at": "2026-04-19T14:03:47.414802+00:00",
+  "http_status": 200,
+  "byte_size": 10613,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "free_cash_flow",
+    "type": "concept",
+    "path": "concepts/free_cash_flow.md",
+    "index_order": 19
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_b758be13525320eddd770372b9ad493704734f9eea195aad3bfa5afccd76c0c2",
+  "content_sha256": "b758be13525320eddd770372b9ad493704734f9eea195aad3bfa5afccd76c0c2",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/berkshire_hathaway_shareholder_letter_2023.txt",
+  "fetched_at": "2026-04-19T14:00:31.079765+00:00",
+  "http_status": 200,
+  "byte_size": 14384,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "berkshire_hathaway_shareholder_letter_2023",
+    "type": "source",
+    "path": "sources/berkshire_hathaway_shareholder_letter_2023.md",
+    "index_expected_size": 14384,
+    "index_order": 86
+  }
+}

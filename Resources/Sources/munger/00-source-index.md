@@ -302,3 +302,20 @@ URL 规律：`https://theoraclesclassroom.com/wp-content/uploads/2019/09/{YEAR}-
 ---
 
 *本索引基于 2026-04-15 的搜索结果，URL 有效性以实际访问为准。*
+
+
+---
+
+## 交叉引用索引（2026-04 vig scan）
+
+2026-04-19 扫描了 value-investing-gurus.pages.dev（编者：用户投资人朋友），
+整合了 134 份二手综合资料（P3/P4 tier）到 `Resources/Sources/cross-master/views/value-investing-gurus-dev-2026-04/`。
+
+**这些资料不是原件替代，而是补充：**
+- 交叉验证本索引中 P0/P1 原件的细节（已解决 2+7 处 NEEDS VERIFICATION 标记）
+- 提供跨大师对比视角（master_comparisons）
+- 把概念链接到真实投资案例与实际回报（concept_investment_links）
+
+浏览：`cross-master/views/value-investing-gurus-dev-2026-04/00-compendium-index.md`
+Registry：`registry/sources.jsonl` 按 `masters: ["munger"]` 过滤
+Scan 记录：`registry/scans.jsonl` id = `scan_2026-04-19_vig`

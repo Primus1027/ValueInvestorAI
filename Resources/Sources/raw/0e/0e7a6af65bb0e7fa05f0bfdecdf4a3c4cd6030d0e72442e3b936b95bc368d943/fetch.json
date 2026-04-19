@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_0e7a6af65bb0e7fa05f0bfdecdf4a3c4cd6030d0e72442e3b936b95bc368d943",
+  "content_sha256": "0e7a6af65bb0e7fa05f0bfdecdf4a3c4cd6030d0e72442e3b936b95bc368d943",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/trust.txt",
+  "fetched_at": "2026-04-19T13:59:50.713357+00:00",
+  "http_status": 200,
+  "byte_size": 39436,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "trust",
+    "type": "concept",
+    "path": "concepts/trust.md",
+    "index_expected_size": 39436,
+    "index_order": 60
+  }
+}

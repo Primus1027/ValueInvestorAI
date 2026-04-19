@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_6b61d3267f4ba7233f5e2a099507097e17691b3d91f73a65756acae76c24de62",
+  "content_sha256": "6b61d3267f4ba7233f5e2a099507097e17691b3d91f73a65756acae76c24de62",
+  "url": "https://value-investing-gurus.pages.dev/api/en/articles/syntheses/mental_models_lattice.txt",
+  "fetched_at": "2026-04-19T14:04:26.137432+00:00",
+  "http_status": 200,
+  "byte_size": 16657,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "en",
+    "id": "mental_models_lattice",
+    "type": "synthesis",
+    "path": "syntheses/mental_models_lattice.md",
+    "index_order": 115
+  }
+}

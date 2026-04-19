@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_132ea4146985184ec52624867d1913f6da9153c4cffcf4706717cbc3e4361c20",
+  "content_sha256": "132ea4146985184ec52624867d1913f6da9153c4cffcf4706717cbc3e4361c20",
+  "url": "https://value-investing-gurus.pages.dev/api/en/articles/syntheses/management_evaluation.txt",
+  "fetched_at": "2026-04-19T14:04:24.197938+00:00",
+  "http_status": 200,
+  "byte_size": 14934,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "en",
+    "id": "management_evaluation",
+    "type": "synthesis",
+    "path": "syntheses/management_evaluation.md",
+    "index_order": 114
+  }
+}

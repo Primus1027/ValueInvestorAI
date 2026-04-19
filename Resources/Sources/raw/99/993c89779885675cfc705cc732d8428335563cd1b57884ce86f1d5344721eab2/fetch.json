@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_993c89779885675cfc705cc732d8428335563cd1b57884ce86f1d5344721eab2",
+  "content_sha256": "993c89779885675cfc705cc732d8428335563cd1b57884ce86f1d5344721eab2",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/academic_economics_strengths_and_faults_charlie_munger_ucsb_2003.txt",
+  "fetched_at": "2026-04-19T14:04:07.858323+00:00",
+  "http_status": 200,
+  "byte_size": 16264,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "academic_economics_strengths_and_faults_charlie_munger_ucsb_2003",
+    "type": "source",
+    "path": "sources/academic_economics_strengths_and_faults_charlie_munger_ucsb_2003.md",
+    "index_order": 66
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_2e58557103a3c3039641fb7c293b6002110c39cfc1d3cfb9b87095f0883c030e",
+  "content_sha256": "2e58557103a3c3039641fb7c293b6002110c39cfc1d3cfb9b87095f0883c030e",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/inversion.txt",
+  "fetched_at": "2026-04-19T14:03:53.255392+00:00",
+  "http_status": 200,
+  "byte_size": 29528,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "inversion",
+    "type": "concept",
+    "path": "concepts/inversion.md",
+    "index_order": 29
+  }
+}

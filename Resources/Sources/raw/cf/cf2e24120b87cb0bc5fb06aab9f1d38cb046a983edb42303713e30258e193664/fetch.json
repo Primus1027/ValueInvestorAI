@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_cf2e24120b87cb0bc5fb06aab9f1d38cb046a983edb42303713e30258e193664",
+  "content_sha256": "cf2e24120b87cb0bc5fb06aab9f1d38cb046a983edb42303713e30258e193664",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/return_on_capital.txt",
+  "fetched_at": "2026-04-19T14:04:04.445179+00:00",
+  "http_status": 200,
+  "byte_size": 35904,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "return_on_capital",
+    "type": "concept",
+    "path": "concepts/return_on_capital.md",
+    "index_order": 52
+  }
+}

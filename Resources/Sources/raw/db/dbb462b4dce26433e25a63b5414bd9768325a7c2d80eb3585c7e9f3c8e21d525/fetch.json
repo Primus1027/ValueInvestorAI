@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_dbb462b4dce26433e25a63b5414bd9768325a7c2d80eb3585c7e9f3c8e21d525",
+  "content_sha256": "dbb462b4dce26433e25a63b5414bd9768325a7c2d80eb3585c7e9f3c8e21d525",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/simplicity.txt",
+  "fetched_at": "2026-04-19T13:59:44.855955+00:00",
+  "http_status": 200,
+  "byte_size": 36379,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "simplicity",
+    "type": "concept",
+    "path": "concepts/simplicity.md",
+    "index_expected_size": 36379,
+    "index_order": 56
+  }
+}

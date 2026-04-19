@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_657d562fc4f45417fbd03f10bdac995be53b3e120da2977924528eaec4da7a99",
+  "content_sha256": "657d562fc4f45417fbd03f10bdac995be53b3e120da2977924528eaec4da7a99",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/compounding.txt",
+  "fetched_at": "2026-04-19T14:03:53.465301+00:00",
+  "http_status": 200,
+  "byte_size": 31841,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "compounding",
+    "type": "concept",
+    "path": "concepts/compounding.md",
+    "index_order": 12
+  }
+}

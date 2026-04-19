@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_17ce6041d67be0ad60eafbda034f512132f519210b465ce961231e4eefabdf61",
+  "content_sha256": "17ce6041d67be0ad60eafbda034f512132f519210b465ce961231e4eefabdf61",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/fixed_income.txt",
+  "fetched_at": "2026-04-19T14:03:45.887465+00:00",
+  "http_status": 200,
+  "byte_size": 14529,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "fixed_income",
+    "type": "concept",
+    "path": "concepts/fixed_income.md",
+    "index_order": 18
+  }
+}

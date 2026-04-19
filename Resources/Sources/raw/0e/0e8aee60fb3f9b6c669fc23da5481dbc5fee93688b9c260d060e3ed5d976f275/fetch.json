@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_0e8aee60fb3f9b6c669fc23da5481dbc5fee93688b9c260d060e3ed5d976f275",
+  "content_sha256": "0e8aee60fb3f9b6c669fc23da5481dbc5fee93688b9c260d060e3ed5d976f275",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/business_quality.txt",
+  "fetched_at": "2026-04-19T14:03:35.838620+00:00",
+  "http_status": 200,
+  "byte_size": 40159,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "business_quality",
+    "type": "concept",
+    "path": "concepts/business_quality.md",
+    "index_order": 4
+  }
+}

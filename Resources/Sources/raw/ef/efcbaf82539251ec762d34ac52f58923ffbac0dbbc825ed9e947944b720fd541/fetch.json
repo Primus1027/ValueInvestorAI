@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_efcbaf82539251ec762d34ac52f58923ffbac0dbbc825ed9e947944b720fd541",
+  "content_sha256": "efcbaf82539251ec762d34ac52f58923ffbac0dbbc825ed9e947944b720fd541",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/liquidity.txt",
+  "fetched_at": "2026-04-19T14:03:54.663710+00:00",
+  "http_status": 200,
+  "byte_size": 22557,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "liquidity",
+    "type": "concept",
+    "path": "concepts/liquidity.md",
+    "index_order": 32
+  }
+}

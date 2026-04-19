@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_55e84160eda6b9d62e7b9038aac7373d0e4c2f5cd7b431cc76fb08ae240318af",
+  "content_sha256": "55e84160eda6b9d62e7b9038aac7373d0e4c2f5cd7b431cc76fb08ae240318af",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/long_term_investing.txt",
+  "fetched_at": "2026-04-19T13:59:09.130100+00:00",
+  "http_status": 200,
+  "byte_size": 37318,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "long_term_investing",
+    "type": "concept",
+    "path": "concepts/long_term_investing.md",
+    "index_expected_size": 37318,
+    "index_order": 34
+  }
+}

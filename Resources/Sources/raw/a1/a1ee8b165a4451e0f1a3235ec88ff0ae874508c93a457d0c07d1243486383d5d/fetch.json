@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_a1ee8b165a4451e0f1a3235ec88ff0ae874508c93a457d0c07d1243486383d5d",
+  "content_sha256": "a1ee8b165a4451e0f1a3235ec88ff0ae874508c93a457d0c07d1243486383d5d",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/charlie_munger_fireside_chat_with_todd_combs_singleton_prize_2022.txt",
+  "fetched_at": "2026-04-19T14:00:35.823522+00:00",
+  "http_status": 200,
+  "byte_size": 2859,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "charlie_munger_fireside_chat_with_todd_combs_singleton_prize_2022",
+    "type": "source",
+    "path": "sources/charlie_munger_fireside_chat_with_todd_combs_singleton_prize_2022.md",
+    "index_expected_size": 2859,
+    "index_order": 91
+  }
+}

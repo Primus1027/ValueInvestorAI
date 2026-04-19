@@ -242,3 +242,20 @@ https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1067983&type=13F-
 4. **Fortune 1999**：Fortune.com 原文需付费订阅，CNN Money 存档版（money.cnn.com）可能可以免费访问（历史存档），Tilson PDF 版为演讲要点非杂志全文。
 
 5. **Buffett's Alpha PDF**：NBER 直接 PDF 链接（w19681.pdf）已验证可下载（292KB），作者 Pedersen 个人网站也提供免费版本。
+
+
+---
+
+## 交叉引用索引（2026-04 vig scan）
+
+2026-04-19 扫描了 value-investing-gurus.pages.dev（编者：用户投资人朋友），
+整合了 134 份二手综合资料（P3/P4 tier）到 `Resources/Sources/cross-master/views/value-investing-gurus-dev-2026-04/`。
+
+**这些资料不是原件替代，而是补充：**
+- 交叉验证本索引中 P0/P1 原件的细节（已解决 2+7 处 NEEDS VERIFICATION 标记）
+- 提供跨大师对比视角（master_comparisons）
+- 把概念链接到真实投资案例与实际回报（concept_investment_links）
+
+浏览：`cross-master/views/value-investing-gurus-dev-2026-04/00-compendium-index.md`
+Registry：`registry/sources.jsonl` 按 `masters: ["buffett"]` 过滤
+Scan 记录：`registry/scans.jsonl` id = `scan_2026-04-19_vig`

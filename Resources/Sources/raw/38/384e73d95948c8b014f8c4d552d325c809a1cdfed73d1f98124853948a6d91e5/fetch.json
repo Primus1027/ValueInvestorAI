@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_384e73d95948c8b014f8c4d552d325c809a1cdfed73d1f98124853948a6d91e5",
+  "content_sha256": "384e73d95948c8b014f8c4d552d325c809a1cdfed73d1f98124853948a6d91e5",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/valuation.txt",
+  "fetched_at": "2026-04-19T14:04:05.776671+00:00",
+  "http_status": 200,
+  "byte_size": 40414,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "valuation",
+    "type": "concept",
+    "path": "concepts/valuation.md",
+    "index_order": 61
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_29ad23f9f3831e9569c6ad908d633530916627dfb38ae601095c4533caf8daeb",
+  "content_sha256": "29ad23f9f3831e9569c6ad908d633530916627dfb38ae601095c4533caf8daeb",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/a_lesson_on_elementary_worldly_wisdom_charlie_munger_usc_1994.txt",
+  "fetched_at": "2026-04-19T14:00:02.308261+00:00",
+  "http_status": 200,
+  "byte_size": 23507,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "a_lesson_on_elementary_worldly_wisdom_charlie_munger_usc_1994",
+    "type": "source",
+    "path": "sources/a_lesson_on_elementary_worldly_wisdom_charlie_munger_usc_1994.md",
+    "index_expected_size": 23507,
+    "index_order": 65
+  }
+}

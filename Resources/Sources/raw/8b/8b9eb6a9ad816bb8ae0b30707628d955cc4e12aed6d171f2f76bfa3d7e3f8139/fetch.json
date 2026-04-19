@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_8b9eb6a9ad816bb8ae0b30707628d955cc4e12aed6d171f2f76bfa3d7e3f8139",
+  "content_sha256": "8b9eb6a9ad816bb8ae0b30707628d955cc4e12aed6d171f2f76bfa3d7e3f8139",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/rationality.txt",
+  "fetched_at": "2026-04-19T13:59:37.143507+00:00",
+  "http_status": 200,
+  "byte_size": 37348,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "rationality",
+    "type": "concept",
+    "path": "concepts/rationality.md",
+    "index_expected_size": 37348,
+    "index_order": 50
+  }
+}

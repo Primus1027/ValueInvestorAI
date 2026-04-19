@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_ce04b58fdf282184015c3ef4fa0b3fb56a1c9a3e43f9584c62d59e825d9b114e",
+  "content_sha256": "ce04b58fdf282184015c3ef4fa0b3fb56a1c9a3e43f9584c62d59e825d9b114e",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/financial_strength.txt",
+  "fetched_at": "2026-04-19T13:58:35.390568+00:00",
+  "http_status": 200,
+  "byte_size": 44784,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "financial_strength",
+    "type": "concept",
+    "path": "concepts/financial_strength.md",
+    "index_expected_size": 44784,
+    "index_order": 17
+  }
+}

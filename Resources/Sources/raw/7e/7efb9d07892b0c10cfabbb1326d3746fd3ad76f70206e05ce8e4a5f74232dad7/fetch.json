@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_7efb9d07892b0c10cfabbb1326d3746fd3ad76f70206e05ce8e4a5f74232dad7",
+  "content_sha256": "7efb9d07892b0c10cfabbb1326d3746fd3ad76f70206e05ce8e4a5f74232dad7",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/regulatory_risk.txt",
+  "fetched_at": "2026-04-19T13:59:36.106784+00:00",
+  "http_status": 200,
+  "byte_size": 25746,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "regulatory_risk",
+    "type": "concept",
+    "path": "concepts/regulatory_risk.md",
+    "index_expected_size": 25746,
+    "index_order": 51
+  }
+}

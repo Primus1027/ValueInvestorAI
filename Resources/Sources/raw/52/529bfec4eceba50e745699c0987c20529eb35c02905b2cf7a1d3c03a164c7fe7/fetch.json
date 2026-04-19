@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_529bfec4eceba50e745699c0987c20529eb35c02905b2cf7a1d3c03a164c7fe7",
+  "content_sha256": "529bfec4eceba50e745699c0987c20529eb35c02905b2cf7a1d3c03a164c7fe7",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/cnbc_buffett_post_ceo_transition_interview_mar_2026.txt",
+  "fetched_at": "2026-04-19T14:04:14.070193+00:00",
+  "http_status": 200,
+  "byte_size": 16898,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "cnbc_buffett_post_ceo_transition_interview_mar_2026",
+    "type": "source",
+    "path": "sources/cnbc_buffett_post_ceo_transition_interview_mar_2026.md",
+    "index_order": 96
+  }
+}

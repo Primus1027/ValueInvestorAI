@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_bfe5bfeecebf10636d3cfd45f200b2fa2549fef433477bb1ff73b91e40378e29",
+  "content_sha256": "bfe5bfeecebf10636d3cfd45f200b2fa2549fef433477bb1ff73b91e40378e29",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/integrity_and_ethics.txt",
+  "fetched_at": "2026-04-19T13:58:54.286387+00:00",
+  "http_status": 200,
+  "byte_size": 35230,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "integrity_and_ethics",
+    "type": "concept",
+    "path": "concepts/integrity_and_ethics.md",
+    "index_expected_size": 35230,
+    "index_order": 26
+  }
+}

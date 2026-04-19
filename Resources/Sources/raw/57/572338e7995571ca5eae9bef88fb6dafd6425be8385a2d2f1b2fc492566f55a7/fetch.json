@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_572338e7995571ca5eae9bef88fb6dafd6425be8385a2d2f1b2fc492566f55a7",
+  "content_sha256": "572338e7995571ca5eae9bef88fb6dafd6425be8385a2d2f1b2fc492566f55a7",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/cnbc_buffett_munger_a_wealth_of_wisdom_2021.txt",
+  "fetched_at": "2026-04-19T14:00:39.656375+00:00",
+  "http_status": 200,
+  "byte_size": 10909,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "cnbc_buffett_munger_a_wealth_of_wisdom_2021",
+    "type": "source",
+    "path": "sources/cnbc_buffett_munger_a_wealth_of_wisdom_2021.md",
+    "index_expected_size": 10909,
+    "index_order": 95
+  }
+}

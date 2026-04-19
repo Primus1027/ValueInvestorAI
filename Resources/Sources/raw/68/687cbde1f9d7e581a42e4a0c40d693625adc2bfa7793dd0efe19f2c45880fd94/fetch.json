@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_687cbde1f9d7e581a42e4a0c40d693625adc2bfa7793dd0efe19f2c45880fd94",
+  "content_sha256": "687cbde1f9d7e581a42e4a0c40d693625adc2bfa7793dd0efe19f2c45880fd94",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/mental_models.txt",
+  "fetched_at": "2026-04-19T14:03:57.753501+00:00",
+  "http_status": 200,
+  "byte_size": 33777,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "mental_models",
+    "type": "concept",
+    "path": "concepts/mental_models.md",
+    "index_order": 40
+  }
+}

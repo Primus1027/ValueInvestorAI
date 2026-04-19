@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_22426f011af5a0936479c392f8b25d43e21fc79c3a2ed348c5b1199070a7a3d8",
+  "content_sha256": "22426f011af5a0936479c392f8b25d43e21fc79c3a2ed348c5b1199070a7a3d8",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/behavioral.txt",
+  "fetched_at": "2026-04-19T13:58:12.369097+00:00",
+  "http_status": 200,
+  "byte_size": 38761,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "behavioral",
+    "type": "concept",
+    "path": "concepts/behavioral.md",
+    "index_expected_size": 38761,
+    "index_order": 3
+  }
+}

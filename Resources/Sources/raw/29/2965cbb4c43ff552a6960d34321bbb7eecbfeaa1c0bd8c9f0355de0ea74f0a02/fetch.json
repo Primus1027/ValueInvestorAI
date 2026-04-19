@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_2965cbb4c43ff552a6960d34321bbb7eecbfeaa1c0bd8c9f0355de0ea74f0a02",
+  "content_sha256": "2965cbb4c43ff552a6960d34321bbb7eecbfeaa1c0bd8c9f0355de0ea74f0a02",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/cnbc_gates_buffett_keeping_america_great_columbia_2009.txt",
+  "fetched_at": "2026-04-19T14:04:15.277449+00:00",
+  "http_status": 200,
+  "byte_size": 16211,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "cnbc_gates_buffett_keeping_america_great_columbia_2009",
+    "type": "source",
+    "path": "sources/cnbc_gates_buffett_keeping_america_great_columbia_2009.md",
+    "index_order": 98
+  }
+}

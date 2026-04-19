@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_180d9dbd8b7b0503f0e11051c3731fcf152a86351f1318712e24808298745b6a",
+  "content_sha256": "180d9dbd8b7b0503f0e11051c3731fcf152a86351f1318712e24808298745b6a",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/concentrated_investing.txt",
+  "fetched_at": "2026-04-19T14:03:40.694294+00:00",
+  "http_status": 200,
+  "byte_size": 39381,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "concentrated_investing",
+    "type": "concept",
+    "path": "concepts/concentrated_investing.md",
+    "index_order": 13
+  }
+}

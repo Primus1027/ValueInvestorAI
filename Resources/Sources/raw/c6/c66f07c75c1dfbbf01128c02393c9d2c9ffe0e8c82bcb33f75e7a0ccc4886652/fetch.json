@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_c66f07c75c1dfbbf01128c02393c9d2c9ffe0e8c82bcb33f75e7a0ccc4886652",
+  "content_sha256": "c66f07c75c1dfbbf01128c02393c9d2c9ffe0e8c82bcb33f75e7a0ccc4886652",
+  "url": "https://value-investing-gurus.pages.dev/api/en/articles/syntheses/insurance_float_machine.txt",
+  "fetched_at": "2026-04-19T14:04:22.502055+00:00",
+  "http_status": 200,
+  "byte_size": 15111,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "en",
+    "id": "insurance_float_machine",
+    "type": "synthesis",
+    "path": "syntheses/insurance_float_machine.md",
+    "index_order": 112
+  }
+}

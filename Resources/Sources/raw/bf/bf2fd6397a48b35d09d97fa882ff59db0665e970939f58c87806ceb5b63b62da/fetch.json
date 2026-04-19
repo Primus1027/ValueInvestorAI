@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_bf2fd6397a48b35d09d97fa882ff59db0665e970939f58c87806ceb5b63b62da",
+  "content_sha256": "bf2fd6397a48b35d09d97fa882ff59db0665e970939f58c87806ceb5b63b62da",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/portfolio_management.txt",
+  "fetched_at": "2026-04-19T14:04:03.352491+00:00",
+  "http_status": 200,
+  "byte_size": 36692,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "portfolio_management",
+    "type": "concept",
+    "path": "concepts/portfolio_management.md",
+    "index_order": 47
+  }
+}

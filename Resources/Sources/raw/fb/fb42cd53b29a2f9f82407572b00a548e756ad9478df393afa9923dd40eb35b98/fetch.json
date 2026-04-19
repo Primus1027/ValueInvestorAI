@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_fb42cd53b29a2f9f82407572b00a548e756ad9478df393afa9923dd40eb35b98",
+  "content_sha256": "fb42cd53b29a2f9f82407572b00a548e756ad9478df393afa9923dd40eb35b98",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/shareholder_returns.txt",
+  "fetched_at": "2026-04-19T14:04:04.691018+00:00",
+  "http_status": 200,
+  "byte_size": 38641,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "shareholder_returns",
+    "type": "concept",
+    "path": "concepts/shareholder_returns.md",
+    "index_order": 55
+  }
+}

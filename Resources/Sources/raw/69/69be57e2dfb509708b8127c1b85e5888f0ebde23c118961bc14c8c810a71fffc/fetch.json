@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_69be57e2dfb509708b8127c1b85e5888f0ebde23c118961bc14c8c810a71fffc",
+  "content_sha256": "69be57e2dfb509708b8127c1b85e5888f0ebde23c118961bc14c8c810a71fffc",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/poor_charlies_almanack_charlie_munger.txt",
+  "fetched_at": "2026-04-19T14:00:52.628127+00:00",
+  "http_status": 200,
+  "byte_size": 5225,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "poor_charlies_almanack_charlie_munger",
+    "type": "source",
+    "path": "sources/poor_charlies_almanack_charlie_munger.md",
+    "index_expected_size": 5225,
+    "index_order": 102
+  }
+}

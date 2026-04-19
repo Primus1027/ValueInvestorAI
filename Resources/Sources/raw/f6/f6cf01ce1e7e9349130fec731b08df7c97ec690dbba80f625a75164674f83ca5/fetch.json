@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_f6cf01ce1e7e9349130fec731b08df7c97ec690dbba80f625a75164674f83ca5",
+  "content_sha256": "f6cf01ce1e7e9349130fec731b08df7c97ec690dbba80f625a75164674f83ca5",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/agency_problems.txt",
+  "fetched_at": "2026-04-19T13:58:13.365564+00:00",
+  "http_status": 200,
+  "byte_size": 39479,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "agency_problems",
+    "type": "concept",
+    "path": "concepts/agency_problems.md",
+    "index_expected_size": 39479,
+    "index_order": 2
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_812dcb71d73285310f405d829147d3d192580fcb450a4b1f491bc2831ccd775a",
+  "content_sha256": "812dcb71d73285310f405d829147d3d192580fcb450a4b1f491bc2831ccd775a",
+  "url": "https://value-investing-gurus.pages.dev/api/en/articles/syntheses/capital_allocation_ceo_most_important_job.txt",
+  "fetched_at": "2026-04-19T14:04:23.201376+00:00",
+  "http_status": 200,
+  "byte_size": 13905,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "en",
+    "id": "capital_allocation_ceo_most_important_job",
+    "type": "synthesis",
+    "path": "syntheses/capital_allocation_ceo_most_important_job.md",
+    "index_order": 110
+  }
+}

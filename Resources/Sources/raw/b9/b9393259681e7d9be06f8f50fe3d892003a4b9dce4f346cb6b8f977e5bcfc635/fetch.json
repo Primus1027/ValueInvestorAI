@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_b9393259681e7d9be06f8f50fe3d892003a4b9dce4f346cb6b8f977e5bcfc635",
+  "content_sha256": "b9393259681e7d9be06f8f50fe3d892003a4b9dce4f346cb6b8f977e5bcfc635",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/checklist_approach.txt",
+  "fetched_at": "2026-04-19T13:58:13.706001+00:00",
+  "http_status": 200,
+  "byte_size": 8708,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "checklist_approach",
+    "type": "concept",
+    "path": "concepts/checklist_approach.md",
+    "index_expected_size": 8708,
+    "index_order": 6
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_98bbe3404785effd59bc88d8c4938e243c0b919faa7290d5bfc95c9e9bfabd63",
+  "content_sha256": "98bbe3404785effd59bc88d8c4938e243c0b919faa7290d5bfc95c9e9bfabd63",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/institutional_imperative.txt",
+  "fetched_at": "2026-04-19T14:03:58.782787+00:00",
+  "http_status": 200,
+  "byte_size": 39236,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "institutional_imperative",
+    "type": "concept",
+    "path": "concepts/institutional_imperative.md",
+    "index_order": 24
+  }
+}

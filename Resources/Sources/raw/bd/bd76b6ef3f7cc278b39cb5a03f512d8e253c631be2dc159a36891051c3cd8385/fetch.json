@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_bd76b6ef3f7cc278b39cb5a03f512d8e253c631be2dc159a36891051c3cd8385",
+  "content_sha256": "bd76b6ef3f7cc278b39cb5a03f512d8e253c631be2dc159a36891051c3cd8385",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/communication.txt",
+  "fetched_at": "2026-04-19T14:03:38.302207+00:00",
+  "http_status": 200,
+  "byte_size": 16538,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "communication",
+    "type": "concept",
+    "path": "concepts/communication.md",
+    "index_order": 10
+  }
+}

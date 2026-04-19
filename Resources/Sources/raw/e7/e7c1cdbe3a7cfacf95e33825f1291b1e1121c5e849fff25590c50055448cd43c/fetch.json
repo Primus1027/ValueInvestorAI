@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_e7c1cdbe3a7cfacf95e33825f1291b1e1121c5e849fff25590c50055448cd43c",
+  "content_sha256": "e7c1cdbe3a7cfacf95e33825f1291b1e1121c5e849fff25590c50055448cd43c",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/the_psychology_of_human_misjudgment_charlie_munger.txt",
+  "fetched_at": "2026-04-19T14:00:56.806603+00:00",
+  "http_status": 200,
+  "byte_size": 18608,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "the_psychology_of_human_misjudgment_charlie_munger",
+    "type": "source",
+    "path": "sources/the_psychology_of_human_misjudgment_charlie_munger.md",
+    "index_expected_size": 18608,
+    "index_order": 104
+  }
+}

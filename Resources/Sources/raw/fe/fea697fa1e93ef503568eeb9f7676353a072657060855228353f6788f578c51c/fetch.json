@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_fea697fa1e93ef503568eeb9f7676353a072657060855228353f6788f578c51c",
+  "content_sha256": "fea697fa1e93ef503568eeb9f7676353a072657060855228353f6788f578c51c",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/cnbc_buffett_gates_munger_on_squawk_box_may_2014.txt",
+  "fetched_at": "2026-04-19T14:04:15.014913+00:00",
+  "http_status": 200,
+  "byte_size": 21853,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "cnbc_buffett_gates_munger_on_squawk_box_may_2014",
+    "type": "source",
+    "path": "sources/cnbc_buffett_gates_munger_on_squawk_box_may_2014.md",
+    "index_order": 94
+  }
+}

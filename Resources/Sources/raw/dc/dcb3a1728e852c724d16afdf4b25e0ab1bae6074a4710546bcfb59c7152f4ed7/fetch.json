@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_dcb3a1728e852c724d16afdf4b25e0ab1bae6074a4710546bcfb59c7152f4ed7",
+  "content_sha256": "dcb3a1728e852c724d16afdf4b25e0ab1bae6074a4710546bcfb59c7152f4ed7",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/private_market_value.txt",
+  "fetched_at": "2026-04-19T14:04:03.281286+00:00",
+  "http_status": 200,
+  "byte_size": 14047,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "private_market_value",
+    "type": "concept",
+    "path": "concepts/private_market_value.md",
+    "index_order": 49
+  }
+}

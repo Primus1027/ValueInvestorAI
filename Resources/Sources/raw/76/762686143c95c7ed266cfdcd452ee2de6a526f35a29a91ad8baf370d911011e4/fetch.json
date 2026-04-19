@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_762686143c95c7ed266cfdcd452ee2de6a526f35a29a91ad8baf370d911011e4",
+  "content_sha256": "762686143c95c7ed266cfdcd452ee2de6a526f35a29a91ad8baf370d911011e4",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/value_investing_philosophy.txt",
+  "fetched_at": "2026-04-19T13:59:53.959324+00:00",
+  "http_status": 200,
+  "byte_size": 18370,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "value_investing_philosophy",
+    "type": "concept",
+    "path": "concepts/value_investing_philosophy.md",
+    "index_expected_size": 18370,
+    "index_order": 62
+  }
+}

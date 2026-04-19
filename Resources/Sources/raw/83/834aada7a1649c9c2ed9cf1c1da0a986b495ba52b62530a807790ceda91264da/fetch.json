@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_834aada7a1649c9c2ed9cf1c1da0a986b495ba52b62530a807790ceda91264da",
+  "content_sha256": "834aada7a1649c9c2ed9cf1c1da0a986b495ba52b62530a807790ceda91264da",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/contrarian_thinking.txt",
+  "fetched_at": "2026-04-19T13:58:29.747767+00:00",
+  "http_status": 200,
+  "byte_size": 35543,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "contrarian_thinking",
+    "type": "concept",
+    "path": "concepts/contrarian_thinking.md",
+    "index_expected_size": 35543,
+    "index_order": 14
+  }
+}

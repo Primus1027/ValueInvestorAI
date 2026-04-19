@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_5eb99707e0aca994c368c7bcbaf84fa8e2d52d0b2cb5feee773ebc80b07eda37",
+  "content_sha256": "5eb99707e0aca994c368c7bcbaf84fa8e2d52d0b2cb5feee773ebc80b07eda37",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/syntheses/moat_identification_framework.txt",
+  "fetched_at": "2026-04-19T14:04:19.540034+00:00",
+  "http_status": 200,
+  "byte_size": 14585,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "moat_identification_framework",
+    "type": "synthesis",
+    "path": "syntheses/moat_identification_framework.md",
+    "index_order": 117
+  }
+}

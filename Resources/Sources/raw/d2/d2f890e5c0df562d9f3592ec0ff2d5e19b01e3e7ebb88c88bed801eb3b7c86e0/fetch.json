@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_d2f890e5c0df562d9f3592ec0ff2d5e19b01e3e7ebb88c88bed801eb3b7c86e0",
+  "content_sha256": "d2f890e5c0df562d9f3592ec0ff2d5e19b01e3e7ebb88c88bed801eb3b7c86e0",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/poor_charlies_almanack_expanded_third_edition.txt",
+  "fetched_at": "2026-04-19T14:04:17.532828+00:00",
+  "http_status": 200,
+  "byte_size": 40205,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "poor_charlies_almanack_expanded_third_edition",
+    "type": "source",
+    "path": "sources/poor_charlies_almanack_expanded_third_edition.md",
+    "index_order": 103
+  }
+}

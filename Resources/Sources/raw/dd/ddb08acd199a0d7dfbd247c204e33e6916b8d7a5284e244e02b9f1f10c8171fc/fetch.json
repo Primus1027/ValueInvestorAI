@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_ddb08acd199a0d7dfbd247c204e33e6916b8d7a5284e244e02b9f1f10c8171fc",
+  "content_sha256": "ddb08acd199a0d7dfbd247c204e33e6916b8d7a5284e244e02b9f1f10c8171fc",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/syntheses/psychology_of_investing.txt",
+  "fetched_at": "2026-04-19T14:01:14.438461+00:00",
+  "http_status": 200,
+  "byte_size": 14486,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "psychology_of_investing",
+    "type": "synthesis",
+    "path": "syntheses/psychology_of_investing.md",
+    "index_expected_size": 14486,
+    "index_order": 118
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_f178867ebe5d78e09cae1629692806fac7ed938c93ae24ffae7cbb09fd6abe73",
+  "content_sha256": "f178867ebe5d78e09cae1629692806fac7ed938c93ae24ffae7cbb09fd6abe73",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/accounting_quality.txt",
+  "fetched_at": "2026-04-19T14:03:37.213162+00:00",
+  "http_status": 200,
+  "byte_size": 36778,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "accounting_quality",
+    "type": "concept",
+    "path": "concepts/accounting_quality.md",
+    "index_order": 0
+  }
+}

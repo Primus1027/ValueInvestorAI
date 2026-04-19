@@ -210,3 +210,26 @@ ValueInvestorAI/
 ---
 
 *本文档用于跨 session 衔接。新 session 开始时，先读本文件了解全部背景。*
+
+
+## 2026-04-19: Scan & Integration — value-investing-gurus compendium
+
+**目标**：把新发现的投资资料网站（用户投资人朋友编纂的 Buffett-Munger Compendium）作为"首次扫描先例"，
+整合进 W/C 灵魂封装，并建立可重复的扫描-整合工作流。
+
+**成果**：
+- 🏗️ 建立了 8 阶段扫描流水线（见 `scripts/soul/`）与全局 registry（`Resources/Sources/registry/`）
+- 📥 抓取 134 份二手综合资料（P3/P4 tier），内容哈希寻址存储于 `raw/` + 段落锚点归一化在 `normalized/`
+- ✅ 完成 30 项定向验证（解决 W 灵魂文档中多处 NEEDS VERIFICATION）
+- 🔀 抽取 10 条跨大师对比、137 条概念→投资案例→结果链接、243 条决策导向洞察
+- 📄 生成 W/C v1.1 灵魂文档（append-only，保留 v1.0 prose 不变，新增 Appendix Z 做多 Agent 辩论输入）
+- 🧪 Gate 5 校准回归：见 `calibration_runs/`
+
+**关键设计决定**：
+1. 网站编者目的是"知识整理"，我们的目的是"决策驱动"——所有借鉴过一道"决策相关性过滤"
+2. 采用 AI 主导审核（L1 自动 + L2 对抗审查），人工仅在关键节点介入
+3. Profile.json 的 factor 列表稳定不变（防膨胀）；新洞察沉淀到 red_flags / how_to_evaluate
+4. 引入 ROI 衰减防御机制：novelty_rate、decision_delta_rate、concept saturation 监控
+
+**下一次扫描的起点**：`scripts/soul/fetch_vig.py` 和 `scripts/soul/integrate.py` 可作为新扫描的模板复用。
+

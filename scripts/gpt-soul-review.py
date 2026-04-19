@@ -21,7 +21,7 @@ client = AsyncOpenAI(
 DOCS_DIR = Path(__file__).parent.parent / "src" / "souls" / "documents"
 REVIEWS_DIR = DOCS_DIR / "reviews"
 
-REVIEW_PROMPT_EN = """You are an adversarial reviewer for a Soul Document — a comprehensive philosophical profile of an investment master, used to power an AI agent that thinks like this person.
+REVIEW_PROMPT_EN = """You are an adversarial reviewer for a Soul Document — a comprehensive philosophical profile of an investment master, used as a methodology knowledge base that an AI research tool applies when analyzing investment cases. Note: the resulting AI tool does NOT impersonate this person or provide personalized investment advice; it applies the documented methodology framework as a structured analytical lens.
 
 Your job is NOT to polish or improve the writing. Your job is to perform 5 specific adversarial checks and report findings with surgical precision.
 
@@ -106,7 +106,7 @@ End with a **Summary** section: overall quality score (1-10), top 3 most critica
 Be thorough. Be harsh. This document will be used to make real investment decisions. False accuracy is worse than admitted gaps.
 """
 
-REVIEW_PROMPT_ZH = """你是一个灵魂文档的对抗性审阅者。灵魂文档是投资大师的全面哲学画像，用于驱动一个像这个人一样思考的 AI agent。
+REVIEW_PROMPT_ZH = """你是一个灵魂文档的对抗性审阅者。灵魂文档是投资大师的全面哲学画像，作为方法论知识库，供 AI 研究工具在分析投资案例时应用。注意：产出的 AI 工具不扮演这个人物、不给出个性化投资建议；而是把文档化的方法论框架作为结构化分析视角来使用。
 
 你的工作不是润色文字。你的工作是执行 5 项具体的对抗性检查，并以外科手术般的精确度报告发现。
 

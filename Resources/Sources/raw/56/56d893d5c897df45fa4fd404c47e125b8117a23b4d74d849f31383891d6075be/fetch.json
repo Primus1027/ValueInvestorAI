@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_56d893d5c897df45fa4fd404c47e125b8117a23b4d74d849f31383891d6075be",
+  "content_sha256": "56d893d5c897df45fa4fd404c47e125b8117a23b4d74d849f31383891d6075be",
+  "url": "https://value-investing-gurus.pages.dev/api/en/articles/syntheses/buffett_munger_evolution.txt",
+  "fetched_at": "2026-04-19T14:04:24.248841+00:00",
+  "http_status": 200,
+  "byte_size": 13840,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "en",
+    "id": "buffett_munger_evolution",
+    "type": "synthesis",
+    "path": "syntheses/buffett_munger_evolution.md",
+    "index_order": 109
+  }
+}

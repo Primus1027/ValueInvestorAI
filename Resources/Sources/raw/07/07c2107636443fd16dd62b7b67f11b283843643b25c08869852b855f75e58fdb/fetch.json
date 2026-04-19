@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_07c2107636443fd16dd62b7b67f11b283843643b25c08869852b855f75e58fdb",
+  "content_sha256": "07c2107636443fd16dd62b7b67f11b283843643b25c08869852b855f75e58fdb",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/corporate_governance.txt",
+  "fetched_at": "2026-04-19T14:03:41.013893+00:00",
+  "http_status": 200,
+  "byte_size": 41570,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "corporate_governance",
+    "type": "concept",
+    "path": "concepts/corporate_governance.md",
+    "index_order": 15
+  }
+}

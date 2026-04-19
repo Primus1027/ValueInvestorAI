@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_56b14a1bd2dfad20b26f0ff274dbf0826770ab5e2960bc3065d8d372463770a2",
+  "content_sha256": "56b14a1bd2dfad20b26f0ff274dbf0826770ab5e2960bc3065d8d372463770a2",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/cognitive_biases.txt",
+  "fetched_at": "2026-04-19T14:03:39.810028+00:00",
+  "http_status": 200,
+  "byte_size": 39218,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "cognitive_biases",
+    "type": "concept",
+    "path": "concepts/cognitive_biases.md",
+    "index_order": 8
+  }
+}

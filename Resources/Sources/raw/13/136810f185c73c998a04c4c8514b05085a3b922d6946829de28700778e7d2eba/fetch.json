@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_136810f185c73c998a04c4c8514b05085a3b922d6946829de28700778e7d2eba",
+  "content_sha256": "136810f185c73c998a04c4c8514b05085a3b922d6946829de28700778e7d2eba",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/tax_efficiency.txt",
+  "fetched_at": "2026-04-19T14:04:05.576084+00:00",
+  "http_status": 200,
+  "byte_size": 47212,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "tax_efficiency",
+    "type": "concept",
+    "path": "concepts/tax_efficiency.md",
+    "index_order": 58
+  }
+}

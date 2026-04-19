@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_95d18c052ddb511802687f40506e80f7d150b9c08b208123f4736e0fec510913",
+  "content_sha256": "95d18c052ddb511802687f40506e80f7d150b9c08b208123f4736e0fec510913",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/risk_management.txt",
+  "fetched_at": "2026-04-19T13:59:39.173800+00:00",
+  "http_status": 200,
+  "byte_size": 43926,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "risk_management",
+    "type": "concept",
+    "path": "concepts/risk_management.md",
+    "index_expected_size": 43926,
+    "index_order": 53
+  }
+}

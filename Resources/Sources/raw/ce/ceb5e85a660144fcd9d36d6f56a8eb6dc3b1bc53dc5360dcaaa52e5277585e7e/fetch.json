@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_ceb5e85a660144fcd9d36d6f56a8eb6dc3b1bc53dc5360dcaaa52e5277585e7e",
+  "content_sha256": "ceb5e85a660144fcd9d36d6f56a8eb6dc3b1bc53dc5360dcaaa52e5277585e7e",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/industry_analysis.txt",
+  "fetched_at": "2026-04-19T13:58:51.839537+00:00",
+  "http_status": 200,
+  "byte_size": 41768,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "industry_analysis",
+    "type": "concept",
+    "path": "concepts/industry_analysis.md",
+    "index_expected_size": 41768,
+    "index_order": 22
+  }
+}

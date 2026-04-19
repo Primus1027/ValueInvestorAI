@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_f671d04f7a874c2e7223b97e601b014e862d9a80e36c2da7243afc6ffb1cea4f",
+  "content_sha256": "f671d04f7a874c2e7223b97e601b014e862d9a80e36c2da7243afc6ffb1cea4f",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/commodity_economics.txt",
+  "fetched_at": "2026-04-19T14:03:41.853382+00:00",
+  "http_status": 200,
+  "byte_size": 21639,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "commodity_economics",
+    "type": "concept",
+    "path": "concepts/commodity_economics.md",
+    "index_order": 9
+  }
+}

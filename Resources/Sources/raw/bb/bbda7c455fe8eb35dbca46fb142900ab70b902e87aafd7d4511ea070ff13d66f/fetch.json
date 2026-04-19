@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_bbda7c455fe8eb35dbca46fb142900ab70b902e87aafd7d4511ea070ff13d66f",
+  "content_sha256": "bbda7c455fe8eb35dbca46fb142900ab70b902e87aafd7d4511ea070ff13d66f",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/complete_buffett_partnership_letters_1957_70_warren_buffet_z_librarysk_1libsk_z_.txt",
+  "fetched_at": "2026-04-19T14:04:16.429513+00:00",
+  "http_status": 200,
+  "byte_size": 33308,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "complete_buffett_partnership_letters_1957_70_warren_buffet_z_librarysk_1libsk_z_",
+    "type": "source",
+    "path": "sources/complete_buffett_partnership_letters_1957_70_warren_buffet_z_librarysk_1libsk_z_.md",
+    "index_order": 99
+  }
+}

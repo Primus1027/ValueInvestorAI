@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_1f897fe5d997e0d2c12803dfab1de27132beec51261bbb9ecfed3036d9f19240",
+  "content_sha256": "1f897fe5d997e0d2c12803dfab1de27132beec51261bbb9ecfed3036d9f19240",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/organizational_design.txt",
+  "fetched_at": "2026-04-19T13:59:19.775225+00:00",
+  "http_status": 200,
+  "byte_size": 33056,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "organizational_design",
+    "type": "concept",
+    "path": "concepts/organizational_design.md",
+    "index_expected_size": 33056,
+    "index_order": 43
+  }
+}

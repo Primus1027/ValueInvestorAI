@@ -1,0 +1,18 @@
+{
+  "source_id": "src_sha256_c56aeb6ee1e1273ef73608c8f5d3115e25a601f634347bca32b83801420a7353",
+  "content_sha256": "c56aeb6ee1e1273ef73608c8f5d3115e25a601f634347bca32b83801420a7353",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/sources/acquired_podcast_charlie_munger_dinner_interview_oct_2023.txt",
+  "fetched_at": "2026-04-19T14:00:05.625866+00:00",
+  "http_status": 200,
+  "byte_size": 16797,
+  "user_agent": "Mozilla/5.0 (valueinvestor-ai-scanner/1.0)",
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "acquired_podcast_charlie_munger_dinner_interview_oct_2023",
+    "type": "source",
+    "path": "sources/acquired_podcast_charlie_munger_dinner_interview_oct_2023.md",
+    "index_expected_size": 16797,
+    "index_order": 70
+  }
+}

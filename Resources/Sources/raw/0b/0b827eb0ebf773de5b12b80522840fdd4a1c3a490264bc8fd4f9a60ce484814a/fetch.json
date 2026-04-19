@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_0b827eb0ebf773de5b12b80522840fdd4a1c3a490264bc8fd4f9a60ce484814a",
+  "content_sha256": "0b827eb0ebf773de5b12b80522840fdd4a1c3a490264bc8fd4f9a60ce484814a",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/entities/warren_buffett.txt",
+  "fetched_at": "2026-04-19T14:04:06.890400+00:00",
+  "http_status": 200,
+  "byte_size": 9184,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "warren_buffett",
+    "type": "entity",
+    "path": "entities/warren_buffett.md",
+    "index_order": 64
+  }
+}

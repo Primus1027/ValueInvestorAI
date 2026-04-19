@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_1ded1bdcf7a04e8640b5945c398f1aef63290945a41a2e32f2a3da3d098d16fe",
+  "content_sha256": "1ded1bdcf7a04e8640b5945c398f1aef63290945a41a2e32f2a3da3d098d16fe",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/intrinsic_value.txt",
+  "fetched_at": "2026-04-19T14:03:52.018728+00:00",
+  "http_status": 200,
+  "byte_size": 60610,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "intrinsic_value",
+    "type": "concept",
+    "path": "concepts/intrinsic_value.md",
+    "index_order": 28
+  }
+}

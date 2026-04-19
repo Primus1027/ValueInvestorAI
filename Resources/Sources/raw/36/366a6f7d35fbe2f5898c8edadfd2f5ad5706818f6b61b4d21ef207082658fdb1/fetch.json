@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_366a6f7d35fbe2f5898c8edadfd2f5ad5706818f6b61b4d21ef207082658fdb1",
+  "content_sha256": "366a6f7d35fbe2f5898c8edadfd2f5ad5706818f6b61b4d21ef207082658fdb1",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/capital_allocation.txt",
+  "fetched_at": "2026-04-19T14:03:36.750057+00:00",
+  "http_status": 200,
+  "byte_size": 43630,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "capital_allocation",
+    "type": "concept",
+    "path": "concepts/capital_allocation.md",
+    "index_order": 5
+  }
+}

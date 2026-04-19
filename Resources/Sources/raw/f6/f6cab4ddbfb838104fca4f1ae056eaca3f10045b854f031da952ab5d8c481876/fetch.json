@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_f6cab4ddbfb838104fca4f1ae056eaca3f10045b854f031da952ab5d8c481876",
+  "content_sha256": "f6cab4ddbfb838104fca4f1ae056eaca3f10045b854f031da952ab5d8c481876",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/acquisition_strategy.txt",
+  "fetched_at": "2026-04-19T14:03:37.219420+00:00",
+  "http_status": 200,
+  "byte_size": 37513,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "acquisition_strategy",
+    "type": "concept",
+    "path": "concepts/acquisition_strategy.md",
+    "index_order": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "src_sha256_7a7f1033116ea2065d97d81cefeef1601cec67f5f189e1d3cee74c80deb4a74c",
+  "content_sha256": "7a7f1033116ea2065d97d81cefeef1601cec67f5f189e1d3cee74c80deb4a74c",
+  "url": "https://value-investing-gurus.pages.dev/api/zh/articles/concepts/owner_operator_mindset.txt",
+  "fetched_at": "2026-04-19T14:04:00.350892+00:00",
+  "http_status": 200,
+  "byte_size": 42103,
+  "scan_id": "scan_2026-04-19_vig",
+  "source_article": {
+    "lang": "zh",
+    "id": "owner_operator_mindset",
+    "type": "concept",
+    "path": "concepts/owner_operator_mindset.md",
+    "index_order": 44
+  }
+}
