@@ -134,6 +134,10 @@ def resolve_retrieve_placeholders(seeds: List[Dict], full_index: Dict) -> List[D
 
     Scans seed's `supporting_evidence` field (and similar fields) for the pattern,
     pulls section text from full_index, stores as dict with id + text.
+
+    P0 fix: single-pass replacement only — if retrieved text itself contains
+    @retrieve() syntax (e.g., appendix cross-refs), strip those rather than
+    recursively resolving, to prevent infinite loops.
     """
     # Build section_id → text map for fast lookup
     sec_map = {}
@@ -145,9 +149,17 @@ def resolve_retrieve_placeholders(seeds: List[Dict], full_index: Dict) -> List[D
 
     def resolve_value(v: Any) -> Any:
         if isinstance(v, str):
+            # Track whether we're in first-pass resolution; if so, sanitize
+            # nested @retrieve in retrieved content rather than recurse.
             def sub(m):
                 sec_id = m.group(1).strip()
                 text = sec_map.get(sec_id, f"[SECTION NOT FOUND: {sec_id}]")
+                # Neutralize any nested @retrieve() in retrieved text — they
+                # become literal `[retrieve:xxx]` markers, not triggers for
+                # further replacement
+                text = retrieve_re.sub(
+                    lambda m2: f"[retrieve:{m2.group(1)}]", text,
+                )
                 # Truncate to ~500 chars for brevity
                 if len(text) > 600:
                     text = text[:600] + "..."

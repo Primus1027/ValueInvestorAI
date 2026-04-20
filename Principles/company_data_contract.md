@@ -3,6 +3,9 @@
 > Generated: 2026-04-20
 > Purpose: 定义 MVP 阶段（未来 Path A）yfinance / edgartools adapter
 > 需要提供给 PrinciplesEngine.evaluate() 的 company_data 字段。
+>
+> **Normative schema**: `company_data_contract.schema.json` (JSON Schema draft-07)。
+> 本 Markdown 是人类可读伴随文档。两者不一致时以 JSON Schema 为准。
 
 ## 要求字段（从 HARD rules 反推）
 

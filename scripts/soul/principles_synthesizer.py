@@ -128,8 +128,12 @@ def call_claude(prompt: str, model: str, timeout: int = 720) -> Dict:
             capture_output=True, timeout=timeout, text=True, check=True,
         )
         parsed = parse_claude_cli_result(result.stdout, expected_keys=["clusters"])
-        if parsed is None:
-            return {"error": "JSON parse failed", "stdout_head": result.stdout[:500]}
+        # P0 fix: guard against LLM returning non-dict JSON (e.g., array, string)
+        if parsed is None or not isinstance(parsed, dict):
+            return {
+                "error": f"JSON parse failed or non-dict: got {type(parsed).__name__}",
+                "stdout_head": result.stdout[:500],
+            }
         return parsed
     except subprocess.TimeoutExpired:
         return {"error": f"timeout after {timeout}s"}
@@ -179,14 +183,18 @@ def phase3b_vote_tally(clusters: List[Dict]) -> Dict[str, List[Dict]]:
 
     hard, soft, dropped = [], [], []
     for cluster in clusters:
-        # Prefer explicit support_count from LLM; fallback to variant count
-        sc = cluster.get("support_count")
-        if sc is None:
-            sc = len(cluster.get("variant_seeds", []))
-            # Also cross-check against distinct masters
-            distinct_masters = {v.get("master") for v in cluster.get("variant_seeds", [])}
-            sc = len(distinct_masters)
-            cluster["support_count"] = sc
+        # P1 fix: support_count might be 0 / missing / non-int. Always recompute
+        # from distinct master attribution as canonical source.
+        distinct_masters = {v.get("master") for v in cluster.get("variant_seeds", [])
+                           if v.get("master")}
+        sc_computed = len(distinct_masters)
+        sc_claimed = cluster.get("support_count")
+        if sc_claimed is None or not isinstance(sc_claimed, int) or sc_claimed <= 0:
+            sc = sc_computed
+        else:
+            # If LLM's claim disagrees with reality, prefer reality
+            sc = sc_computed if sc_computed > 0 else sc_claimed
+        cluster["support_count"] = sc
 
         if sc >= 3:
             hard.append(cluster)
@@ -381,16 +389,15 @@ def render_schema_json(hard: List[Dict]) -> Dict:
     """Render machine-executable v1.0.schema.json."""
     rules = []
     for cluster in hard:
-        # Pick the median threshold if variants diverge, else the common one.
         variants = cluster.get("variant_seeds", [])
-        thresholds = [v.get("threshold") for v in variants if v.get("threshold") is not None]
-
-        # Get a representative variant for quantitative_rule details
-        first_quant = None
-        for v in variants:
-            # Variants came from Phase 1 seeds which had quantitative_rule; preserve if available
-            # (We stored threshold directly; but also preserve metric name if available)
-            pass
+        # P0 fix: filter to numeric thresholds only before min() — prevents
+        # TypeError when LLM mixes numbers and None/strings.
+        thresholds = [
+            v.get("threshold") for v in variants
+            if v.get("threshold") is not None
+            and isinstance(v.get("threshold"), (int, float))
+            and not isinstance(v.get("threshold"), bool)  # bool is subclass of int
+        ]
 
         # Determine severity
         severities = [v.get("severity", "note") for v in variants]
@@ -401,18 +408,27 @@ def render_schema_json(hard: List[Dict]) -> Dict:
         else:
             sev = "note"
 
+        supporting_masters = sorted({v.get("master") for v in variants if v.get("master")})
         rule = {
             "cluster_id": cluster.get("cluster_id"),
             "canonical_claim": cluster.get("canonical_claim"),
             "category": cluster.get("category"),
             "severity": sev,
-            "supporting_masters": sorted({v.get("master") for v in variants}),
+            "supporting_masters": supporting_masters,
             "thresholds_diverge": cluster.get("thresholds_diverge", False),
         }
         if thresholds:
-            # Use min (most strict) as default, but preserve variants
-            rule["default_threshold"] = min(thresholds) if all(isinstance(t, (int, float)) for t in thresholds) else thresholds[0]
+            # P1 fix: use median (middle ground) instead of min (most strict).
+            # min was architectural issue — hijacks multi-framework pluralism to
+            # the most extreme opinion. Median better represents collective stance.
+            sorted_t = sorted(thresholds)
+            n = len(sorted_t)
+            if n % 2 == 1:
+                rule["default_threshold"] = sorted_t[n // 2]
+            else:
+                rule["default_threshold"] = (sorted_t[n // 2 - 1] + sorted_t[n // 2]) / 2
             rule["threshold_variants_by_master"] = cluster.get("threshold_variants_by_master", {})
+            rule["threshold_selection_rule"] = "median across framework variants"
 
         rules.append(rule)
 
@@ -526,8 +542,13 @@ def render_debate_log(
     lines.append("")
     lines.append("## Phase 2: Neutral Comparative Analysis (Opus, anonymized)")
     lines.append("")
-    lines.append(f"- Anonymized mapping (for privacy): {meta.get('anon_map', {})}")
-    lines.append(f"- Double-run consistency rate: {meta.get('consistency_rate', 0):.0%}")
+    # Intentionally do NOT expose anon_map in this debate_log — it's in prep/phase2_metadata.json
+    # for internal audit only. Exposing it here would let readers back-infer which master
+    # took which stance, defeating the anonymization design.
+    lines.append(f"- Anonymized mapping: kept private in `prep/phase2_metadata.json`")
+    consistency_rate = meta.get('consistency_rate', 0)
+    lines.append(f"- Double-run consistency rate: {consistency_rate:.0%}"
+                 f"{' ⚠ (below 80% design target)' if consistency_rate < 0.8 else ''}")
     lines.append(f"- Double-run disagreements: {meta.get('inconsistencies', 0)}")
     lines.append(f"- Total stances produced: {len(comparative_analysis)}")
 

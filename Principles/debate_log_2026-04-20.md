@@ -10,10 +10,16 @@ Each of 3 methodology research assistants independently proposed seed principles
 
 ## Phase 2: Neutral Comparative Analysis (Opus, anonymized)
 
-- Anonymized mapping (for privacy): {'buffett': 'B', 'munger': 'C', 'duan': 'A'}
-- Double-run consistency rate: 20%
+- Anonymized mapping: kept private in `prep/phase2_metadata.json` (not exposed here to avoid back-inference)
+- Double-run consistency rate: 20% ⚠ (below the 80% design target — see diagnostic note below)
 - Double-run disagreements: 12
 - Total stances produced: 15
+
+> **Consistency diagnostic**: Phase 2's low double-run agreement suggests Opus had high
+> variance in its cross-framework mapping judgments. Despite this, Phase 3a (Opus dedup)
+> converged on 4 clear 3/3 HARD clusters, indicating signal is robust at the high-consensus
+> tier even when medium-consensus stances are noisy. Future versions may want 3-run
+> majority voting in Phase 2 instead of 2-run consistency check.
 
 ## Phase 2.5: Revise Round (each master sees comparative analysis, revises)
 

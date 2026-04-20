@@ -5,7 +5,7 @@
   "rules": [
     {
       "cluster_id": "cl_01",
-      "canonical_claim": "若无法用极少句子（1–3句）向普通智识水平者清晰解释公司的盈利机制、护城河来源与客户粘性，则归入'太难'堆直接拒绝",
+      "canonical_claim": "若无法用极少句子（1–3句）向普通智识水平者清晰解释公司的盈利机制、护城河来源与客户粘性，则标记为'不可解释'直接拒绝",
       "category": "qualitative_required",
       "severity": "veto",
       "supporting_masters": [
@@ -14,12 +14,14 @@
         "munger"
       ],
       "thresholds_diverge": true,
-      "default_threshold": 1,
+      "default_threshold": 3,
       "threshold_variants_by_master": {
         "buffett": 3,
         "munger": 3,
         "duan": 1
-      }
+      },
+      "threshold_selection_rule": "median across framework variants (3 sentences = Buffett/Munger median; Duan's 1-sentence is minority but preserved in variants)",
+      "execution_note": "Qualitative judgment — requires LLM or human evaluator to rate explainability. PrinciplesEngine.evaluate() should return {passed: bool, evaluator: 'llm|human', rationale: string}"
     },
     {
       "cluster_id": "cl_02",
@@ -50,12 +52,14 @@
         "munger"
       ],
       "thresholds_diverge": true,
-      "default_threshold": 0,
+      "default_threshold": 0.05,
       "threshold_variants_by_master": {
         "buffett": 0.05,
         "munger": 0,
         "duan": 0.05
-      }
+      },
+      "threshold_selection_rule": "median across framework variants (0.05 = Buffett/Duan median, avoids Munger's 0-tolerance noise trap)",
+      "data_field": "competitors.max_revenue_growth_3yr_cagr MINUS company.revenue_growth_3yr_cagr"
     },
     {
       "cluster_id": "cl_04",
@@ -67,7 +71,8 @@
         "duan",
         "munger"
       ],
-      "thresholds_diverge": false
+      "thresholds_diverge": false,
+      "execution_note": "Qualitative judgment — requires LLM agent (Layer 1) to analyze last 3 years of management communications. Evaluator should rate metric_emphasis_bias on dimensions: (1) revenue/EBITDA prominence, (2) ROIC/FCF disclosure completeness, (3) footnote dependency for economic model comprehension. Returns {passed: bool, bias_score: 0-1, rationale: string}"
     }
   ],
   "company_data_contract": "See company_data_contract.md for required input fields."
