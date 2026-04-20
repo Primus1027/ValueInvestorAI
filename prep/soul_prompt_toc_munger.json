@@ -1,0 +1,965 @@
+{
+  "master": "munger",
+  "source": "src/souls/documents/versions/C-munger/v1.1.md",
+  "total_retrievable_sections": 129,
+  "toc_sections": [
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system",
+      "title": "Version 1.1 | Soul-Forging Document for AI Value Investing System",
+      "level": 2,
+      "keywords": [
+        "version",
+        "soul",
+        "forging",
+        "document",
+        "value",
+        "investing",
+        "system",
+        "purpose"
+      ],
+      "char_count": 405
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/the-lawyer-who-learned-to-think-in-systems",
+      "title": "The Lawyer Who Learned to Think in Systems",
+      "level": 3,
+      "keywords": [
+        "lawyer",
+        "learned",
+        "systems",
+        "munger",
+        "buffett",
+        "later",
+        "would",
+        "through"
+      ],
+      "char_count": 1552
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/legal-training-as-cognitive-foundation",
+      "title": "Legal Training as Cognitive Foundation",
+      "level": 3,
+      "keywords": [
+        "legal",
+        "training",
+        "cognitive",
+        "foundation",
+        "adversarial",
+        "reasoning",
+        "evidence",
+        "hierarchy"
+      ],
+      "char_count": 2168
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/wheeler-munger-company-the-concentrated-years-1962-1975",
+      "title": "Wheeler, Munger & Company: The Concentrated Years (1962-1975)",
+      "level": 3,
+      "keywords": [
+        "wheeler",
+        "munger",
+        "company",
+        "concentrated",
+        "years",
+        "partnership",
+        "buffett",
+        "concentration"
+      ],
+      "char_count": 1629
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/the-crucible-of-suffering",
+      "title": "The Crucible of Suffering",
+      "level": 3,
+      "keywords": [
+        "crucible",
+        "suffering",
+        "munger",
+        "life",
+        "losses",
+        "him",
+        "emotional",
+        "had"
+      ],
+      "char_count": 1746
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/the-buffett-partnership-intellectual-equals-not-subordinates",
+      "title": "The Buffett Partnership: Intellectual Equals, Not Subordinates",
+      "level": 3,
+      "keywords": [
+        "buffett",
+        "partnership",
+        "intellectual",
+        "equals",
+        "subordinates",
+        "munger",
+        "had",
+        "graham"
+      ],
+      "char_count": 2641
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/period-1-early-value-investing-grahams-shadow-mungers-doubts-1950s-1965",
+      "title": "Period 1: Early Value Investing — Graham's Shadow, Munger's Doubts (1950s-1965)",
+      "level": 3,
+      "keywords": [
+        "period",
+        "early",
+        "value",
+        "investing",
+        "graham",
+        "shadow",
+        "munger",
+        "doubts"
+      ],
+      "char_count": 1690
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/period-2-the-quality-revolution-reshaping-buffett-1965-1985",
+      "title": "Period 2: The Quality Revolution — Reshaping Buffett (1965-1985)",
+      "level": 3,
+      "keywords": [
+        "period",
+        "quality",
+        "revolution",
+        "reshaping",
+        "buffett",
+        "step",
+        "capital",
+        "efficiency"
+      ],
+      "char_count": 3902
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/period-3-the-mental-models-era-1985-2000",
+      "title": "Period 3: The Mental Models Era (1985-2000)",
+      "level": 3,
+      "keywords": [
+        "period",
+        "mental",
+        "models",
+        "era",
+        "psychology",
+        "mathematics",
+        "physics",
+        "biology"
+      ],
+      "char_count": 3413
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/period-4-psychology-as-master-framework-2000-2015",
+      "title": "Period 4: Psychology as Master Framework (2000-2015)",
+      "level": 3,
+      "keywords": [
+        "period",
+        "psychology",
+        "master",
+        "framework",
+        "interaction",
+        "effects",
+        "munger",
+        "biases"
+      ],
+      "char_count": 3237
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/period-5-late-career-international-horizons-and-independent-vehicles-2015-2023",
+      "title": "Period 5: Late Career — International Horizons and Independent Vehicles (2015-2023)",
+      "level": 3,
+      "keywords": [
+        "period",
+        "late",
+        "career",
+        "international",
+        "horizons",
+        "independent",
+        "vehicles",
+        "style"
+      ],
+      "char_count": 3589
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/type-b-self-corrections-what-munger-changed-his-mind-about",
+      "title": "Type B Self-Corrections: What Munger Changed His Mind About",
+      "level": 3,
+      "keywords": [
+        "type",
+        "self",
+        "corrections",
+        "munger",
+        "changed",
+        "mind",
+        "graham",
+        "quality"
+      ],
+      "char_count": 1318
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/tier-1-iron-laws-never-violated",
+      "title": "Tier 1: IRON LAWS (Never Violated)",
+      "level": 3,
+      "keywords": [
+        "tier",
+        "iron",
+        "laws",
+        "never",
+        "violated",
+        "ruin",
+        "modes",
+        "dependency"
+      ],
+      "char_count": 5172
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/tier-2-strong-preferences-default-behavior-overridable-in-extraordinary-circumst",
+      "title": "Tier 2: STRONG PREFERENCES (Default Behavior, Overridable in Extraordinary Circumstances)",
+      "level": 3,
+      "keywords": [
+        "tier",
+        "strong",
+        "preferences",
+        "default",
+        "behavior",
+        "overridable",
+        "extraordinary",
+        "circumstances"
+      ],
+      "char_count": 4644
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/tier-3-contextual-judgments-case-by-case-assessment",
+      "title": "Tier 3: CONTEXTUAL JUDGMENTS (Case-by-Case Assessment)",
+      "level": 3,
+      "keywords": [
+        "tier",
+        "contextual",
+        "judgments",
+        "case",
+        "assessment",
+        "munger",
+        "advantage",
+        "chinese"
+      ],
+      "char_count": 1723
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/case-1-sees-candies-1972-the-investment-that-changed-everything",
+      "title": "Case 1: See's Candies (1972) — The Investment That Changed Everything",
+      "level": 3,
+      "keywords": [
+        "case",
+        "candies",
+        "investment",
+        "changed",
+        "everything",
+        "trigger",
+        "psychology",
+        "entered"
+      ],
+      "char_count": 3901
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/case-2-costco-the-structural-incentive-model",
+      "title": "Case 2: Costco — The Structural Incentive Model",
+      "level": 3,
+      "keywords": [
+        "case",
+        "costco",
+        "structural",
+        "incentive",
+        "model",
+        "trigger",
+        "munger",
+        "reasoning"
+      ],
+      "char_count": 2895
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/case-3-byd-2008-the-exceptional-bet-on-an-exceptional-operator",
+      "title": "Case 3: BYD (2008) — The Exceptional Bet on an Exceptional Operator",
+      "level": 3,
+      "keywords": [
+        "case",
+        "byd",
+        "exceptional",
+        "bet",
+        "operator",
+        "trigger",
+        "munger",
+        "reasoning"
+      ],
+      "char_count": 3544
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/case-4-daily-journal-corporation-and-the-alibaba-position",
+      "title": "Case 4: Daily Journal Corporation and the Alibaba Position",
+      "level": 3,
+      "keywords": [
+        "case",
+        "daily",
+        "journal",
+        "corporation",
+        "alibaba",
+        "position",
+        "trigger",
+        "munger"
+      ],
+      "char_count": 2218
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/case-5-li-lu-and-the-broader-china-thesis",
+      "title": "Case 5: Li Lu and the Broader China Thesis",
+      "level": 3,
+      "keywords": [
+        "case",
+        "broader",
+        "china",
+        "thesis",
+        "trigger",
+        "munger",
+        "reasoning",
+        "chain"
+      ],
+      "char_count": 2216
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/case-6-dexter-shoe-the-negative-case-for-quality-thinking",
+      "title": "Case 6: Dexter Shoe — The Negative Case for Quality Thinking",
+      "level": 3,
+      "keywords": [
+        "case",
+        "dexter",
+        "shoe",
+        "negative",
+        "quality",
+        "trigger",
+        "hidden",
+        "vulnerability"
+      ],
+      "char_count": 2097
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/failure-1-wheeler-munger-partnership-the-cost-of-extreme-concentration-1973-74",
+      "title": "Failure 1: Wheeler Munger Partnership — The Cost of Extreme Concentration (1973-74)",
+      "level": 3,
+      "keywords": [
+        "failure",
+        "wheeler",
+        "munger",
+        "partnership",
+        "cost",
+        "extreme",
+        "concentration",
+        "went"
+      ],
+      "char_count": 2268
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/failure-2-wesco-financial-the-constraints-of-a-legacy-vehicle",
+      "title": "Failure 2: Wesco Financial — The Constraints of a Legacy Vehicle",
+      "level": 3,
+      "keywords": [
+        "failure",
+        "wesco",
+        "financial",
+        "constraints",
+        "legacy",
+        "vehicle",
+        "went",
+        "wrong"
+      ],
+      "char_count": 1507
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/failure-3-salomon-brothers-the-culture-problem",
+      "title": "Failure 3: Salomon Brothers — The Culture Problem",
+      "level": 3,
+      "keywords": [
+        "failure",
+        "salomon",
+        "brothers",
+        "culture",
+        "problem",
+        "went",
+        "wrong",
+        "munger"
+      ],
+      "char_count": 1381
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/failure-4-the-near-miss-of-being-too-cheap-on-sees",
+      "title": "Failure 4: The Near-Miss of Being Too Cheap on See's",
+      "level": 3,
+      "keywords": [
+        "failure",
+        "near",
+        "miss",
+        "being",
+        "too",
+        "cheap",
+        "munger",
+        "self"
+      ],
+      "char_count": 789
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/failure-5-the-alibaba-position",
+      "title": "Failure 5: The Alibaba Position",
+      "level": 3,
+      "keywords": [
+        "failure",
+        "alibaba",
+        "position",
+        "went",
+        "wrong",
+        "munger",
+        "chinese",
+        "mistakes"
+      ],
+      "char_count": 1002
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/the-philosophy-of-mistakes",
+      "title": "The Philosophy of Mistakes",
+      "level": 3,
+      "keywords": [
+        "philosophy",
+        "mistakes",
+        "excuses",
+        "learn",
+        "move",
+        "munger",
+        "errors",
+        "process"
+      ],
+      "char_count": 917
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/c-master-vs-w-master-munger-vs-buffett-five-key-divergences",
+      "title": "C Master vs. W Master (Munger vs. Buffett): Five Key Divergences",
+      "level": 3,
+      "keywords": [
+        "master",
+        "munger",
+        "buffett",
+        "five",
+        "key",
+        "divergences",
+        "business",
+        "would"
+      ],
+      "char_count": 4368
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/c-master-vs-y-master-munger-vs-duan-yongping-three-key-divergences",
+      "title": "C Master vs. Y Master (Munger vs. Duan Yongping): Three Key Divergences",
+      "level": 3,
+      "keywords": [
+        "master",
+        "munger",
+        "duan",
+        "yongping",
+        "key",
+        "divergences",
+        "product",
+        "technology"
+      ],
+      "char_count": 2299
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/c-master-vs-both-w-and-y-unique-characteristics",
+      "title": "C Master vs. Both W and Y: Unique Characteristics",
+      "level": 3,
+      "keywords": [
+        "master",
+        "unique",
+        "characteristics",
+        "primary",
+        "strategy",
+        "uniqueness",
+        "psychology",
+        "breadth"
+      ],
+      "char_count": 1515
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/the-checklist-methodology",
+      "title": "The Checklist Methodology",
+      "level": 3,
+      "keywords": [
+        "checklist",
+        "methodology",
+        "munger",
+        "concept",
+        "consistent",
+        "ideas",
+        "popularized",
+        "people"
+      ],
+      "char_count": 474
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/pre-analysis-self-audit-before-looking-at-any-investment",
+      "title": "Pre-Analysis Self-Audit (Before Looking at Any Investment)",
+      "level": 3,
+      "keywords": [
+        "pre",
+        "analysis",
+        "self",
+        "audit",
+        "investment",
+        "risk",
+        "check",
+        "emotional"
+      ],
+      "char_count": 676
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/core-mental-models-applied-to-investment-analysis",
+      "title": "Core Mental Models Applied to Investment Analysis",
+      "level": 3,
+      "keywords": [
+        "core",
+        "mental",
+        "models",
+        "applied",
+        "investment",
+        "analysis",
+        "model",
+        "inversion"
+      ],
+      "char_count": 4234
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/accounting-quality-and-promotional-management",
+      "title": "Accounting Quality and Promotional Management",
+      "level": 3,
+      "keywords": [
+        "accounting",
+        "quality",
+        "promotional",
+        "management",
+        "distrust",
+        "ebitda",
+        "munger",
+        "earnings"
+      ],
+      "char_count": 1450
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/the-information-diet",
+      "title": "The Information Diet",
+      "level": 3,
+      "keywords": [
+        "information",
+        "diet",
+        "biology",
+        "evolutionary",
+        "theory",
+        "chemistry",
+        "autocatalysis",
+        "changed"
+      ],
+      "char_count": 1498
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/specific-conditions-under-which-munger-says-pass",
+      "title": "Specific Conditions Under Which Munger Says PASS",
+      "level": 3,
+      "keywords": [
+        "specific",
+        "conditions",
+        "munger",
+        "pass",
+        "business",
+        "investment",
+        "requires",
+        "management"
+      ],
+      "char_count": 1623
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/the-too-hard-pile-vs-no-brainer-decisions",
+      "title": "The \"Too Hard\" Pile vs. \"No-Brainer\" Decisions",
+      "level": 3,
+      "keywords": [
+        "too",
+        "hard",
+        "pile",
+        "brainer",
+        "decisions",
+        "candies",
+        "costco",
+        "byd"
+      ],
+      "char_count": 1370
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/worldly-wisdom-academic-critique-and-the-danger-of-specialization",
+      "title": "Worldly Wisdom, Academic Critique, and the Danger of Specialization",
+      "level": 3,
+      "keywords": [
+        "worldly",
+        "wisdom",
+        "academic",
+        "critique",
+        "danger",
+        "specialization",
+        "economics",
+        "departments"
+      ],
+      "char_count": 2262
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/evaluating-management-incentives-incentives-incentives",
+      "title": "Evaluating Management: Incentives, Incentives, Incentives",
+      "level": 3,
+      "keywords": [
+        "evaluating",
+        "management",
+        "incentives",
+        "step",
+        "value"
+      ],
+      "char_count": 1691
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/banking-and-financial-institutions-a-reluctant-area-of-competence",
+      "title": "Banking and Financial Institutions: A Reluctant Area of Competence",
+      "level": 3,
+      "keywords": [
+        "banking",
+        "financial",
+        "institutions",
+        "reluctant",
+        "area",
+        "competence",
+        "underwriting",
+        "discipline"
+      ],
+      "char_count": 1732
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/module-8-characteristic-language-style/the-voice-of-controlled-hostility-toward-stupidity",
+      "title": "The Voice of Controlled Hostility Toward Stupidity",
+      "level": 3,
+      "keywords": [
+        "voice",
+        "controlled",
+        "hostility",
+        "toward",
+        "stupidity",
+        "brutal",
+        "directness",
+        "economy"
+      ],
+      "char_count": 2030
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/module-8-characteristic-language-style/famous-phrases-and-their-deeper-meaning",
+      "title": "Famous Phrases and Their Deeper Meaning",
+      "level": 3,
+      "keywords": [
+        "famous",
+        "phrases",
+        "deeper",
+        "meaning",
+        "nothing",
+        "add",
+        "surface",
+        "being"
+      ],
+      "char_count": 2291
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/module-8-characteristic-language-style/mungers-moral-architecture",
+      "title": "Munger's Moral Architecture",
+      "level": 3,
+      "keywords": [
+        "munger",
+        "moral",
+        "architecture",
+        "rationality",
+        "duty",
+        "deserved",
+        "trust",
+        "reciprocity"
+      ],
+      "char_count": 1645
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/module-8-characteristic-language-style/the-contrast-between-public-and-private-styles",
+      "title": "The Contrast Between Public and Private Styles",
+      "level": 3,
+      "keywords": [
+        "contrast",
+        "public",
+        "private",
+        "styles",
+        "munger",
+        "process",
+        "meetings",
+        "sharp"
+      ],
+      "char_count": 855
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/module-8-characteristic-language-style/communication-through-simple-analogies",
+      "title": "Communication Through Simple Analogies",
+      "level": 3,
+      "keywords": [
+        "communication",
+        "through",
+        "simple",
+        "analogies",
+        "analogy",
+        "communicated",
+        "compared",
+        "competitive"
+      ],
+      "char_count": 1030
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/module-8-characteristic-language-style/tone-calibration-for-the-ai-system",
+      "title": "Tone Calibration for the AI System",
+      "level": 3,
+      "keywords": [
+        "tone",
+        "calibration",
+        "system",
+        "default",
+        "encountering",
+        "bad",
+        "idea",
+        "good"
+      ],
+      "char_count": 1200
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/module-8-characteristic-language-style/appendix-key-relationships-and-influences/people-who-shaped-mungers-thinking",
+      "title": "People Who Shaped Munger's Thinking",
+      "level": 3,
+      "keywords": [
+        "people",
+        "shaped",
+        "munger",
+        "benjamin",
+        "franklin",
+        "warren",
+        "buffett",
+        "master"
+      ],
+      "char_count": 794
+    },
+    {
+      "section_id": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/module-8-characteristic-language-style/appendix-key-relationships-and-influences/key-source-materials",
+      "title": "Key Source Materials",
+      "level": 3,
+      "keywords": [
+        "key",
+        "source",
+        "materials",
+        "poor",
+        "charlie",
+        "almanack",
+        "damn",
+        "right"
+      ],
+      "char_count": 904
+    },
+    {
+      "section_id": "munger/appendix-z-cross-master-comparisons-vig-scan-2026-04/去中心化管理哲学",
+      "title": "去中心化管理哲学",
+      "level": 2,
+      "keywords": [
+        "去中",
+        "中心",
+        "心化",
+        "化管",
+        "管理",
+        "理哲",
+        "哲学",
+        "consensus"
+      ],
+      "char_count": 345
+    },
+    {
+      "section_id": "munger/appendix-z-cross-master-comparisons-vig-scan-2026-04/信任作为组织操作系统",
+      "title": "信任作为组织操作系统",
+      "level": 2,
+      "keywords": [
+        "信任",
+        "任作",
+        "作为",
+        "为组",
+        "组织",
+        "织操",
+        "操作",
+        "作系"
+      ],
+      "char_count": 368
+    },
+    {
+      "section_id": "munger/appendix-z-cross-master-comparisons-vig-scan-2026-04/从失误中学习的方法论",
+      "title": "从失误中学习的方法论",
+      "level": 2,
+      "keywords": [
+        "从失",
+        "失误",
+        "误中",
+        "中学",
+        "学习",
+        "习的",
+        "的方",
+        "方法"
+      ],
+      "char_count": 400
+    },
+    {
+      "section_id": "munger/appendix-z-cross-master-comparisons-vig-scan-2026-04/杠杆与资本结构",
+      "title": "杠杆与资本结构",
+      "level": 2,
+      "keywords": [
+        "杠杆",
+        "杆与",
+        "与资",
+        "资本",
+        "本结",
+        "结构",
+        "consensus",
+        "共识"
+      ],
+      "char_count": 442
+    },
+    {
+      "section_id": "munger/appendix-z-cross-master-comparisons-vig-scan-2026-04/会计数字的局限性",
+      "title": "会计数字的局限性",
+      "level": 2,
+      "keywords": [
+        "会计",
+        "计数",
+        "数字",
+        "字的",
+        "的局",
+        "局限",
+        "限性",
+        "consensus"
+      ],
+      "char_count": 426
+    },
+    {
+      "section_id": "munger/appendix-z-cross-master-comparisons-vig-scan-2026-04/风险定义",
+      "title": "风险定义",
+      "level": 2,
+      "keywords": [
+        "风险",
+        "险定",
+        "定义",
+        "consensus",
+        "共识",
+        "differences",
+        "差异",
+        "synthesis"
+      ],
+      "char_count": 305
+    },
+    {
+      "section_id": "munger/appendix-z-cross-master-comparisons-vig-scan-2026-04/投资标的质量标准",
+      "title": "投资标的质量标准",
+      "level": 2,
+      "keywords": [
+        "投资",
+        "资标",
+        "标的",
+        "的质",
+        "质量",
+        "量标",
+        "标准",
+        "consensus"
+      ],
+      "char_count": 432
+    },
+    {
+      "section_id": "munger/appendix-z-cross-master-comparisons-vig-scan-2026-04/反向思考在决策中的角色分工",
+      "title": "反向思考在决策中的角色分工",
+      "level": 2,
+      "keywords": [
+        "反向",
+        "向思",
+        "思考",
+        "考在",
+        "在决",
+        "决策",
+        "策中",
+        "中的"
+      ],
+      "char_count": 433
+    },
+    {
+      "section_id": "munger/appendix-z-cross-master-comparisons-vig-scan-2026-04/决策流程与合伙人协作",
+      "title": "决策流程与合伙人协作",
+      "level": 2,
+      "keywords": [
+        "决策",
+        "策流",
+        "流程",
+        "程与",
+        "与合",
+        "合伙",
+        "伙人",
+        "人协"
+      ],
+      "char_count": 340
+    },
+    {
+      "section_id": "munger/appendix-decision-grade-insights-vig-scan-2026-04/factor-lollapalooza_商业成功模型",
+      "title": "Factor: lollapalooza_商业成功模型",
+      "level": 2,
+      "keywords": [
+        "factor",
+        "lollapalooza",
+        "商业",
+        "业成",
+        "成功",
+        "功模",
+        "模型",
+        "weight"
+      ],
+      "char_count": 211
+    },
+    {
+      "section_id": "munger/appendix-decision-grade-insights-vig-scan-2026-04/factor-管理层评估",
+      "title": "Factor: 管理层评估",
+      "level": 2,
+      "keywords": [
+        "factor",
+        "管理",
+        "理层",
+        "层评",
+        "评估",
+        "red",
+        "flag",
+        "想法"
+      ],
+      "char_count": 220
+    },
+    {
+      "section_id": "munger/appendix-decision-grade-insights-vig-scan-2026-04/factor-能力圈",
+      "title": "Factor: 能力圈",
+      "level": 2,
+      "keywords": [
+        "factor",
+        "能力",
+        "力圈",
+        "red",
+        "flag",
+        "领域",
+        "一个",
+        "困难"
+      ],
+      "char_count": 539
+    }
+  ],
+  "note": "Use @retrieve(section_id) in your output to pull specific section text. Full retrievable sections (including short ones) in soul_index.json → docs[munger].sections"
+}

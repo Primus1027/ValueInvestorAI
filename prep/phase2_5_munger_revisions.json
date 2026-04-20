@@ -1,0 +1,73 @@
+{
+  "master": "munger",
+  "revisions": [
+    {
+      "seed_id": "seed_01",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_02",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_03",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_04",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_05",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_06",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_07",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_08",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_09",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_10",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_11",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_12",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    },
+    {
+      "seed_id": "seed_13",
+      "action": "keep",
+      "rationale": "Phase 2.5 call failed; preserved original seed as fallback."
+    }
+  ],
+  "new_seeds": [],
+  "error": "timeout after 540s",
+  "_fallback_used": true
+}

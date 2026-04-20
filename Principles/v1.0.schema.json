@@ -1,0 +1,74 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-04-20T10:28:37.040792+00:00",
+  "description": "Machine-executable Layer 0 hard constraints for ValueInvestorAI. Each rule has severity (veto/warning/note) and an optional threshold. PrinciplesEngine.evaluate(company_data) iterates these rules and returns {passed: bool, violations: [...], warnings: [...]}.",
+  "rules": [
+    {
+      "cluster_id": "cl_01",
+      "canonical_claim": "若无法用极少句子（1–3句）向普通智识水平者清晰解释公司的盈利机制、护城河来源与客户粘性，则归入'太难'堆直接拒绝",
+      "category": "qualitative_required",
+      "severity": "veto",
+      "supporting_masters": [
+        "buffett",
+        "duan",
+        "munger"
+      ],
+      "thresholds_diverge": true,
+      "default_threshold": 1,
+      "threshold_variants_by_master": {
+        "buffett": 3,
+        "munger": 3,
+        "duan": 1
+      }
+    },
+    {
+      "cluster_id": "cl_02",
+      "canonical_claim": "长期平均资本回报率（ROIC 或等价的非杠杆 ROE）低于 15% 的公司标记业务质量/护城河不足警告",
+      "category": "quantitative_hard",
+      "severity": "warning",
+      "supporting_masters": [
+        "buffett",
+        "duan",
+        "munger"
+      ],
+      "thresholds_diverge": false,
+      "default_threshold": 0.15,
+      "threshold_variants_by_master": {
+        "buffett": 0.15,
+        "munger": 0.15,
+        "duan": 0.15
+      }
+    },
+    {
+      "cluster_id": "cl_03",
+      "canonical_claim": "主要竞争对手多年营收复合增速持续高于本公司时标记护城河侵蚀警告",
+      "category": "quantitative_hard",
+      "severity": "warning",
+      "supporting_masters": [
+        "buffett",
+        "duan",
+        "munger"
+      ],
+      "thresholds_diverge": true,
+      "default_threshold": 0,
+      "threshold_variants_by_master": {
+        "buffett": 0.05,
+        "munger": 0,
+        "duan": 0.05
+      }
+    },
+    {
+      "cluster_id": "cl_04",
+      "canonical_claim": "管理层在对外沟通中以营收/EBITDA 为核心业绩叙事而系统性回避 ROIC/FCF 等资本回报指标（或报表须依赖大量脚注才能理解基本经济模型）标记资本配置与会计质量警告",
+      "category": "qualitative_required",
+      "severity": "warning",
+      "supporting_masters": [
+        "buffett",
+        "duan",
+        "munger"
+      ],
+      "thresholds_diverge": false
+    }
+  ],
+  "company_data_contract": "See company_data_contract.md for required input fields."
+}
