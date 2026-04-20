@@ -66,7 +66,7 @@ def build_phase3a_prompt(all_seeds: List[Dict]) -> str:
         cs["_master"] = s.get("_master", "unknown")
         clean_seeds.append(cs)
 
-    return f"""你是辩论记录员。三个独立的投资方法论框架（W/C/Y — 分别对应 buffett / munger / duan 的方法论研究助手）经过独立提案（Phase 1）和修订（Phase 2.5）后，产出以下 seed principles。
+    return f"""你是辩论记录员。三个独立的投资方法论框架（以框架标识 W/C/Y 代指）的研究助手经过独立提案（Phase 1）和修订（Phase 2.5）后，产出以下 seed principles。
 
 你的任务：识别跨框架的**语义等价 seeds**，合并成 canonical clusters。
 
