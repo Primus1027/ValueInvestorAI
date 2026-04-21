@@ -31,7 +31,7 @@ from scripts.soul.validate_seed import validate_seed
 sys.path.insert(0, str(PROJECT_ROOT / "scripts" / "soul"))
 from _json_utils import parse_claude_cli_result  # noqa: E402
 
-PHASE1_TIMEOUT = 420  # 7 minutes per master
+PHASE1_TIMEOUT = 900  # 15 minutes per master (Claude CLI + ~333KB context can take 8-10min)
 MIN_VALID_SEEDS = 5
 MAX_RETRIES = 2
 
@@ -165,12 +165,33 @@ def load_v_prev_hard_as_seeds(master: str, current_principles: dict) -> list[dic
     """Load HARD conditions for this master from Principles/current.schema.json
     and convert them to seed_v1_1 format (marked with _fallback_from_v).
 
-    Returns empty list if no current principles.
+    Returns empty list if no current principles. Prints loud diagnostic to
+    stderr distinguishing first-ever-run (no schema) from incompatible-schema
+    (schema exists but lacks v0.4.1 `hard_rules` + `variant_seeds_by_master`
+    shape — e.g. legacy Pre-A v1.0 which used flat `rules` and only
+    `threshold_variants_by_master`). Silent empty return would mask a real
+    problem exactly at the moment the pipeline needs the fallback to rescue it.
     """
     schema = current_principles.get("schema")
     if not schema:
+        print(f"[fallback] master={master}: no v_prev schema available "
+              f"(first-ever debate — fallback not possible)", file=sys.stderr)
         return []
-    hard_rules = schema.get("hard_rules", []) if isinstance(schema, dict) else []
+    if not isinstance(schema, dict):
+        print(f"[fallback] master={master}: v_prev schema is not a dict "
+              f"(type={type(schema).__name__})", file=sys.stderr)
+        return []
+    hard_rules = schema.get("hard_rules", [])
+    if not hard_rules and schema.get("rules"):
+        # Legacy Pre-A format uses `rules`; warn but don't auto-promote — rule
+        # shape is incompatible (no `variant_seeds_by_master`), so downstream
+        # master-variant lookup returns None for every rule anyway.
+        print(f"[fallback] master={master}: v_prev schema uses legacy "
+              f"`rules` key (Pre-A format), not v0.4.1 `hard_rules`. "
+              f"Fallback cannot recover master-level variants. "
+              f"Upgrade current.schema.json or accept this run cannot "
+              f"tolerate phase1 failures.", file=sys.stderr)
+        return []
     out = []
     for idx, rule in enumerate(hard_rules):
         variants = rule.get("variant_seeds_by_master", {})
@@ -196,6 +217,10 @@ def load_v_prev_hard_as_seeds(master: str, current_principles: dict) -> list[dic
             "_fallback_from_v": schema.get("version", "v_prev"),
         }
         out.append(seed)
+    if not out:
+        print(f"[fallback] master={master}: v_prev schema had {len(hard_rules)} "
+              f"hard_rules but no variant_seeds_by_master for this master. "
+              f"Returning empty fallback.", file=sys.stderr)
     return out
 
 
