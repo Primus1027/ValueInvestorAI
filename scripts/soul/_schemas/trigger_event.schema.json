@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Trigger Event (Phase -1)",
+  "type": "object",
+  "required": ["timestamp", "trigger_type", "debate_mode", "debate_id"],
+  "properties": {
+    "timestamp": {"type": "string", "format": "date-time"},
+    "trigger_type": {
+      "type": "string",
+      "enum": ["T1_quarterly", "T2_soul_doc_update", "T3_field_signal", "T4_agenda_overflow", "manual"]
+    },
+    "debate_mode": {"type": "string", "enum": ["full", "mini"]},
+    "debate_id": {"type": "string"},
+    "scope": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "array", "items": {"type": "string"}}
+      ]
+    },
+    "reason": {"type": "string"},
+    "skipped": {"type": "boolean"},
+    "skip_reason": {"type": "string"},
+    "soul_doc_versions_at_trigger": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    }
+  }
+}

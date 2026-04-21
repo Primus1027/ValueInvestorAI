@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cluster (after Phase 3a)",
+  "type": "object",
+  "required": [
+    "cluster_id",
+    "rule_subject",
+    "canonical_claim",
+    "category_primary",
+    "variant_seeds",
+    "support_count"
+  ],
+  "properties": {
+    "cluster_id": {"type": "string", "pattern": "^cl_\\d{2,3}$"},
+    "rule_subject": {"type": "string", "enum": ["target", "self", "decision_process"]},
+    "canonical_claim": {"type": "string", "minLength": 10},
+    "canonical_theme": {"type": "string"},
+    "category_primary": {
+      "type": "string",
+      "enum": ["quantitative_hard", "qualitative_required", "veto_line", "valuation_method", "position_sizing"]
+    },
+    "categories_secondary": {"type": "array", "items": {"type": "string"}},
+    "variant_seeds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["seed_id", "master", "claim"],
+        "properties": {
+          "seed_id": {"type": "string"},
+          "master": {"type": "string", "enum": ["buffett", "munger", "duan"]},
+          "claim": {"type": "string"},
+          "threshold": {"type": ["number", "null"]},
+          "severity": {"type": "string", "enum": ["veto", "warning", "note"]},
+          "category": {"type": "string"},
+          "supporting_section_id": {"type": "string"}
+        }
+      }
+    },
+    "thresholds_variants_by_master": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": {"type": ["number", "null"]}
+        }
+      ]
+    },
+    "severity_variants_by_master": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "enum": ["veto", "warning", "note"]}
+    },
+    "support_count": {"type": "integer", "minimum": 1, "maximum": 3},
+    "merge_confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "_drop_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "debate_id": {"type": "string"},
+          "support_count": {"type": "integer"}
+        }
+      }
+    }
+  }
+}

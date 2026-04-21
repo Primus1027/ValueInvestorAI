@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Principle Seed v1.1 (v0.4.1 debate flow)",
+  "description": "Schema for one principle seed produced in Phase 1 by a methodology research assistant.",
+  "type": "object",
+  "required": [
+    "seed_id",
+    "_master",
+    "rule_subject",
+    "theme",
+    "category",
+    "qualitative_claim",
+    "severity",
+    "anti_scope",
+    "rationale",
+    "evidence_strength",
+    "supporting_section_id",
+    "supporting_profile_factor"
+  ],
+  "properties": {
+    "seed_id": {
+      "type": "string",
+      "pattern": "^seed_\\d{2,3}$",
+      "description": "Unique within one master's output for this debate."
+    },
+    "_master": {
+      "type": "string",
+      "enum": ["buffett", "munger", "duan"]
+    },
+    "rule_subject": {
+      "type": "string",
+      "enum": ["target", "self", "decision_process"],
+      "description": "target=constrains investee; self=constrains investor/institution; decision_process=constrains analysis process"
+    },
+    "theme": {
+      "type": "string",
+      "enum": [
+        "moat",
+        "capital_return",
+        "financial_strength",
+        "management_integrity",
+        "valuation_method",
+        "behavioral_discipline",
+        "circle_of_competence",
+        "portfolio_construction",
+        "accounting_quality",
+        "opportunity_cost"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "quantitative_hard",
+        "qualitative_required",
+        "veto_line",
+        "valuation_method",
+        "position_sizing"
+      ]
+    },
+    "qualitative_claim": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 300,
+      "description": "Pure qualitative directional statement. No digits. No compound connectives.",
+      "not": {
+        "anyOf": [
+          {"pattern": "\\d"},
+          {"pattern": "%"},
+          {"pattern": "(既.*又|不.*但.*|同意.*但反对|在.*同时还要求)"}
+        ]
+      }
+    },
+    "quantitative_rule": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "required": ["metric", "operator", "threshold", "data_field"],
+          "properties": {
+            "metric": {"type": "string"},
+            "operator": {"type": "string", "enum": [">", "<", ">=", "<=", "==", "!="]},
+            "threshold": {"type": "number"},
+            "data_field": {"type": "string"}
+          }
+        }
+      ]
+    },
+    "qualitative_rule": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "string", "minLength": 10}
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["veto", "warning", "note"]
+    },
+    "anti_scope": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 200,
+      "description": "What this seed does NOT constrain, to prevent over-interpretation."
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Why this is methodologically necessary."
+    },
+    "evidence_strength": {
+      "type": "string",
+      "enum": ["direct_quote", "consistent_pattern", "reasonable_inference"]
+    },
+    "supporting_section_id": {
+      "type": "string",
+      "description": "soul doc anchor path"
+    },
+    "supporting_profile_factor": {
+      "type": "string",
+      "description": "profile.json factor id"
+    },
+    "_reintroduced_from": {
+      "oneOf": [{"type": "null"}, {"type": "string"}],
+      "description": "If this is a re-introduction, the original cluster_id + archive version"
+    },
+    "_reintroduction_rationale": {
+      "oneOf": [{"type": "null"}, {"type": "string", "minLength": 20}]
+    },
+    "_reintroduced_seed_commit_hash": {
+      "oneOf": [{"type": "null"}, {"type": "string", "pattern": "^[a-f0-9]{7,40}$"}]
+    },
+    "_reintroduced_seed_section_id": {
+      "oneOf": [{"type": "null"}, {"type": "string"}]
+    },
+    "_fallback_from_v": {
+      "oneOf": [{"type": "null"}, {"type": "string"}]
+    },
+    "_sanitized": {
+      "type": "boolean",
+      "description": "True after Phase 1.5 de-anonymization"
+    },
+    "_ref_map": {
+      "oneOf": [{"type": "null"}, {"type": "object"}]
+    }
+  },
+  "allOf": [
+    {
+      "description": "Either quantitative_rule or qualitative_rule must be non-null",
+      "anyOf": [
+        {"properties": {"quantitative_rule": {"type": "object"}}},
+        {"properties": {"qualitative_rule": {"type": "string"}}}
+      ]
+    },
+    {
+      "description": "If _reintroduced_from is set, all 3 other re-intro fields must also be set",
+      "if": {
+        "properties": {"_reintroduced_from": {"type": "string"}},
+        "required": ["_reintroduced_from"]
+      },
+      "then": {
+        "required": [
+          "_reintroduction_rationale",
+          "_reintroduced_seed_commit_hash",
+          "_reintroduced_seed_section_id"
+        ]
+      }
+    }
+  ]
+}

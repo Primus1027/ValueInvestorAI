@@ -1,0 +1,86 @@
+{
+  "_description": "Methodology fingerprint words to sanitize in Phase 1.5. Keys are identity-revealing words, values are generic replacements that preserve semantics.",
+  "_version": "1.0",
+  "_last_updated": "2026-04-21",
+
+  "replacements": {
+    "本分": "品行自律",
+    "本份": "品行自律",
+
+    "too hard pile": "过于困难的领域",
+    "太难堆": "过于困难的领域",
+    "太难的堆": "过于困难的领域",
+    "too-hard pile": "过于困难的领域",
+
+    "lollapalooza": "多因素汇合效应",
+    "Lollapalooza": "多因素汇合效应",
+
+    "能力圈": "熟悉领域",
+    "Circle of Competence": "knowledge boundary",
+    "circle of competence": "knowledge boundary",
+
+    "tier-1 铁律": "核心约束",
+    "Tier-1 铁律": "核心约束",
+    "Tier 1 Iron Laws": "core constraints",
+    "tier-1 iron laws": "core constraints",
+
+    "anti_drift_rules": "methodology_boundaries",
+    "anti-drift rules": "methodology boundaries",
+
+    "Berkshire": "methodology exemplar firm",
+    "伯克希尔": "方法论范例企业",
+
+    "赤子之心": "simplicity principle",
+    "right business right people right price": "quality-integrity-valuation sequence",
+
+    "Mr. Market": "market as counterparty",
+    "市场先生": "市场交易对手方",
+
+    "economic moat": "structural competitive barrier",
+    "护城河": "结构性竞争壁垒",
+
+    "margin of safety": "valuation buffer",
+    "安全边际": "估值缓冲",
+
+    "owner earnings": "distributable economic earnings",
+    "所有者收益": "可分配经济收益",
+
+    "wonderful business at a fair price": "quality-over-cheapness principle",
+    "fair business at a wonderful price": "cheapness-over-quality principle",
+
+    "show me the incentive": "incentive alignment check",
+    "incentive alignment": "incentive alignment check",
+
+    "inversion": "reverse reasoning",
+    "逆向思维": "反向推理",
+
+    "five questions": "methodology self-check",
+    "五问清单": "方法论自检",
+
+    "temperament over IQ": "discipline over intelligence",
+    "气质胜于智商": "纪律胜于智力",
+
+    "mental models": "cross-disciplinary frameworks",
+    "思维模型": "跨学科框架"
+  },
+
+  "_scan_patterns": {
+    "_description": "Regex patterns (Python-compatible) to detect identity markers not in the replacements dict. Used by Phase 1.5 second-pass scan.",
+    "patterns": [
+      "Buffett",
+      "Munger",
+      "段永平",
+      "巴菲特",
+      "芒格",
+      "Duan\\s+Yongping",
+      "Warren\\s+Buffett",
+      "Charlie\\s+Munger",
+      "W\\s*v1\\.\\d",
+      "C\\s*v1\\.\\d",
+      "Y\\s*v1\\.\\d",
+      "buffett/module",
+      "munger/soul",
+      "duan/y-"
+    ]
+  }
+}
