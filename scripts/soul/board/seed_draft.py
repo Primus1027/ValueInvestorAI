@@ -16,6 +16,7 @@ import json
 import re
 import subprocess
 import sys
+import traceback
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from pathlib import Path
@@ -292,10 +293,45 @@ def draft_seeds_parallel(context: dict) -> dict:
             try:
                 results[master] = fut.result(timeout=PHASE1_TIMEOUT + 60)
             except Exception as e:
-                results[master] = {
-                    "master": master, "seeds": [], "seed_count": 0,
-                    "status": "error", "error": str(e),
-                }
+                tb = traceback.format_exc()
+                err_msg = str(e) or type(e).__name__
+                print(f"[phase1] ERROR master={master}: {err_msg}",
+                      file=sys.stderr)
+                print(tb, file=sys.stderr)
+                # Attempt fallback to v_prev HARD before giving up
+                fallback_seeds: list[dict] = []
+                try:
+                    fallback_seeds = load_v_prev_hard_as_seeds(master,
+                                                                current_principles)
+                except Exception as fb_e:
+                    print(f"[phase1] fallback-load for {master} also failed: {fb_e}",
+                          file=sys.stderr)
+
+                if fallback_seeds:
+                    out_path = PREP_DIR / f"phase1_{master}_seeds.jsonl"
+                    PREP_DIR.mkdir(parents=True, exist_ok=True)
+                    with out_path.open("w", encoding="utf-8") as f:
+                        for s in fallback_seeds:
+                            f.write(json.dumps(s, ensure_ascii=False) + "\n")
+                    print(f"[phase1] master={master} recovered via fallback: "
+                          f"{len(fallback_seeds)} v_prev HARD seeds loaded",
+                          file=sys.stderr)
+                    results[master] = {
+                        "master": master,
+                        "seeds": fallback_seeds,
+                        "seed_count": len(fallback_seeds),
+                        "status": "fallback",
+                        "error": err_msg,
+                        "traceback": tb,
+                        "output_path": str(out_path),
+                    }
+                else:
+                    results[master] = {
+                        "master": master, "seeds": [], "seed_count": 0,
+                        "status": "error",
+                        "error": err_msg,
+                        "traceback": tb,
+                    }
 
     # Save re-intro tracker state
     dropped_tracker.save()

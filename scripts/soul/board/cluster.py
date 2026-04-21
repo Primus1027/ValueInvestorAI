@@ -131,14 +131,21 @@ def call_opus_cluster(all_seeds: list[dict], phase2_matrix: list[dict],
         return {"error": str(e)}
 
 
-def validate_cluster_output(clusters: list[dict], all_seed_ids: set[str]) -> tuple[list[dict], list[str]]:
+def validate_cluster_output(clusters: list[dict],
+                              all_seed_uids: set[tuple]) -> tuple[list[dict], list[str]]:
     """Check:
-    - Every seed_id appears in exactly one cluster
+    - Every (master, seed_id) UID appears in exactly one cluster
     - All variant_seeds within a cluster share same rule_subject
+
+    Seed identity is `(master, seed_id)` tuple. Bare `seed_id` is NOT unique
+    across masters (each master mints its own seed_01..seed_N namespace), so
+    deduping by bare seed_id causes false-positive "duplicate" errors when two
+    masters happen to share a numeric index.
+
     Returns (valid_clusters, list_of_errors).
     """
     errors = []
-    seen_seed_ids: set = set()
+    seen_uids: set[tuple] = set()
     valid_clusters = []
 
     for c in clusters:
@@ -158,13 +165,15 @@ def validate_cluster_output(clusters: list[dict], all_seed_ids: set[str]) -> tup
             errors.append(f"cluster {cid}: mixed rule_subjects {rule_subjects}")
             continue
 
-        # Dedup check
+        # Dedup check — keyed on (master, seed_id) to survive namespace collisions.
         for v in variants:
-            sid = v.get("seed_id")
-            if sid in seen_seed_ids:
-                errors.append(f"cluster {cid}: seed {sid} appears in multiple clusters")
+            uid = (v.get("master"), v.get("seed_id"))
+            if uid in seen_uids:
+                errors.append(
+                    f"cluster {cid}: seed {uid[0]}/{uid[1]} appears in multiple clusters"
+                )
             else:
-                seen_seed_ids.add(sid)
+                seen_uids.add(uid)
 
         # Compute support_count from distinct masters
         masters = {v.get("master") for v in variants if v.get("master")}
@@ -172,11 +181,12 @@ def validate_cluster_output(clusters: list[dict], all_seed_ids: set[str]) -> tup
         valid_clusters.append(c)
 
     # Check coverage
-    missing = all_seed_ids - seen_seed_ids
+    missing = all_seed_uids - seen_uids
     if missing:
-        errors.append(f"{len(missing)} seeds missing from any cluster: {list(missing)[:10]}")
-        # Add each missing seed as its own singleton cluster
-        # (Defensive: don't silently drop)
+        errors.append(
+            f"{len(missing)} seeds missing from any cluster: "
+            f"{[f'{m}/{s}' for m, s in list(missing)[:10]]}"
+        )
 
     return valid_clusters, errors
 
@@ -188,6 +198,10 @@ def phase3a_cluster() -> dict:
         return {"error": "no_seeds_loaded"}
 
     matrix = load_phase2_matrix()
+    # Guard against stale pre-fix matrices that lack the `masters` field
+    # (would silently miscluster when masters share bare seed_ids).
+    from scripts.soul.board.cross_rebuttal import _assert_matrix_has_masters
+    _assert_matrix_has_masters(matrix)
     p275_summary = load_phase275_summary()
     # Extract final_positions flat dict
     final_positions = {}
@@ -226,19 +240,37 @@ def phase3a_cluster() -> dict:
     else:
         clusters = result["clusters"]
 
-    # Validate
-    all_ids = {s["seed_id"] for s in all_seeds}
-    valid_clusters, errors = validate_cluster_output(clusters, all_ids)
+    # Validate — seed identity is (master, seed_id) UID, not bare seed_id.
+    all_uids: set[tuple] = {(s.get("_master"), s["seed_id"]) for s in all_seeds}
+    valid_clusters, errors = validate_cluster_output(clusters, all_uids)
+
+    # Abort gate: genuine invariant breaches (mixed rule_subject, missing variant
+    # seeds) must halt the pipeline. Missing-seed errors are recoverable below.
+    hard_errors = [
+        e for e in errors
+        if "mixed rule_subjects" in e or "no variant_seeds" in e
+           or "appears in multiple clusters" in e
+    ]
+    if hard_errors and not any(c.get("_fallback_singleton") for c in valid_clusters):
+        raise RuntimeError(
+            f"phase3a validation failed with {len(hard_errors)} hard errors "
+            f"(bad cluster structure); refusing to proceed. First 3: {hard_errors[:3]}"
+        )
 
     # If there were missing seeds, add as singletons
-    existing_sids = set()
+    existing_uids: set[tuple] = set()
     for c in valid_clusters:
         for v in c.get("variant_seeds", []):
-            existing_sids.add(v.get("seed_id"))
-    missing_sids = all_ids - existing_sids
+            existing_uids.add((v.get("master"), v.get("seed_id")))
+    missing_uids = all_uids - existing_uids
     next_cid_num = len(valid_clusters) + 1
-    for mid in missing_sids:
-        s = next((x for x in all_seeds if x["seed_id"] == mid), None)
+    for mid_uid in missing_uids:
+        m_name, m_sid = mid_uid
+        s = next(
+            (x for x in all_seeds
+             if x["seed_id"] == m_sid and x.get("_master") == m_name),
+            None,
+        )
         if not s:
             continue
         valid_clusters.append({

@@ -53,22 +53,63 @@ def anonymize_for_dispute(dispute_id: str) -> dict[str, str]:
 
 # ─────────── Identify dispute clusters (pre-clustering) ───────────
 
+def _record_uids(record: dict) -> tuple[tuple, tuple]:
+    """Extract ((master_a, seed_id_a), (master_b, seed_id_b)) UID tuples.
+
+    Matrix records written by comparative.py carry a `masters` field alongside
+    `seed_ids`. Legacy records without `masters` produce (None, seed_id) UIDs,
+    which would silently collide on bare seed_id — callers must validate
+    upstream with `_assert_matrix_has_masters` before passing matrix in.
+    """
+    seed_ids = record.get("seed_ids") or [None, None]
+    masters = record.get("masters") or [None, None]
+    return (masters[0], seed_ids[0]), (masters[1], seed_ids[1])
+
+
+def _assert_matrix_has_masters(matrix: list[dict]) -> None:
+    """Fail loudly if any matrix record lacks the `masters` field.
+
+    Background: v1.1 debate shipped with matrix records keyed only by bare
+    seed_id. Every downstream module treating seed_id as globally unique
+    silently degraded. The namespace fix requires every matrix record to
+    carry `masters: [_master_a, _master_b]`; stale pre-fix matrices on disk
+    MUST raise rather than silently produce zero-disputes.
+    """
+    missing = 0
+    for p in matrix or []:
+        if "masters" not in p or not p["masters"]:
+            missing += 1
+    if missing:
+        raise RuntimeError(
+            f"phase2_final_matrix.jsonl is stale: {missing}/{len(matrix)} records "
+            f"lack the required `masters` field. Re-run Phase 2 via "
+            f"`python3 -m scripts.soul.orchestrator_v2 --manual --mode full "
+            f"--resume-from phase2` or delete the stale matrix file."
+        )
+
+
 def identify_dispute_clusters(revised_seeds_by_master: dict,
                                 phase2_matrix: list[dict]) -> list[dict]:
     """Scan seeds + matrix to find clusters with threshold/severity variants
     or partial equivalence — these need cross-rebuttal.
 
+    Identity is (master, seed_id) UID throughout. Bare seed_id is not globally
+    unique (each master mints its own seed_01..seed_N), so union-find keyed on
+    bare seed_id silently collapses cross-master equivalence pairs into a single
+    master and kills every dispute.
+
     Output: list of dispute cluster dicts ready for Phase 2.75.
     """
-    # Build seed_id → seed index
+    # Build UID → seed index
     all_seeds: list[dict] = []
     for master, seeds in revised_seeds_by_master.items():
         all_seeds.extend(seeds)
-    seeds_by_id = {s["seed_id"]: s for s in all_seeds}
+    seeds_by_uid: dict[tuple, dict] = {
+        (s.get("_master"), s["seed_id"]): s for s in all_seeds
+    }
 
-    # Use equivalence matrix to union-find clusters of equivalent seeds
-    from itertools import combinations
-    parent = {s["seed_id"]: s["seed_id"] for s in all_seeds}
+    # Union-find over UID tuples.
+    parent: dict[tuple, tuple] = {uid: uid for uid in seeds_by_uid}
 
     def find(x):
         while parent[x] != x:
@@ -84,23 +125,23 @@ def identify_dispute_clusters(revised_seeds_by_master: dict,
     # Union equivalent pairs
     for p in phase2_matrix:
         if p.get("equivalent") and not p.get("skipped_llm"):
-            a, b = p["seed_ids"]
-            if a in parent and b in parent:
-                union(a, b)
+            uid_a, uid_b = _record_uids(p)
+            if uid_a in parent and uid_b in parent:
+                union(uid_a, uid_b)
 
-    # Build clusters
-    cluster_members: dict[str, list[str]] = {}
-    for sid in parent:
-        root = find(sid)
-        cluster_members.setdefault(root, []).append(sid)
+    # Build clusters keyed by root UID
+    cluster_members: dict[tuple, list[tuple]] = {}
+    for uid in parent:
+        root = find(uid)
+        cluster_members.setdefault(root, []).append(uid)
 
     # For each cluster with members from >=2 masters, check for variants
     disputes = []
     for root, members in cluster_members.items():
         if len(members) < 2:
             continue
-        member_seeds = [seeds_by_id[sid] for sid in members]
-        masters_in_cluster = set(s.get("_master") for s in member_seeds)
+        member_seeds = [seeds_by_uid[uid] for uid in members]
+        masters_in_cluster = {s.get("_master") for s in member_seeds}
         if len(masters_in_cluster) < 2:
             continue
         # Get all distinct thresholds and severities
@@ -117,11 +158,10 @@ def identify_dispute_clusters(revised_seeds_by_master: dict,
         if not (has_threshold_dispute or has_severity_dispute):
             continue
 
-        # Also include partial-equivalence borderlines (confidence 0.3-0.7 pairs)
-        # even if they didn't make it to union. For now we include only this cluster.
         disputes.append({
-            "dispute_id": f"dispute_{root}",
-            "root_seed_id": root,
+            "dispute_id": f"dispute_{root[0]}_{root[1]}",
+            "root_seed_id": root[1],
+            "root_master": root[0],
             "canonical_claim": (member_seeds[0].get("qualitative_claim") or "")[:150],
             "rule_subject": member_seeds[0].get("rule_subject", "target"),
             "theme": member_seeds[0].get("theme", ""),
@@ -140,34 +180,35 @@ def identify_dispute_clusters(revised_seeds_by_master: dict,
 
     # Also: borderline partial-equivalence pairs (cross-cluster)
     # Add them as separate disputes only if not already covered
-    covered_sids = set()
+    covered_uids: set[tuple] = set()
     for d in disputes:
-        for sids in d["member_seeds_by_master"].values():
-            for s in sids:
-                covered_sids.add(s["seed_id"])
+        for seeds in d["member_seeds_by_master"].values():
+            for s in seeds:
+                covered_uids.add((s.get("_master"), s["seed_id"]))
 
     for p in phase2_matrix:
         if p.get("skipped_llm"):
             continue
         conf = p.get("confidence", 0)
         if PARTIAL_EQUIV_LOW <= conf <= PARTIAL_EQUIV_HIGH:
-            a, b = p["seed_ids"]
-            if a in covered_sids and b in covered_sids:
+            uid_a, uid_b = _record_uids(p)
+            if uid_a in covered_uids and uid_b in covered_uids:
                 continue
-            sa = seeds_by_id.get(a)
-            sb = seeds_by_id.get(b)
+            sa = seeds_by_uid.get(uid_a)
+            sb = seeds_by_uid.get(uid_b)
             if not sa or not sb:
                 continue
             if sa.get("rule_subject") != sb.get("rule_subject"):
                 continue
-            d_id = f"dispute_partial_{a}_{b}"
+            d_id = f"dispute_partial_{uid_a[0]}_{uid_a[1]}_{uid_b[0]}_{uid_b[1]}"
             member_by_master: dict[str, list] = {m: [] for m in MASTERS}
             member_by_master.setdefault(sa.get("_master"), []).append(sa)
             if sa.get("_master") != sb.get("_master"):
                 member_by_master.setdefault(sb.get("_master"), []).append(sb)
             disputes.append({
                 "dispute_id": d_id,
-                "root_seed_id": a,
+                "root_seed_id": uid_a[1],
+                "root_master": uid_a[0],
                 "canonical_claim": (sa.get("qualitative_claim") or "")[:150],
                 "rule_subject": sa.get("rule_subject"),
                 "theme": sa.get("theme"),
@@ -585,6 +626,7 @@ def phase2_75_cross_rebuttal(debate_id: str,
         from scripts.soul.board.revise import load_phase2_matrix
         phase2_matrix = load_phase2_matrix()
 
+    _assert_matrix_has_masters(phase2_matrix)
     revised_seeds = load_revised_seeds_by_master()
     disputes = identify_dispute_clusters(revised_seeds, phase2_matrix)
     print(f"[phase2.75] Found {len(disputes)} dispute clusters")
@@ -618,6 +660,19 @@ def phase2_75_cross_rebuttal(debate_id: str,
         except Exception as e:
             print(f"[phase2.75] transcript render error: {e}")
 
+    # Emit a seed-UID → transcript path map so Phase 3b-qual voting can resolve
+    # any cluster's variant_seeds back to the right debate transcript. Without
+    # this, Phase 3b falls back to filename guessing, which silently returns
+    # None after the dispute_id format changed to dispute_{master}_{seed_id}.
+    seed_uid_to_transcript: dict[str, str] = {}
+    for d, path in zip(disputes, transcript_paths):
+        for master_name, seeds in d.get("member_seeds_by_master", {}).items():
+            for s in seeds:
+                sid = s.get("seed_id")
+                m = s.get("_master") or master_name
+                if sid and m:
+                    seed_uid_to_transcript[f"{m}/{sid}"] = path
+
     summary = {
         "debate_id": debate_id,
         "total_disputes": len(disputes),
@@ -628,9 +683,12 @@ def phase2_75_cross_rebuttal(debate_id: str,
             "error": sum(1 for r in dispute_results if r.get("convergence") == "error"),
         },
         "transcript_paths": transcript_paths,
+        "seed_uid_to_transcript": seed_uid_to_transcript,
         "disputes": [
             {
                 "dispute_id": d["dispute_id"],
+                "root_master": d.get("root_master"),
+                "root_seed_id": d.get("root_seed_id"),
                 "canonical_claim": d.get("canonical_claim"),
                 "dispute_type": d.get("dispute_type"),
                 "convergence": r.get("convergence"),

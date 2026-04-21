@@ -162,8 +162,28 @@ def sanitize_all_seeds(phase1_summary: dict) -> dict:
     backup_dir.mkdir(parents=True, exist_ok=True)
 
     results_by_master: dict = {}
+    # Guard: refuse to proceed with any master that errored upstream or has
+    # zero seeds. Silent 0-byte sanitized output poisons every downstream phase.
     for master, result in phase1_summary.get("results_by_master", {}).items():
+        upstream_status = result.get("status", "unknown")
         original_seeds = result.get("seeds", [])
+        if upstream_status == "error" or not original_seeds:
+            err_detail = result.get("error", "") or result.get("traceback", "")[:500]
+            raise RuntimeError(
+                f"Phase 1.5 refusing to proceed: master={master} has no seeds.\n"
+                f"  upstream_status={upstream_status}\n"
+                f"  error={err_detail!r}\n"
+                f"  Phase 1 must either produce ≥5 valid seeds or fall back to "
+                f"v_prev HARD. Full error detail in prep/phase1_summary.json "
+                f"under results_by_master.{master}.\n"
+                f"  Inspect: cat prep/phase1_summary.json | "
+                f"python3 -c \"import json, sys; "
+                f"d=json.load(sys.stdin); print(d['results_by_master']['{master}'])\"\n"
+                f"  Resume after fix: "
+                f"python3 -m scripts.soul.orchestrator_v2 --manual --mode full "
+                f"--resume-from phase1"
+            )
+
         # Write backup
         backup_path = backup_dir / f"phase1_{master}_seeds_original.jsonl"
         with backup_path.open("w", encoding="utf-8") as bf:

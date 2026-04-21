@@ -83,9 +83,25 @@ def render_pairwise_prompt(seed_a: dict, seed_b: dict) -> str:
     )
 
 
+def _pair_id(seed_a: dict, seed_b: dict) -> str:
+    """Globally-unique pair identifier that survives cross-master seed_id collisions."""
+    ma = seed_a.get("_master", "?")
+    mb = seed_b.get("_master", "?")
+    return f"{ma}/{seed_a.get('seed_id', '?')}__{mb}/{seed_b.get('seed_id', '?')}"
+
+
+def _base_matrix_record(seed_a: dict, seed_b: dict) -> dict:
+    """Common fields every matrix record must carry for namespace-safe downstream lookup."""
+    return {
+        "pair_id": _pair_id(seed_a, seed_b),
+        "seed_ids": [seed_a["seed_id"], seed_b["seed_id"]],
+        "masters": [seed_a.get("_master"), seed_b.get("_master")],
+    }
+
+
 def call_pairwise(seed_a: dict, seed_b: dict) -> dict:
     prompt = render_pairwise_prompt(seed_a, seed_b)
-    pair_id = f"{seed_a.get('seed_id', '?')}-{seed_b.get('seed_id', '?')}"
+    base = _base_matrix_record(seed_a, seed_b)
     try:
         res = subprocess.run(
             ["claude", "-p", prompt, "--model", "claude-sonnet-4-6",
@@ -93,29 +109,26 @@ def call_pairwise(seed_a: dict, seed_b: dict) -> dict:
             capture_output=True, timeout=SONNET_TIMEOUT, text=True,
         )
         if res.returncode != 0:
-            return {"pair_id": pair_id, "seed_ids": [seed_a["seed_id"], seed_b["seed_id"]],
-                    "equivalent": False, "confidence": 0.0,
+            return {**base, "equivalent": False, "confidence": 0.0,
                     "brief_reason": "error",
                     "error": f"exit {res.returncode}"}
         parsed = parse_claude_cli_result(res.stdout,
                                           expected_keys=["equivalent", "confidence", "brief_reason"])
         if not parsed:
-            return {"pair_id": pair_id, "seed_ids": [seed_a["seed_id"], seed_b["seed_id"]],
-                    "equivalent": False, "confidence": 0.0,
+            return {**base, "equivalent": False, "confidence": 0.0,
                     "brief_reason": "parse_fail"}
         return {
-            "pair_id": pair_id,
-            "seed_ids": [seed_a["seed_id"], seed_b["seed_id"]],
+            **base,
             "equivalent": _coerce_bool(parsed.get("equivalent"), default=False),
             "confidence": _coerce_float(parsed.get("confidence"), default=0.0),
             "brief_reason": str(parsed.get("brief_reason", ""))[:200],
         }
     except subprocess.TimeoutExpired:
-        return {"pair_id": pair_id, "seed_ids": [seed_a["seed_id"], seed_b["seed_id"]],
-                "equivalent": False, "confidence": 0.0, "brief_reason": "timeout"}
+        return {**base, "equivalent": False, "confidence": 0.0,
+                "brief_reason": "timeout"}
     except Exception as e:
-        return {"pair_id": pair_id, "seed_ids": [seed_a["seed_id"], seed_b["seed_id"]],
-                "equivalent": False, "confidence": 0.0, "brief_reason": f"err:{e}"}
+        return {**base, "equivalent": False, "confidence": 0.0,
+                "brief_reason": f"err:{e}"}
 
 
 def pairwise_layer1(all_seeds: list[dict], batch_size: int = PAIRWISE_BATCH_SIZE,
@@ -135,10 +148,8 @@ def pairwise_layer1(all_seeds: list[dict], batch_size: int = PAIRWISE_BATCH_SIZE
     llm_pairs = []
     for a, b in pairs:
         if a.get("rule_subject") != b.get("rule_subject"):
-            pair_id = f"{a.get('seed_id')}-{b.get('seed_id')}"
             matrix.append({
-                "pair_id": pair_id,
-                "seed_ids": [a["seed_id"], b["seed_id"]],
+                **_base_matrix_record(a, b),
                 "equivalent": False,
                 "confidence": 1.0,
                 "brief_reason": "different_rule_subject",
@@ -215,10 +226,23 @@ def call_opus_critic(seed_a: dict, seed_b: dict, sonnet_result: dict) -> dict:
         return {"pair_id": pair_id, "arbitration_error": str(e)}
 
 
+def _matrix_record_uids(record: dict) -> tuple[tuple, tuple]:
+    """Extract ((master_a, seed_id_a), (master_b, seed_id_b)) tuples from a matrix record.
+
+    Falls back to (None, seed_id) when `masters` is absent (legacy records).
+    """
+    seed_ids = record.get("seed_ids") or [None, None]
+    masters = record.get("masters") or [None, None]
+    return (masters[0], seed_ids[0]), (masters[1], seed_ids[1])
+
+
 def opus_arbitrate_low_conf(matrix: list[dict], all_seeds: list[dict],
                               threshold: float = LOW_CONF_THRESHOLD) -> list[dict]:
     """For every pair with confidence < threshold, run Opus arbitration."""
-    seeds_by_id = {s["seed_id"]: s for s in all_seeds}
+    # Key by (master, seed_id) so cross-master collisions on bare seed_id don't clobber.
+    seeds_by_uid: dict[tuple, dict] = {
+        (s.get("_master"), s["seed_id"]): s for s in all_seeds
+    }
     low_conf = [p for p in matrix if not p.get("skipped_llm") and p.get("confidence", 0) < threshold]
     print(f"[phase2.L2] Opus arbitration on {len(low_conf)} low-confidence pairs")
 
@@ -226,12 +250,18 @@ def opus_arbitrate_low_conf(matrix: list[dict], all_seeds: list[dict],
     # Concurrent but gentler — Opus is expensive, use batch of 3
     for batch_idx in range(0, len(low_conf), 3):
         batch = low_conf[batch_idx:batch_idx + 3]
+
+        def _arbitrate(p):
+            uid_a, uid_b = _matrix_record_uids(p)
+            sa = seeds_by_uid.get(uid_a)
+            sb = seeds_by_uid.get(uid_b)
+            if sa is None or sb is None:
+                return {"pair_id": p.get("pair_id"),
+                        "arbitration_error": f"uid_miss a={uid_a} b={uid_b}"}
+            return call_opus_critic(sa, sb, p)
+
         with ThreadPoolExecutor(max_workers=3) as ex:
-            batch_results = list(ex.map(
-                lambda p: call_opus_critic(
-                    seeds_by_id[p["seed_ids"][0]], seeds_by_id[p["seed_ids"][1]], p
-                ), batch
-            ))
+            batch_results = list(ex.map(_arbitrate, batch))
         for r in batch_results:
             arbitrations[r["pair_id"]] = r
         done = min(batch_idx + 3, len(low_conf))
@@ -259,34 +289,43 @@ def opus_arbitrate_low_conf(matrix: list[dict], all_seeds: list[dict],
 
 # ─────────── Layer 3: Consistency (transitivity) ───────────
 
-def build_equivalence_map(matrix: list[dict]) -> dict[tuple[str, str], bool]:
-    """Build (seed_id_x, seed_id_y) → equivalent mapping (both orderings)."""
-    m = {}
+def build_equivalence_map(matrix: list[dict]) -> dict[tuple[tuple, tuple], bool]:
+    """Build ((master_x, seed_id_x), (master_y, seed_id_y)) → equivalent mapping.
+
+    UID-keyed to survive cross-master seed_id collisions. Both orderings stored.
+    """
+    m: dict[tuple[tuple, tuple], bool] = {}
     for p in matrix:
-        a, b = p["seed_ids"]
+        uid_a, uid_b = _matrix_record_uids(p)
         equiv = p.get("equivalent", False)
-        m[(a, b)] = equiv
-        m[(b, a)] = equiv
+        m[(uid_a, uid_b)] = equiv
+        m[(uid_b, uid_a)] = equiv
     return m
 
 
 def find_transitivity_violations(matrix: list[dict],
                                    all_seeds: list[dict]) -> list[dict]:
-    """Find triples (A, B, C) where A≡B ∧ B≡C but A≢C (or vice versa)."""
+    """Find triples (A, B, C) where A≡B ∧ B≡C but A≢C (or vice versa).
+
+    Triples are keyed by (master, seed_id) tuples so that bare seed_id collisions
+    across masters never produce spurious same-triple violations.
+    """
     equiv_map = build_equivalence_map(matrix)
-    seed_ids = [s["seed_id"] for s in all_seeds]
+    seed_uids = [(s.get("_master"), s["seed_id"]) for s in all_seeds]
 
     violations = []
-    for a, b, c in combinations(seed_ids, 3):
-        ab = equiv_map.get((a, b), False)
-        bc = equiv_map.get((b, c), False)
-        ac = equiv_map.get((a, c), False)
+    for uid_a, uid_b, uid_c in combinations(seed_uids, 3):
+        ab = equiv_map.get((uid_a, uid_b), False)
+        bc = equiv_map.get((uid_b, uid_c), False)
+        ac = equiv_map.get((uid_a, uid_c), False)
         # Violation: 2 of the 3 are equivalent but third is not (i.e. not all True, not all False, not 1-true)
         count_true = sum([ab, bc, ac])
         if count_true == 2:
-            # Two equal, one not — transitivity violated
+            # Two equal, one not — transitivity violated.
+            # Report both master-qualified UIDs AND bare seed_ids for human readability.
             violations.append({
-                "triple": [a, b, c],
+                "triple_uids": [list(uid_a), list(uid_b), list(uid_c)],
+                "triple": [uid_a[1], uid_b[1], uid_c[1]],
                 "ab_equivalent": ab,
                 "bc_equivalent": bc,
                 "ac_equivalent": ac,
@@ -296,18 +335,31 @@ def find_transitivity_violations(matrix: list[dict],
 
 def render_consistency_prompt(violations: list[dict], all_seeds: list[dict]) -> str:
     template = (PROMPTS_DIR / "phase2_consistency.md").read_text(encoding="utf-8")
-    seeds_by_id = {s["seed_id"]: s for s in all_seeds}
-    # Build summary of only seeds involved
-    involved_ids = set()
+    # Key seeds by (master, seed_id) tuple — bare seed_id is not unique across masters.
+    seeds_by_uid: dict[tuple, dict] = {
+        (s.get("_master"), s["seed_id"]): s for s in all_seeds
+    }
+    # Build summary of only seeds involved (violations carry triple_uids when available).
+    involved_uids: set = set()
     for v in violations:
-        involved_ids.update(v["triple"])
+        uids = v.get("triple_uids")
+        if uids:
+            for uid in uids:
+                involved_uids.add(tuple(uid))
+        else:
+            # Legacy records without UIDs — fall back to bare seed_id scan.
+            for sid in v.get("triple", []):
+                for (m, sid2), seed in seeds_by_uid.items():
+                    if sid2 == sid:
+                        involved_uids.add((m, sid2))
     seeds_summary = []
-    for sid in involved_ids:
-        s = seeds_by_id.get(sid)
+    for uid in involved_uids:
+        s = seeds_by_uid.get(uid)
         if not s:
             continue
         seeds_summary.append({
-            "seed_id": sid,
+            "seed_id": uid[1],
+            "master": uid[0],
             "qualitative_claim": s.get("qualitative_claim", ""),
             "rule_subject": s.get("rule_subject", ""),
         })
@@ -339,28 +391,51 @@ def consistency_sonnet_review(violations: list[dict],
     return []
 
 
+def _parse_uid_token(token: str) -> tuple:
+    """Parse a `"<master>/<seed_id>"` token into a (master, seed_id) tuple.
+
+    Accepts legacy bare `seed_id` tokens as `(None, seed_id)` so the caller
+    can decide whether to resolve or reject.
+    """
+    if isinstance(token, str) and "/" in token:
+        master, _, seed_id = token.partition("/")
+        return master, seed_id
+    return None, token
+
+
 def apply_consistency_fixes(matrix: list[dict], suggestions: list[dict],
                              all_seeds: list[dict]) -> list[dict]:
-    """Re-run suggested pairs via Opus for final judgement."""
+    """Re-run suggested pairs via Opus for final judgement.
+
+    Suggestions carry `"suspicious_pair": ["<master>/<seed_id>", ...]` per the
+    updated phase2_consistency.md prompt. Bare seed_id tokens are rejected
+    because they collide across masters.
+    """
     if not suggestions:
         return matrix
-    seeds_by_id = {s["seed_id"]: s for s in all_seeds}
+    seeds_by_uid: dict[tuple, dict] = {
+        (s.get("_master"), s["seed_id"]): s for s in all_seeds
+    }
     matrix_by_pair = {p["pair_id"]: p for p in matrix}
 
     for sug in suggestions:
-        pair_seeds = sug.get("suspicious_pair", [])
-        if len(pair_seeds) != 2:
+        pair_tokens = sug.get("suspicious_pair", [])
+        if len(pair_tokens) != 2:
             continue
-        # Try both orderings for pair_id
-        pair_id_1 = f"{pair_seeds[0]}-{pair_seeds[1]}"
-        pair_id_2 = f"{pair_seeds[1]}-{pair_seeds[0]}"
+        uid_a = _parse_uid_token(pair_tokens[0])
+        uid_b = _parse_uid_token(pair_tokens[1])
+        if not (uid_a[0] and uid_b[0]):
+            # Skip legacy bare-id suggestions to avoid cross-master ambiguity
+            continue
+        a = seeds_by_uid.get(uid_a)
+        b = seeds_by_uid.get(uid_b)
+        if not a or not b:
+            continue
+        # pair_id is globally unique via _pair_id helper; try both orderings.
+        pair_id_1 = _pair_id(a, b)
+        pair_id_2 = _pair_id(b, a)
         target_p = matrix_by_pair.get(pair_id_1) or matrix_by_pair.get(pair_id_2)
         if not target_p:
-            continue
-        # Re-run via Opus
-        a = seeds_by_id.get(pair_seeds[0])
-        b = seeds_by_id.get(pair_seeds[1])
-        if not a or not b:
             continue
         arb = call_opus_critic(a, b, target_p)
         if arb and "equivalent_final" in arb:

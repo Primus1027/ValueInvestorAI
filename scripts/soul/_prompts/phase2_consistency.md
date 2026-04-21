@@ -24,7 +24,7 @@
   "suggestions": [
     {{
       "violation_id": "<三元组标识>",
-      "suspicious_pair": ["<seed_id_x>", "<seed_id_y>"],
+      "suspicious_pair": ["<master_x>/<seed_id_x>", "<master_y>/<seed_id_y>"],
       "suggested_change": "<should_be_equivalent | should_be_not_equivalent>",
       "reason": "<≤ 60 字>"
     }},
@@ -32,5 +32,8 @@
   ]
 }}
 ```
+
+**重要**：`suspicious_pair` 必须写成 `<master>/<seed_id>` 格式（例如 `buffett/seed_03`）。
+每个 master 独立编号 seed_id（各自有 seed_01..seed_N），只写 seed_id 会跨 master 冲突。
 
 只输出 JSON，不要其他内容。

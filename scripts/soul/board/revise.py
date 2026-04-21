@@ -73,18 +73,26 @@ def render_revise_prompt(master: str, own_seeds: list[dict],
                            phase2_matrix: list[dict]) -> str:
     """Fill phase2_5_revise.md template."""
     template = (PROMPTS_DIR / "phase2_5_revise.md").read_text(encoding="utf-8")
-    # Compact Phase 2 analysis: only entries involving this master's seeds
-    own_seed_ids = {s["seed_id"] for s in own_seeds}
-    relevant_pairs = [
-        p for p in phase2_matrix
-        if any(sid in own_seed_ids for sid in p.get("seed_ids", []))
-    ]
+    # Compact Phase 2 analysis: only entries involving THIS master's seeds.
+    # Filter by (_master, seed_id) UID — bare seed_id filtering leaks other
+    # masters' pairs when two masters share a seed_id (e.g. seed_01 minted
+    # independently by each master).
+    own_uids: set[tuple] = {(s.get("_master"), s["seed_id"]) for s in own_seeds}
+
+    def _pair_involves_own(p: dict) -> bool:
+        masters = p.get("masters") or [None, None]
+        seed_ids = p.get("seed_ids") or [None, None]
+        return ((masters[0], seed_ids[0]) in own_uids
+                or (masters[1], seed_ids[1]) in own_uids)
+
+    relevant_pairs = [p for p in phase2_matrix if _pair_involves_own(p)]
     # Keep it compact — strip long fields
     compact = []
     for p in relevant_pairs[:100]:  # cap to 100 entries
         compact.append({
             "pair_id": p.get("pair_id"),
             "seed_ids": p.get("seed_ids"),
+            "masters": p.get("masters"),
             "equivalent": p.get("equivalent"),
             "confidence": p.get("confidence"),
             "brief_reason": p.get("brief_reason", "")[:100],

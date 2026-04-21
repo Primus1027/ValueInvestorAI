@@ -30,25 +30,77 @@ from _json_utils import parse_claude_cli_result  # noqa: E402
 QUAL_VOTE_TIMEOUT = 180
 
 
+_PHASE275_UID_MAP_CACHE: dict[str, dict[str, str]] = {}
+
+
+def _load_phase275_uid_map(debate_id: str) -> dict[str, str]:
+    """Load the seed_uid → transcript_path map written by Phase 2.75.
+
+    Cached per debate_id to avoid re-reading the summary on every cluster vote.
+    Returns `{}` if the summary is absent or lacks the map (legacy summaries).
+    """
+    if debate_id in _PHASE275_UID_MAP_CACHE:
+        return _PHASE275_UID_MAP_CACHE[debate_id]
+    summary_path = PREP_DIR / "phase2_75_summary.json"
+    mapping: dict[str, str] = {}
+    if summary_path.exists():
+        try:
+            data = json.loads(summary_path.read_text(encoding="utf-8"))
+            mapping = data.get("seed_uid_to_transcript", {}) or {}
+        except (json.JSONDecodeError, OSError):
+            mapping = {}
+    _PHASE275_UID_MAP_CACHE[debate_id] = mapping
+    return mapping
+
+
 def find_transcript_path(debate_id: str, cluster: dict) -> Optional[Path]:
-    """Find debate transcript for a cluster; return None if no transcript exists."""
+    """Find debate transcript for a cluster; return None if no transcript exists.
+
+    Phase 2.75 emits `seed_uid_to_transcript` in phase2_75_summary.json keyed
+    by `"{master}/{seed_id}"`. We consult that map first (source of truth),
+    then fall back to filename-probing on disk for robustness.
+    """
     history_dir = HISTORY_DIR / debate_id
     if not history_dir.exists():
         return None
-    # Try multiple naming patterns: cluster_id, dispute_<root_seed>
+
+    # Primary: look up by (master, seed_id) UID via the Phase 2.75 map.
+    uid_map = _load_phase275_uid_map(debate_id)
+    for v in cluster.get("variant_seeds", []):
+        sid = v.get("seed_id")
+        master = v.get("master")
+        if sid and master:
+            path_str = uid_map.get(f"{master}/{sid}")
+            if path_str:
+                p = Path(path_str)
+                if p.exists():
+                    return p
+
+    # Fallback: probe the disk directly. Supports both the new
+    # `dispute_{master}_{seed_id}` and legacy `dispute_{seed_id}` filenames,
+    # plus `dispute_partial_*` transcripts that contain a variant's UID.
     cid = cluster.get("cluster_id", "")
     for pattern in [f"debate_transcript_{cid}.md",
                     f"debate_transcript_dispute_{cid}.md"]:
         p = history_dir / pattern
         if p.exists():
             return p
-    # Also try matching by root seed in variant_seeds
     for v in cluster.get("variant_seeds", []):
         sid = v.get("seed_id")
+        master = v.get("master")
+        if master and sid:
+            p = history_dir / f"debate_transcript_dispute_{master}_{sid}.md"
+            if p.exists():
+                return p
         if sid:
             p = history_dir / f"debate_transcript_dispute_{sid}.md"
             if p.exists():
                 return p
+            # Scan for partial-dispute transcripts referencing this seed.
+            needle = f"{master}_{sid}" if master else sid
+            for p in history_dir.glob("debate_transcript_dispute_partial_*.md"):
+                if needle in p.name:
+                    return p
     return None
 
 

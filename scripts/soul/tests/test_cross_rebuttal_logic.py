@@ -31,9 +31,12 @@ class TestDisputeIdentification(unittest.TestCase):
             ],
         }
         matrix = [
-            {"pair_id": "b1-m1", "seed_ids": ["b1", "m1"], "equivalent": True, "confidence": 0.9},
-            {"pair_id": "b1-y1", "seed_ids": ["b1", "y1"], "equivalent": True, "confidence": 0.9},
-            {"pair_id": "m1-y1", "seed_ids": ["m1", "y1"], "equivalent": True, "confidence": 0.9},
+            {"pair_id": "buffett/b1__munger/m1", "seed_ids": ["b1", "m1"],
+             "masters": ["buffett", "munger"], "equivalent": True, "confidence": 0.9},
+            {"pair_id": "buffett/b1__duan/y1", "seed_ids": ["b1", "y1"],
+             "masters": ["buffett", "duan"], "equivalent": True, "confidence": 0.9},
+            {"pair_id": "munger/m1__duan/y1", "seed_ids": ["m1", "y1"],
+             "masters": ["munger", "duan"], "equivalent": True, "confidence": 0.9},
         ]
         disputes = identify_dispute_clusters(revised, matrix)
         self.assertEqual(len(disputes), 1)
@@ -61,9 +64,12 @@ class TestDisputeIdentification(unittest.TestCase):
             ],
         }
         matrix = [
-            {"pair_id": "b1-m1", "seed_ids": ["b1", "m1"], "equivalent": True, "confidence": 0.9},
-            {"pair_id": "b1-y1", "seed_ids": ["b1", "y1"], "equivalent": True, "confidence": 0.9},
-            {"pair_id": "m1-y1", "seed_ids": ["m1", "y1"], "equivalent": True, "confidence": 0.9},
+            {"pair_id": "buffett/b1__munger/m1", "seed_ids": ["b1", "m1"],
+             "masters": ["buffett", "munger"], "equivalent": True, "confidence": 0.9},
+            {"pair_id": "buffett/b1__duan/y1", "seed_ids": ["b1", "y1"],
+             "masters": ["buffett", "duan"], "equivalent": True, "confidence": 0.9},
+            {"pair_id": "munger/m1__duan/y1", "seed_ids": ["m1", "y1"],
+             "masters": ["munger", "duan"], "equivalent": True, "confidence": 0.9},
         ]
         disputes = identify_dispute_clusters(revised, matrix)
         self.assertEqual(len(disputes), 1)
@@ -86,7 +92,8 @@ class TestDisputeIdentification(unittest.TestCase):
             "duan": [],
         }
         matrix = [
-            {"pair_id": "b1-m1", "seed_ids": ["b1", "m1"], "equivalent": True, "confidence": 0.9},
+            {"pair_id": "buffett/b1__munger/m1", "seed_ids": ["b1", "m1"],
+             "masters": ["buffett", "munger"], "equivalent": True, "confidence": 0.9},
         ]
         disputes = identify_dispute_clusters(revised, matrix)
         # Even though equivalent, same threshold AND same severity → no dispute

@@ -5,6 +5,7 @@ import unittest
 from scripts.soul.board.sanitize import (
     sanitize_seed_static, load_fingerprint_dict,
     apply_static_replacement, detect_remaining_fingerprints,
+    sanitize_all_seeds,
 )
 
 
@@ -84,6 +85,52 @@ class TestSanitizeStatic(unittest.TestCase):
         text = "这是 Buffett 的核心观点"
         hits = detect_remaining_fingerprints(text, self.scan_patterns)
         self.assertGreater(len(hits), 0)
+
+
+class TestSanitizeGuard(unittest.TestCase):
+    """Guard: sanitize_all_seeds must refuse to proceed on silent upstream failure.
+
+    Background: v1.1 debate shipped 28 garbage HARD rules because phase1 errored
+    for buffett silently (empty `error` string), sanitize iterated an empty list,
+    wrote a 0-byte file, and the pipeline continued end-to-end with 2 masters.
+    """
+
+    def test_raises_on_master_with_error_status(self):
+        phase1_summary = {
+            "debate_id": "test",
+            "results_by_master": {
+                "buffett": {"master": "buffett", "seeds": [], "seed_count": 0,
+                             "status": "error", "error": "TimeoutError"},
+                "munger": {"master": "munger",
+                            "seeds": [{"seed_id": "m1", "_master": "munger"}],
+                            "status": "success"},
+                "duan": {"master": "duan",
+                          "seeds": [{"seed_id": "d1", "_master": "duan"}],
+                          "status": "success"},
+            },
+        }
+        with self.assertRaises(RuntimeError) as ctx:
+            sanitize_all_seeds(phase1_summary)
+        self.assertIn("buffett", str(ctx.exception))
+        self.assertIn("error", str(ctx.exception).lower())
+
+    def test_raises_on_master_with_zero_seeds(self):
+        phase1_summary = {
+            "debate_id": "test",
+            "results_by_master": {
+                "buffett": {"master": "buffett", "seeds": [], "seed_count": 0,
+                             "status": "success"},
+                "munger": {"master": "munger",
+                            "seeds": [{"seed_id": "m1", "_master": "munger"}],
+                            "status": "success"},
+                "duan": {"master": "duan",
+                          "seeds": [{"seed_id": "d1", "_master": "duan"}],
+                          "status": "success"},
+            },
+        }
+        with self.assertRaises(RuntimeError) as ctx:
+            sanitize_all_seeds(phase1_summary)
+        self.assertIn("buffett", str(ctx.exception))
 
 
 if __name__ == "__main__":
