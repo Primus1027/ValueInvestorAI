@@ -1,0 +1,33 @@
+{
+  "debate_id": "2026-04-21_manual",
+  "version": "v1.1",
+  "published": true,
+  "circuit_breaker": {
+    "regression_guard": {
+      "pass": true,
+      "new_hard": 28,
+      "prev_hard": 0,
+      "threshold": 0,
+      "note": "no_prior_version"
+    },
+    "drift_guard": {
+      "pass": true,
+      "new_veto_ratio": 0.357,
+      "prev_veto_ratio": 0.0,
+      "drop": 0.0
+    },
+    "health_check": {
+      "pass": true,
+      "phase2_5_fallback_count": 0
+    },
+    "all_pass": true
+  },
+  "principles_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/v1.1.md",
+  "schema_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/v1.1.schema.json",
+  "soul_level_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/soul-level-preferences-v1.1.md",
+  "critique_matrix_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/critique_matrix_v1.1.jsonl",
+  "quarantine_path": null,
+  "quarantine_reasons": [],
+  "hard_count": 28,
+  "l3_count": 2
+}

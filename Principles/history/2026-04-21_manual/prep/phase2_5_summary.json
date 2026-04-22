@@ -1,0 +1,68 @@
+{
+  "results_by_master": {
+    "buffett": {
+      "master": "buffett",
+      "final_seed_count": 16,
+      "action_counts": {
+        "keep": 13,
+        "modify": 2,
+        "new": 1,
+        "keep_due_to_modify_invalid": 0
+      },
+      "fallback_used": false,
+      "process_critique_count": 3,
+      "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase2_5_buffett_revised_seeds.jsonl",
+      "attempts": [
+        {
+          "attempt": 0,
+          "error": "parse_fail"
+        },
+        {
+          "attempt": 1,
+          "returncode": 0
+        }
+      ]
+    },
+    "munger": {
+      "master": "munger",
+      "final_seed_count": 16,
+      "action_counts": {
+        "keep": 14,
+        "modify": 1,
+        "new": 1,
+        "keep_due_to_modify_invalid": 0
+      },
+      "fallback_used": false,
+      "process_critique_count": 3,
+      "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase2_5_munger_revised_seeds.jsonl",
+      "attempts": [
+        {
+          "attempt": 0,
+          "returncode": 0
+        }
+      ]
+    },
+    "duan": {
+      "master": "duan",
+      "final_seed_count": 15,
+      "action_counts": {
+        "keep": 13,
+        "modify": 1,
+        "new": 1,
+        "keep_due_to_modify_invalid": 0
+      },
+      "fallback_used": false,
+      "process_critique_count": 3,
+      "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase2_5_duan_revised_seeds.jsonl",
+      "attempts": [
+        {
+          "attempt": 0,
+          "returncode": 0
+        }
+      ]
+    }
+  },
+  "fallback_count": 0,
+  "partial_failure": false,
+  "timestamp": "2026-04-22T00:27:55"
+}

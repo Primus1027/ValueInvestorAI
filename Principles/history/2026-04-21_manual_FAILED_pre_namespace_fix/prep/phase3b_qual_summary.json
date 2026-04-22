@@ -1,0 +1,10 @@
+{
+  "debate_id": "2026-04-21_manual",
+  "total_clusters_voted": 30,
+  "decision_counts": {
+    "L1": 26,
+    "L2": 2,
+    "L3": 2
+  },
+  "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase3b_qual_votes.jsonl"
+}

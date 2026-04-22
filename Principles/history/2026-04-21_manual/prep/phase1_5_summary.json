@@ -1,0 +1,28 @@
+{
+  "results_by_master": {
+    "buffett": {
+      "master": "buffett",
+      "sanitized_count": 15,
+      "llm_passes_used": 15,
+      "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase1_5_buffett_sanitized.jsonl",
+      "backup_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase1_original_backup/phase1_buffett_seeds_original.jsonl"
+    },
+    "munger": {
+      "master": "munger",
+      "sanitized_count": 15,
+      "llm_passes_used": 14,
+      "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase1_5_munger_sanitized.jsonl",
+      "backup_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase1_original_backup/phase1_munger_seeds_original.jsonl"
+    },
+    "duan": {
+      "master": "duan",
+      "sanitized_count": 14,
+      "llm_passes_used": 14,
+      "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase1_5_duan_sanitized.jsonl",
+      "backup_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase1_original_backup/phase1_duan_seeds_original.jsonl"
+    }
+  },
+  "total_sanitized_seeds": 44,
+  "total_llm_passes": 43,
+  "ref_map_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase1_5_section_id_map.json"
+}

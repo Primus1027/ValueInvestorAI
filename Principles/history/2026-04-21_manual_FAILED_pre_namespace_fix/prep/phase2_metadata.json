@@ -1,0 +1,1448 @@
+{
+  "anon_map": {
+    "buffett": "B",
+    "munger": "C",
+    "duan": "A"
+  },
+  "n_runs": 2,
+  "consistency_rate": 0.19999999999999996,
+  "inconsistencies": 12,
+  "raw_runs": [
+    {
+      "stances": [
+        {
+          "seed_id": "seed_01",
+          "framework": "A",
+          "claim_normalized": "无法用极简一句话解释商业模式的公司直接拒绝（最严苛门槛）",
+          "supported_by": [
+            "B",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_08",
+            "C_seed_04"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值最严格：要求'一句话/30字'解释；其他框架允许'一段不含术语的文字'(B) 或'3句话'(C)"
+          ],
+          "synthesis_note": "三个框架均把'可解释性'作为 veto 级 gate，差异仅在解释长度上限：A最严（1句）、C居中（3句）、B最宽（一段）。"
+        },
+        {
+          "seed_id": "seed_02",
+          "framework": "A",
+          "claim_normalized": "以 DCF/复杂多情景 Excel 模型作为唯一估值依据时拒绝",
+          "supported_by": [
+            "B",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_10",
+            "C_seed_08"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "A 把'需要乐观假设才能成立'作为附加触发器；C 用假设数量(>20)而非工具类型；B 限定为'精确折现率+逐年现金流+终值'结构"
+          ],
+          "synthesis_note": "三框架一致排斥精细化 DCF 主导的估值，但触发器不同：A 看场景假设、B 看模型结构、C 看假设数量。"
+        },
+        {
+          "seed_id": "seed_03",
+          "framework": "A",
+          "claim_normalized": "5 年平均 ROE 持续低于 15% 触发警告",
+          "supported_by": [
+            "B",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_07",
+            "C_seed_01"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "时间窗口最短(5年)；指标用 ROE 不含'未被杠杆推高'限定"
+          ],
+          "synthesis_note": "三框架共享 15% 资本回报门槛与 warning 严重度，差异在窗口(5/10年)与指标口径(ROE/ROIC/无杠杆ROE)。"
+        },
+        {
+          "seed_id": "seed_04",
+          "framework": "A",
+          "claim_normalized": "经营性现金流连续 3 年为负的公司直接拒绝",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "唯一把'OCF 长期为负'设为 veto 的框架；B/C 仅在'FCF 转化率/会计质量'层面给 warning"
+          ],
+          "synthesis_note": "现金造血底线：A 设为硬性 veto，B/C 在相关现金质量议题上停留在 warning 级别。"
+        },
+        {
+          "seed_id": "seed_05",
+          "framework": "A",
+          "claim_normalized": "经营现金流/净利润 3 年均值低于 0.5 触发警告",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_04"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值更宽松(0.5 vs B 的 0.8)，且使用 OCF 而非 FCF"
+          ],
+          "synthesis_note": "A、B 共享'现金/利润背离'警告逻辑，A 阈值更宽且窗口更短；C 不直接覆盖此比率。"
+        },
+        {
+          "seed_id": "seed_06",
+          "framework": "A",
+          "claim_normalized": "投资组合任何形式借贷杠杆均直接拒绝",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "唯一在投资者/组合层面 veto 任何杠杆的框架；C_03 仅 veto 标的公司 25× 极端杠杆，B 无相关条款"
+          ],
+          "synthesis_note": "杠杆议题：A 在投资者侧零容忍，C 在企业侧设极高阈值后才 veto，B 通过债务比率/利息覆盖间接控制。"
+        },
+        {
+          "seed_id": "seed_07",
+          "framework": "A",
+          "claim_normalized": "任何做空头寸直接拒绝",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "A 独有；B、C 未提及做空"
+          ],
+          "synthesis_note": "做空禁令仅 A 设立明文规则；B、C 默认不涉及但也未明确允许。"
+        },
+        {
+          "seed_id": "seed_08",
+          "framework": "A",
+          "claim_normalized": "有监管机构认定的财务造假历史的公司直接拒绝",
+          "supported_by": [
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "C_seed_09",
+            "C_seed_12"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "A 用监管认定历史作 veto；C 走更细粒度信号(EBITDA口径/一次性项目频次)且仅 warning"
+          ],
+          "synthesis_note": "会计诚信议题：A 把已坐实的历史造假作硬否决，C 关注前置软信号但停在 warning；B 此类条款较弱。"
+        },
+        {
+          "seed_id": "seed_09",
+          "framework": "A",
+          "claim_normalized": "核心管理层 12 个月净减持超过总股本 5% 触发警告",
+          "supported_by": [
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "C_seed_11"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "A 用绝对减持比例触发 warning；C 把'回购期内净卖出'作 veto，触发条件更窄但更严"
+          ],
+          "synthesis_note": "内部人交易信号：A 看规模(5%阈值/warning)，C 看情境(回购期/veto)，触发逻辑互补。"
+        },
+        {
+          "seed_id": "seed_10",
+          "framework": "A",
+          "claim_normalized": "标的所属行业不在预设能力圈白名单内时拒绝分析",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_09"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "A 给出 9 个具体行业白名单，金融/半导体/生科等明文排除；B 只 veto'判断优势必须依赖前沿技术'的标的，无白名单"
+          ],
+          "synthesis_note": "能力圈：A 用静态白/黑名单做硬隔离，B 用'判断方法是否需要前沿专业知识'做动态过滤，C 用'可解释性'间接覆盖。"
+        },
+        {
+          "seed_id": "seed_11",
+          "framework": "A",
+          "claim_normalized": "仅以低估值（低 PE/PB）作为买入主因、未先论证业务质量时触发警告",
+          "supported_by": [
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "C_seed_06"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "A 设为 warning，C 同议题设为 veto；A 明文要求先过 seed_01/seed_08 才能引用估值"
+          ],
+          "synthesis_note": "质量优先于价格：A、C 一致，C 严重度更高(veto)；B 未单独条款化此顺序。"
+        },
+        {
+          "seed_id": "seed_12",
+          "framework": "A",
+          "claim_normalized": "有息负债率超过 50% 且连续 3 年上升触发警告",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_01",
+            "B_seed_02"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "A 用资产负债表比率(债/总资产)+趋势条件，warning；B 用 EBITDA 口径(债/EBITDA、利息覆盖)且为 veto"
+          ],
+          "synthesis_note": "公司杠杆议题：A、B 同方向，A 用资产口径+较低严重度，B 用收益口径+veto；C 仅在 25× 极端值才介入。"
+        },
+        {
+          "seed_id": "seed_13",
+          "framework": "A",
+          "claim_normalized": "以'赛道/风口/蓝海'等概念作为核心买入理由时直接拒绝",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_11"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "A 提供具体概念词清单作触发器；B 用'尚未实现的机会/TAM 占比/期权价值'语义触发"
+          ],
+          "synthesis_note": "拒绝叙事性投机估值：A 用关键词清单，B 用论据结构，C 此处无对应条款。"
+        },
+        {
+          "seed_id": "seed_14",
+          "framework": "A",
+          "claim_normalized": "投资论点预设持有期不足 10 年时直接拒绝",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_13"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "A 设硬性 10 年持有下限；B 是反方向条款(拒绝以季报节奏推荐)，并未规定最低持有期"
+          ],
+          "synthesis_note": "长期主义：A 用持有期下限做正向约束，B 用拒绝短期催化逻辑做反向约束，互补但 A 更结构化。"
+        },
+        {
+          "seed_id": "seed_15",
+          "framework": "A",
+          "claim_normalized": "投资组合持仓超过 10 只触发集中度警告",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_14"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值更严：A 上限 10 只，B 上限 20 只；C 用机会成本逻辑而非数量阈值"
+          ],
+          "synthesis_note": "集中持仓：A、B 同方向 warning，A 阈值约 B 的一半；C 改用'是否优于现有最高信念持仓'的相对判断。"
+        },
+        {
+          "seed_id": "seed_01",
+          "framework": "B",
+          "claim_normalized": "负债/EBITDA > 3 倍直接拒绝",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_12"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "B 用 EBITDA 口径并 veto；A 用资产负债率口径且 warning；C 仅 25× 杠杆才介入"
+          ],
+          "synthesis_note": "杠杆 veto：B 在常规企业杠杆区间已开始否决，A 严重度更低，C 仅极端值。"
+        },
+        {
+          "seed_id": "seed_02",
+          "framework": "B",
+          "claim_normalized": "利息覆盖率 < 5 倍直接拒绝",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_12"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "专属 B 的偿债能力 veto；A 通过资产负债率间接覆盖；C 无对应"
+          ],
+          "synthesis_note": "B 独立设置利息覆盖红线，A 在债务议题上以总量比率近似，C 此处无介入。"
+        },
+        {
+          "seed_id": "seed_03",
+          "framework": "B",
+          "claim_normalized": "ROE 连续 3 年及以上下滑触发护城河侵蚀警告",
+          "supported_by": [
+            "B",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_05",
+            "B_seed_06",
+            "C_seed_13"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "B 用 ROE 趋势监测；同框架内 seed_05/06 用毛利率、市占率覆盖；C_13 用相对增速"
+          ],
+          "synthesis_note": "护城河侵蚀的可观测信号：B 看自身ROE/毛利/市占趋势，C 看相对竞争对手增速，A 无对应趋势条款。"
+        },
+        {
+          "seed_id": "seed_04",
+          "framework": "B",
+          "claim_normalized": "5 年平均 FCF/净利润 < 80% 触发利润质量警告",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_05"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值更严(0.8 vs A 的 0.5)，使用 FCF 而非 OCF，5 年窗口"
+          ],
+          "synthesis_note": "现金转化警告：A、B 同方向，B 阈值更严、窗口更长、口径更靠近自由现金流。"
+        },
+        {
+          "seed_id": "seed_05",
+          "framework": "B",
+          "claim_normalized": "毛利率连续 5 年以上下降触发定价权丧失警告",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "B 独有：明确把毛利率长期趋势作为定价权代理指标"
+          ],
+          "synthesis_note": "定价权监测信号在 B 中独立条款化；A、C 未在 seed 层面单独捕获该指标。"
+        },
+        {
+          "seed_id": "seed_06",
+          "framework": "B",
+          "claim_normalized": "市场份额连续 3 年以上下滑触发护城河失效警告",
+          "supported_by": [
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "C_seed_13"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "B 用市占率绝对趋势；C 用'竞争对手增速 > 自身'相对口径"
+          ],
+          "synthesis_note": "B、C 在'护城河被竞争对手侵蚀'议题一致，B 用绝对份额走势，C 用相对增速差。"
+        },
+        {
+          "seed_id": "seed_07",
+          "framework": "B",
+          "claim_normalized": "10 年平均 ROE 低于 15%（且无杠杆放大）触发业务质量警告",
+          "supported_by": [
+            "A",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_03",
+            "C_seed_01"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "独有'未被过度杠杆推高'的限定条件；窗口最长(10年)"
+          ],
+          "synthesis_note": "三框架共享 15% 资本回报阈值，B 强调去杠杆口径，C 用 ROIC，A 用 5 年 ROE。"
+        },
+        {
+          "seed_id": "seed_08",
+          "framework": "B",
+          "claim_normalized": "无法用一段不含术语的文字解释商业模式的公司直接拒绝",
+          "supported_by": [
+            "A",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_01",
+            "C_seed_04"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "B 阈值最宽(一段文字)；额外要求'谁是客户/为何 10 年后还买'结构性问题"
+          ],
+          "synthesis_note": "可解释性 veto 三框架一致；B 解释长度门槛最宽但要求结构化要素。"
+        },
+        {
+          "seed_id": "seed_09",
+          "framework": "B",
+          "claim_normalized": "评估竞争优势必须依赖前沿技术专业知识时直接拒绝",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_10"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "B 用'判断方法是否需要前沿专业知识'动态判断；A 用静态行业白/黑名单"
+          ],
+          "synthesis_note": "能力圈控制：B 是动态方法依赖判定，A 是静态行业清单判定，C 通过可解释性间接覆盖。"
+        },
+        {
+          "seed_id": "seed_10",
+          "framework": "B",
+          "claim_normalized": "以精确多年 DCF 电子表格为主要估值方法时拒绝该结论",
+          "supported_by": [
+            "A",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_02",
+            "C_seed_08"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "明确禁止精确折现率/逐年预测/终值的结构"
+          ],
+          "synthesis_note": "三框架共拒绝高精度 DCF 主导：B 看模型结构、A 看是否需乐观假设、C 看假设总量。"
+        },
+        {
+          "seed_id": "seed_11",
+          "framework": "B",
+          "claim_normalized": "以未实现机会/TAM 占比/期权价值作为主要估值依据时拒绝",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_13"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "B 关注估值结构(TAM/期权)；A 关注关键词(赛道/风口)；触发面互补"
+          ],
+          "synthesis_note": "投机性估值否决：B、A 同方向，C 此处无独立条款。"
+        },
+        {
+          "seed_id": "seed_12",
+          "framework": "B",
+          "claim_normalized": "投资论据以宏观经济预测为核心前提时直接拒绝",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "B 独有的反宏观预测条款"
+          ],
+          "synthesis_note": "宏观预测禁令仅 B 明文化；A、C 未在 seed 层面单独覆盖。"
+        },
+        {
+          "seed_id": "seed_13",
+          "framework": "B",
+          "claim_normalized": "以季度收益超/低预期为核心买卖依据时直接拒绝",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_14"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "B 反向约束短期催化逻辑；A 通过强制 10 年持有正向约束"
+          ],
+          "synthesis_note": "反短期主义：B 拒绝季报驱动的论据，A 强制最低持有期，逻辑互补。"
+        },
+        {
+          "seed_id": "seed_14",
+          "framework": "B",
+          "claim_normalized": "投资组合持仓数 ≥ 20 只触发过度分散警告",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_15"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值最宽(20 只 vs A 的 10 只)"
+          ],
+          "synthesis_note": "集中度 warning 同方向，B 较 A 宽松一倍；C 用相对机会成本判定而非数量阈值。"
+        },
+        {
+          "seed_id": "seed_01",
+          "framework": "C",
+          "claim_normalized": "10 年平均 ROIC < 15% 时不能用'高质量'支撑溢价估值（warning）",
+          "supported_by": [
+            "A",
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_03",
+            "B_seed_07"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "唯一使用 ROIC 而非 ROE 的框架；并把阈值与'估值溢价主张'绑定"
+          ],
+          "synthesis_note": "三框架共享 15% 资本回报门槛，C 用 ROIC 并把它直接挂钩到估值合理性论据。"
+        },
+        {
+          "seed_id": "seed_02",
+          "framework": "C",
+          "claim_normalized": "牛市论点依赖 > 2 个独立关键假设同时成立时直接拒绝",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 独有的'独立假设数量'脆弱性 veto"
+          ],
+          "synthesis_note": "假设数量 veto 仅 C 明文设立；A、B 通过反对复杂模型/反对乐观假设间接覆盖但无量化阈值。"
+        },
+        {
+          "seed_id": "seed_03",
+          "framework": "C",
+          "claim_normalized": "标的公司资产/权益杠杆 ≥ 25 倍时直接拒绝",
+          "supported_by": [
+            "A",
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_06",
+            "B_seed_01",
+            "B_seed_02"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 仅在极端杠杆才 veto，针对金融机构语境；A 是组合层面零杠杆，B 是常规企业杠杆 veto"
+          ],
+          "synthesis_note": "杠杆议题三框架同方向但严格度梯度：A(组合零杠杆)>B(常规阈值veto)>C(仅极端值veto)。"
+        },
+        {
+          "seed_id": "seed_04",
+          "framework": "C",
+          "claim_normalized": "无法在 3 句话内向普通智识水平者解释清楚的论点直接拒绝",
+          "supported_by": [
+            "A",
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_01",
+            "B_seed_08"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值居中(3 句话)；要求覆盖竞争优势/盈利机制/主要风险三要素"
+          ],
+          "synthesis_note": "可解释性 veto 三框架同向；C 阈值在 A(1句)与 B(一段)之间，要素结构最明确。"
+        },
+        {
+          "seed_id": "seed_05",
+          "framework": "C",
+          "claim_normalized": "管理层近 3 年沟通中频繁强调营收而回避 ROIC 触发警告",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 独有的语言学/沟通习惯监测信号"
+          ],
+          "synthesis_note": "管理层沟通口径作为代理指标仅 C 条款化；A、B 在管理层议题上更依赖行为(减持/造假)而非话术。"
+        },
+        {
+          "seed_id": "seed_06",
+          "framework": "C",
+          "claim_normalized": "在确认质量/护城河/管理层之前以估值指标主导推荐时直接拒绝",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_11"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 设为 veto 并明确分析顺序；A 同主题为 warning"
+          ],
+          "synthesis_note": "质量先于价格的顺序约束 A、C 一致，C 严重度更高；B 未单独条款化此分析顺序。"
+        },
+        {
+          "seed_id": "seed_07",
+          "framework": "C",
+          "claim_normalized": "护城河完全依赖单一专利/许可/客户(占比>50%)时直接拒绝",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 独有的'护城河单点依赖'结构性 veto"
+          ],
+          "synthesis_note": "护城河单点失效风险仅 C 明文 veto；A、B 在护城河议题上更看趋势数据。"
+        },
+        {
+          "seed_id": "seed_08",
+          "framework": "C",
+          "claim_normalized": "分析模型依赖 > 20 个独立关键假设时归入'太难'堆并触发警告",
+          "supported_by": [
+            "A",
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_02",
+            "B_seed_10"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 用假设总量数字化触发；A、B 用模型类型(DCF)触发"
+          ],
+          "synthesis_note": "复杂模型限制三框架同向；C 是数量阈值 warning，A、B 是结构特征 veto。"
+        },
+        {
+          "seed_id": "seed_09",
+          "framework": "C",
+          "claim_normalized": "管理层以 EBITDA 为核心盈利指标且报表难以理解触发会计风险警告",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_08"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 关注前置软信号(EBITDA口径/脚注复杂度)；A 关注已坐实的造假认定"
+          ],
+          "synthesis_note": "会计诚信议题 A、C 同向：C 看预警信号(warning)，A 看历史结果(veto)。"
+        },
+        {
+          "seed_id": "seed_10",
+          "framework": "C",
+          "claim_normalized": "新投资风险调整回报未显著高于现有最高信念持仓时拒绝纳入",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 独有的机会成本相对比较条款；A、B 用绝对持仓数量阈值"
+          ],
+          "synthesis_note": "组合纳入逻辑：C 用相对回报比较，A、B 用持仓数量上限；维度互补。"
+        },
+        {
+          "seed_id": "seed_11",
+          "framework": "C",
+          "claim_normalized": "公司回购期内核心高管净卖出股票时直接拒绝",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_09"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 触发条件最窄(必须叠加回购情境)但严重度最高(veto)"
+          ],
+          "synthesis_note": "内部人交易信号 A、C 互补：A 看绝对减持比例 warning，C 看情境冲突 veto。"
+        },
+        {
+          "seed_id": "seed_12",
+          "framework": "C",
+          "claim_normalized": "5 年内一次性调整项目超过 3 次触发会计风险警告",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_08"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 用频率作量化前置信号；A 看监管认定的造假结果"
+          ],
+          "synthesis_note": "会计诚信 A、C 同向，C 看频次软信号 warning，A 看坐实结果 veto；B 此处无对应。"
+        },
+        {
+          "seed_id": "seed_13",
+          "framework": "C",
+          "claim_normalized": "竞争对手 3 年营收复合增速持续高于本公司时护城河主张失效（warning）",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_06"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "C 用相对增速差，B 用市占率绝对趋势；A 无对应"
+          ],
+          "synthesis_note": "护城河被竞争对手侵蚀的检测：B、C 同方向，B 看绝对份额走势，C 看相对增速差。"
+        }
+      ]
+    },
+    {
+      "stances": [
+        {
+          "seed_id": "seed_01",
+          "framework": "B",
+          "claim_normalized": "公司层面债务/EBITDA 超过 3 倍作为直接否决线",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_12"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "采用 Debt/EBITDA 流量比作为硬性阈值（>3x）",
+            "严重等级为 veto",
+            "以单一比率作为直接否决而非组合评估"
+          ],
+          "synthesis_note": "三个框架都关注企业层面杠杆，但只有 B 设定了精确流量比阈值 (Debt/EBITDA>3x) 作为否决；A 用有息负债/总资产>50% 且连续上升作为 warning；C 在公司层面无等价硬性阈值（25x 规则仅针对金融机构）。"
+        },
+        {
+          "seed_id": "seed_02",
+          "framework": "B",
+          "claim_normalized": "利息覆盖率低于 5 倍作为直接否决线",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_12"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以利息覆盖率作为独立硬性指标（<5x）",
+            "A/C 均无相同精确度的偿债能力阈值"
+          ],
+          "synthesis_note": "偿债能力是三个框架共同关心的议题，但只有 B 设定了利息覆盖率的硬否决线；A 以资产负债率上升趋势代替，C 未就公司层面偿债覆盖率设定阈值。"
+        },
+        {
+          "seed_id": "seed_03",
+          "framework": "B",
+          "claim_normalized": "ROE 连续 3 年及以上下滑作为护城河侵蚀的警告信号",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "关注 ROE 的趋势性下滑（连续 3 年）",
+            "A/C 只对 ROE/ROIC 水平值设阈值，不对趋势设硬指标"
+          ],
+          "synthesis_note": "三个框架都将 ROE/ROIC 视为质量核心，但只有 B 将其连续下滑作为独立的触发项，A 与 C 均以绝对水平阈值而非走势变化作为触发条件。"
+        },
+        {
+          "seed_id": "seed_04",
+          "framework": "B",
+          "claim_normalized": "5 年平均 FCF/净利润比低于 80% 作为利润质量警告",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_05"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值为 80%、窗口 5 年",
+            "采用 FCF 而非 OCF 作为分子"
+          ],
+          "synthesis_note": "A 与 B 均使用现金流/净利润偏离度作为利润质量信号，但阈值和口径不同（A: OCF/NI 3yr<0.5；B: FCF/NI 5yr<0.8）；C 无等价定量规则但在 seed_09 以 EBITDA 使用作为定性代理。"
+        },
+        {
+          "seed_id": "seed_05",
+          "framework": "B",
+          "claim_normalized": "毛利率连续 5 年以上下降作为定价权丧失的警告",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "将定价权操作化为毛利率趋势",
+            "仅 B 设有专门针对 pricing power 的因子"
+          ],
+          "synthesis_note": "定价权在 B 被独立建模为毛利率趋势指标，A 与 C 虽强调护城河/竞争优势，但未将毛利率连续下降单列为独立触发项。"
+        },
+        {
+          "seed_id": "seed_06",
+          "framework": "B",
+          "claim_normalized": "市场份额连续 3 年以上下滑作为护城河失效的警告",
+          "supported_by": [
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "C_seed_13"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以被投公司自身市场份额的绝对下滑衡量",
+            "C 的等价规则以竞争对手相对增速更快作为信号"
+          ],
+          "synthesis_note": "B 与 C 对护城河失效采用了可观察的市场地位指标，但操作化不同：B 看份额下滑，C 看竞争对手营收增速相对领先；A 无等价定量规则。"
+        },
+        {
+          "seed_id": "seed_07",
+          "framework": "B",
+          "claim_normalized": "10 年平均 ROE 低于 15%（无高杠杆放大）标记业务质量不足",
+          "supported_by": [
+            "A",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_03",
+            "C_seed_01"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "窗口 10 年",
+            "使用 ROE 而非 ROIC",
+            "排除杠杆放大效应"
+          ],
+          "synthesis_note": "三个框架在『持续高资本回报率』这一要求上高度一致，但指标和窗口不同：A 用 5 年 ROE，B 用 10 年 ROE 并剔除杠杆，C 用 10 年 ROIC；阈值均为 15%。"
+        },
+        {
+          "seed_id": "seed_08",
+          "framework": "B",
+          "claim_normalized": "无法用不含术语的普通语言解释商业模式的公司直接否决",
+          "supported_by": [
+            "A",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_01",
+            "C_seed_04"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "限定『不使用专业术语的一段文字』",
+            "相比 A（一句话）和 C（3 句话）更偏向禁用行业术语而非长度约束"
+          ],
+          "synthesis_note": "可理解性是三个框架共同的第一闸门，全部以 veto 处理；差异仅在解释长度/语言形式的操作化：A=1 句，C=3 句，B=无术语段落。"
+        },
+        {
+          "seed_id": "seed_09",
+          "framework": "B",
+          "claim_normalized": "评估竞争优势必须依赖前沿技术专业知识的公司直接否决",
+          "supported_by": [
+            "A",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_10",
+            "C_seed_04"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以『需要前沿技术专家知识评估护城河』作为否决触发",
+            "相比 A（能力圈白名单枚举）更偏向功能性判定"
+          ],
+          "synthesis_note": "三个框架都排斥在能力圈外推进投资：A 用行业白名单，B 用技术深度判定，C 用『太难堆』启发式——本质相同，操作化路径不同。"
+        },
+        {
+          "seed_id": "seed_10",
+          "framework": "B",
+          "claim_normalized": "以精确多年 DCF 电子表格为主要估值方法时否决该估值结论",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_02"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "否决的是估值方法本身（DCF 精确计算），不是公司"
+          ],
+          "synthesis_note": "A 与 B 对 DCF 电子表格作为主要估值方法立场一致、均 veto；C 未直接否决 DCF，但 seed_06 要求估值必须位于质量判断之后，路径不同但价格纪律相近。"
+        },
+        {
+          "seed_id": "seed_11",
+          "framework": "B",
+          "claim_normalized": "以未实现的 TAM 渗透/期权价值/推测性未来产品作为主要估值依据时否决",
+          "supported_by": [
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "C_seed_02"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "针对估值的投机假设成分"
+          ],
+          "synthesis_note": "B 和 C 在『依赖多重未验证假设的估值不可接受』上方向一致：B 聚焦在投机性未来业务价值，C 聚焦在独立关键假设数量；A 在 seed_02 中涵盖『需 3 个以上乐观假设』部分重叠。"
+        },
+        {
+          "seed_id": "seed_12",
+          "framework": "B",
+          "claim_normalized": "以宏观预测（利率/GDP/货币政策）为核心前提的投资论据直接否决",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "专门针对宏观预测这一类外生变量依赖",
+            "A/C 均无等价专门规则"
+          ],
+          "synthesis_note": "只有 B 对『宏观预测驱动的投资论证』设置明确 veto；A 对『风口/赛道/政策红利』类叙事有相关 veto（seed_13），但着眼点是主题热度而非宏观变量本身。"
+        },
+        {
+          "seed_id": "seed_13",
+          "framework": "B",
+          "claim_normalized": "以季度收益超/低预期或环比节奏作为核心买卖依据时直接否决",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_14"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "专门针对季报节奏驱动的荐股逻辑",
+            "A 通过最低持有期间接覆盖同类问题"
+          ],
+          "synthesis_note": "B 直接禁用季报节奏逻辑，A 则通过≥10 年持有期要求间接排除短期驱动；C 未直接规制季报节奏但 seed_05 指出管理层过度强调增长指标属于警示。"
+        },
+        {
+          "seed_id": "seed_14",
+          "framework": "B",
+          "claim_normalized": "组合持股数 ≥20 只标记过度分散",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_15"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值 20 只",
+            "A 的等价规则更严（>10 只）"
+          ],
+          "synthesis_note": "A 和 B 都把过度分散视为对每只标的信念不足的信号，但 A 对集中度要求更严（10 只阈值 vs B 的 20 只）；C 通过 seed_10 的机会成本规则达到类似效果，但无具体持仓数上限。"
+        },
+        {
+          "seed_id": "seed_01",
+          "framework": "C",
+          "claim_normalized": "10 年平均 ROIC 低于 15% 不足以支撑『高质量护城河』的溢价估值",
+          "supported_by": [
+            "A",
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_03",
+            "B_seed_07"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "使用 ROIC 而非 ROE",
+            "将触发后果限定为『不支持溢价』，而非否决公司"
+          ],
+          "synthesis_note": "三个框架都采用 15% 作为资本回报质量阈值；差异仅在指标 (ROE vs ROIC) 和触发后果（A/B 直接标记警告，C 将其挂钩估值溢价合法性）。"
+        },
+        {
+          "seed_id": "seed_02",
+          "framework": "C",
+          "claim_normalized": "牛市论点依赖超过 2 个相互独立的关键假设同时成立时直接否决",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_11"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "设定独立关键假设数量阈值（>2）",
+            "作为 veto 直接过滤论点脆弱性"
+          ],
+          "synthesis_note": "C 独特地以关键假设数量上限作为脆弱性判据（>2 veto）；B 通过禁止『依赖投机假设的估值』触及同一议题；A 在 seed_02 以『>3 个乐观假设』作为 DCF 使用的判定条件，阈值与语境不同。"
+        },
+        {
+          "seed_id": "seed_03",
+          "framework": "C",
+          "claim_normalized": "金融/投资载体资产/权益杠杆≥25 倍时直接否决",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "针对金融机构或投资载体这一特定业态",
+            "与 B_seed_01 不在同一数量级（企业层面 3x vs 金融 25x）"
+          ],
+          "synthesis_note": "C 为金融机构/投资载体设立独立的 25x 杠杆 veto；B 对所有公司设置 3x Debt/EBITDA veto；A 在组合层面禁用任何借款投资——三者分别针对标的、公司、组合三个层级的杠杆。"
+        },
+        {
+          "seed_id": "seed_04",
+          "framework": "C",
+          "claim_normalized": "无法在 3 句话内向普通智识水平者讲清投资论点的公司归入『太难』直接否决",
+          "supported_by": [
+            "A",
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_01",
+            "B_seed_08"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "长度阈值 3 句",
+            "加入了『太难堆』的概念性处置路径"
+          ],
+          "synthesis_note": "三框架均以可理解性作为 veto 闸门；C 的独特处在于将『不确定』独立为『太难堆』的第三象限而非直接拒绝，长度阈值居中（A=1 句<C=3 句<B=无术语段落）。"
+        },
+        {
+          "seed_id": "seed_05",
+          "framework": "C",
+          "claim_normalized": "管理层长期强调营收增长且回避 ROIC/资本配置讨论，标记激励错位警告",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "关注管理层公开沟通语料内容偏向",
+            "A/B 无等价规则"
+          ],
+          "synthesis_note": "只有 C 将管理层『讨论营收 vs 讨论 ROIC 的比例』作为可观察的激励信号；A 从股票交易行为（减持）入手评估管理层态度，B 无对应维度。"
+        },
+        {
+          "seed_id": "seed_06",
+          "framework": "C",
+          "claim_normalized": "在业务质量/护城河/管理层诚信未确立前以估值指标作为核心买入理由直接否决",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_11"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以『分析顺序』作为触发条件",
+            "veto 而非 warning"
+          ],
+          "synthesis_note": "C 与 A 对『估值不能先于质量』立场一致，但 C 作为 veto、A 作为 warning；B 通过 seed_10/seed_11 限制估值方法的方式接近但不直接处理顺序问题。"
+        },
+        {
+          "seed_id": "seed_07",
+          "framework": "C",
+          "claim_normalized": "护城河完全依赖单一专利/单一许可/单一大客户(>50%)的公司直接否决",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "将单点依赖结构性解构为专利/监管/客户三条路径",
+            "作为 veto"
+          ],
+          "synthesis_note": "护城河脆弱性只在 C 被独立建模为单点依赖 veto；B 的 seed_05/06 以毛利率/份额趋势捕捉类似信号，但不直接处理护城河的结构性来源。"
+        },
+        {
+          "seed_id": "seed_08",
+          "framework": "C",
+          "claim_normalized": "投资论点模型依赖 20 个以上独立关键假设时归入『太难』",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_02"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值为 20 个假设",
+            "与 C_seed_02 的 >2 阈值并存，对应不同严重度"
+          ],
+          "synthesis_note": "C 对假设数量使用双阈值体系（>2 veto、>20 warning）；A 以『>3 个乐观假设』隐含类似标准但聚焦 DCF 场景；B 无对等定量规则。"
+        },
+        {
+          "seed_id": "seed_09",
+          "framework": "C",
+          "claim_normalized": "管理层以 EBITDA 为核心盈利指标或财务报表依赖大量脚注才能理解时标记高会计风险",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_05"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "点名反对 EBITDA 作为核心指标",
+            "以财报可读性作为附加判据"
+          ],
+          "synthesis_note": "C 直接否定 EBITDA 沟通模式；A 通过 OCF/净利润背离作为会计质量警示；B 的 seed_04 以 FCF 转化率作为相关信号——三者从不同切面检测盈利质量失真。"
+        },
+        {
+          "seed_id": "seed_10",
+          "framework": "C",
+          "claim_normalized": "新投资的风险调整回报若未显著高于组合现有最高信念持仓则拒绝纳入",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以机会成本为独立决策约束",
+            "要求至少 200bps 的信念增量"
+          ],
+          "synthesis_note": "机会成本纪律只在 C 被独立建模；A 通过集中持仓上限（≤10 只）间接强制同一效果，B 通过 20 只上限更宽松地达到类似约束。"
+        },
+        {
+          "seed_id": "seed_11",
+          "framework": "C",
+          "claim_normalized": "公司回购期内核心高管存在净卖出时直接否决",
+          "supported_by": [
+            "A"
+          ],
+          "supporting_seed_ids": [
+            "A_seed_09"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以『回购 + 内部卖出』共现作为触发条件",
+            "严重度 veto"
+          ],
+          "synthesis_note": "C 与 A 都把内部人净卖出视为管理层信号，但 C 更严（veto，条件是与回购同时发生），A 更宽（warning，纯净卖出超 5% 即触发）。"
+        },
+        {
+          "seed_id": "seed_12",
+          "framework": "C",
+          "claim_normalized": "过去 5 年出现超过 3 次一次性调整项时标记会计操纵警告",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以一次性项目出现频次作为量化信号"
+          ],
+          "synthesis_note": "C 独有的量化会计质量指标；A 的 seed_08 对已被监管认定的造假采取 veto，覆盖更严重但更窄的情形，不构成频次预警。"
+        },
+        {
+          "seed_id": "seed_13",
+          "framework": "C",
+          "claim_normalized": "主要竞争对手 3 年营收增速超过被投公司时，护城河主张无效",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_06"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以相对竞争者增速而非自身份额衡量",
+            "触发后果针对溢价估值的合法性"
+          ],
+          "synthesis_note": "C 与 B 都把竞争动态作为护城河证伪路径；B 看自身份额下滑，C 看对手相对领先——观测对象不同，结论方向一致。"
+        },
+        {
+          "seed_id": "seed_01",
+          "framework": "A",
+          "claim_normalized": "无法用一句话解释清楚商业模式的公司直接否决",
+          "supported_by": [
+            "B",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_08",
+            "C_seed_04"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "长度阈值最严（一句话、≤30 字）"
+          ],
+          "synthesis_note": "三框架均以可理解性为第一闸门；A 的长度要求最紧（1 句/30 字），C 为 3 句，B 为无术语段落——共识明显、操作化各异。"
+        },
+        {
+          "seed_id": "seed_02",
+          "framework": "A",
+          "claim_normalized": "以 DCF 或多情景复杂模型为唯一估值依据的论点直接否决",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_10"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "加入『需多个乐观假设才成立』的触发条件"
+          ],
+          "synthesis_note": "A 和 B 对 DCF 为唯一依据均采取 veto；C 未直接否定 DCF，但通过质量优先原则和假设数量上限从另一端约束估值方法。"
+        },
+        {
+          "seed_id": "seed_03",
+          "framework": "A",
+          "claim_normalized": "5 年平均 ROE 低于 15% 标记财务质量警告",
+          "supported_by": [
+            "B",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_07",
+            "C_seed_01"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "窗口 5 年（短于 B/C 的 10 年）",
+            "使用 ROE"
+          ],
+          "synthesis_note": "三框架阈值一致均为 15%，差别在窗口与指标：A=5yr ROE，B=10yr ROE 剔除杠杆，C=10yr ROIC。"
+        },
+        {
+          "seed_id": "seed_04",
+          "framework": "A",
+          "claim_normalized": "经营性现金流连续 3 年为负的公司直接否决",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "唯一将『现金流持续为负』作为 veto 的规则",
+            "B 的 FCF 转化率是 warning 级别，C 无等价规则"
+          ],
+          "synthesis_note": "A 对现金流的底线要求最刚性（连续负 OCF=veto）；B 以 FCF/NI 比值 warning 捕捉同类风险但不作否决；C 通过会计质量规则间接触及。"
+        },
+        {
+          "seed_id": "seed_05",
+          "framework": "A",
+          "claim_normalized": "OCF/净利润 3 年均值低于 0.5 标记利润质量警告",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_04"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值 0.5、窗口 3 年",
+            "分子为 OCF 而非 FCF"
+          ],
+          "synthesis_note": "A 与 B 以不同口径/阈值捕捉同一现金流与利润背离议题（A: OCF/NI 3yr<0.5；B: FCF/NI 5yr<0.8）；C 无定量等价但 seed_09 以 EBITDA 使用作为定性信号。"
+        },
+        {
+          "seed_id": "seed_06",
+          "framework": "A",
+          "claim_normalized": "组合层面任何借贷资金投资（融资融券/配资等）直接否决",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "唯一在组合/投资者层面对杠杆作零容忍规制",
+            "B/C 的杠杆规制均在被投公司层面"
+          ],
+          "synthesis_note": "A 独有投资者自身不使用杠杆的 veto；B/C 在公司层面分别以 3x Debt/EBITDA 和 25x 金融杠杆作为否决——三者覆盖了杠杆风险的不同层级。"
+        },
+        {
+          "seed_id": "seed_07",
+          "framework": "A",
+          "claim_normalized": "任何做空头寸直接否决",
+          "supported_by": [],
+          "supporting_seed_ids": [],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "显式禁止做空，B/C 均无等价规则"
+          ],
+          "synthesis_note": "只有 A 对做空采取绝对 veto；B 和 C 未在该议题上设立规则，但长期持有与集中持仓取向隐含对做空不友好，无正面规制。"
+        },
+        {
+          "seed_id": "seed_08",
+          "framework": "A",
+          "claim_normalized": "有监管机构认定的财务造假或重大信披违规记录的公司直接否决",
+          "supported_by": [
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "C_seed_12",
+            "C_seed_09"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "限定为『监管机构认定』的硬事实",
+            "10 年回看期"
+          ],
+          "synthesis_note": "A 以监管认定的造假历史作为 veto；C 以一次性项目频次和 EBITDA 沟通模式等软信号作为 warning——同一诚信议题在两框架对应不同严重度与证据标准；B 无等价规则。"
+        },
+        {
+          "seed_id": "seed_09",
+          "framework": "A",
+          "claim_normalized": "核心高管 12 个月内净减持超过总股本 5% 标记管理层信心警告",
+          "supported_by": [
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "C_seed_11"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以净减持比例作为量化阈值，不要求与回购同时发生"
+          ],
+          "synthesis_note": "A 与 C 都追踪内部人交易，但 A 以单纯的净减持幅度（>5%）warning，C 则要求『回购+卖出』共现才 veto——两者共享维度但严重度与触发条件不同。"
+        },
+        {
+          "seed_id": "seed_10",
+          "framework": "A",
+          "claim_normalized": "标的行业不在预先定义的能力圈列表内直接否决",
+          "supported_by": [
+            "B",
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_09",
+            "C_seed_04"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以行业白名单/黑名单为硬边界",
+            "枚举具体排除行业（金融/半导体/生物科技等）"
+          ],
+          "synthesis_note": "三框架均执行能力圈原则：A 采用行业白名单，B 以『是否需前沿技术理解』作判据，C 以『太难堆』启发式——操作化差异大但 veto 立场一致。"
+        },
+        {
+          "seed_id": "seed_11",
+          "framework": "A",
+          "claim_normalized": "仅凭低 PE/PB 在未论证商业模式和企业文化前提出买入标记方法论漂移警告",
+          "supported_by": [
+            "C"
+          ],
+          "supporting_seed_ids": [
+            "C_seed_06"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "严重度为 warning",
+            "C 的等价规则是 veto"
+          ],
+          "synthesis_note": "A 与 C 均要求估值不能先于质量；C 将其作为硬 veto，A 作为 warning；B 通过限制估值方法（DCF/投机 TAM veto）间接对齐。"
+        },
+        {
+          "seed_id": "seed_12",
+          "framework": "A",
+          "claim_normalized": "有息负债/总资产连续 3 年上升且最新超过 50% 标记资产负债表风险警告",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_01",
+            "B_seed_02"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "同时要求『趋势上升』与『水平超阈值』双条件",
+            "采用负债/资产而非 Debt/EBITDA"
+          ],
+          "synthesis_note": "A 与 B 均对公司杠杆设阈值但口径不同（A: 有息负债/资产>50% warning；B: Debt/EBITDA>3x veto 与利息覆盖<5x veto）；C 在公司层面无等价规则。"
+        },
+        {
+          "seed_id": "seed_13",
+          "framework": "A",
+          "claim_normalized": "以『赛道/风口/蓝海/政策红利』等概念作为核心买入理由直接否决",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_12"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以叙事词汇清单作为检测锚点",
+            "枚举禁用词汇（AI 浪潮/元宇宙/新能源革命等）"
+          ],
+          "synthesis_note": "A 和 B 都禁用宏大叙事驱动的论证：A 检测行业热点词汇，B 检测宏观变量预测——指向不同叙事类型但同为 veto；C 通过『太难堆』和假设数量规则间接过滤。"
+        },
+        {
+          "seed_id": "seed_14",
+          "framework": "A",
+          "claim_normalized": "投资论点预设持有期不足 10 年时直接否决",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_13"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "以 10 年最低持有期作为硬性前置条件",
+            "正向规制（要求长持）而非负向禁用（禁止季报驱动）"
+          ],
+          "synthesis_note": "A 从正面要求≥10 年持有期（veto），B 从反面禁用季报节奏驱动（veto）——两者操作方向互补、同一长期主义目标；C 无等价硬约束。"
+        },
+        {
+          "seed_id": "seed_15",
+          "framework": "A",
+          "claim_normalized": "投资组合持仓超过 10 只标记过度分散警告",
+          "supported_by": [
+            "B"
+          ],
+          "supporting_seed_ids": [
+            "B_seed_14"
+          ],
+          "conflicts_with": [],
+          "conflicting_seed_ids": [],
+          "framework_specific_aspects": [
+            "阈值 10 只（较 B 的 20 只更严）"
+          ],
+          "synthesis_note": "A 和 B 在集中持仓立场一致但阈值不同（A≤10 只 vs B<20 只）；C 无具体数量上限，但以机会成本规则（seed_10）从质量替代数量约束角度对齐。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "total_clusters": 30,
+  "hard_candidate": 0,
+  "soft_candidate": 2,
+  "singleton": 28,
+  "validation_errors": [
+    "cluster cl_06: seed seed_01 appears in multiple clusters",
+    "cluster cl_08: seed seed_05 appears in multiple clusters",
+    "cluster cl_15: seed seed_08 appears in multiple clusters",
+    "cluster cl_16: seed seed_09 appears in multiple clusters",
+    "cluster cl_18: seed seed_16 appears in multiple clusters",
+    "cluster cl_19: seed seed_02 appears in multiple clusters",
+    "cluster cl_20: seed seed_04 appears in multiple clusters",
+    "cluster cl_21: seed seed_06 appears in multiple clusters",
+    "cluster cl_22: seed seed_13 appears in multiple clusters",
+    "cluster cl_23: seed seed_10 appears in multiple clusters",
+    "cluster cl_24: seed seed_07 appears in multiple clusters",
+    "cluster cl_25: seed seed_15 appears in multiple clusters",
+    "cluster cl_27: seed seed_03 appears in multiple clusters",
+    "cluster cl_28: seed seed_11 appears in multiple clusters",
+    "cluster cl_29: seed seed_12 appears in multiple clusters",
+    "cluster cl_30: seed seed_14 appears in multiple clusters"
+  ],
+  "fallback_singleton_used": false,
+  "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase3a_clusters.jsonl"
+}

@@ -1,0 +1,9 @@
+{
+  "total_clusters": 34,
+  "hard_candidate": 4,
+  "soft_candidate": 5,
+  "singleton": 25,
+  "validation_errors": [],
+  "fallback_singleton_used": false,
+  "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase3a_clusters.jsonl"
+}

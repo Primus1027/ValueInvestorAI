@@ -1,0 +1,214 @@
+{
+  "master": "buffett",
+  "revisions": [
+    {
+      "seed_id": "seed_01",
+      "action": "keep",
+      "rationale": "Phase 2 comparisons confirm this seed covers a distinct rule_subject not replicated across Duan or Munger seeds. The plain-language articulation test — covering business model, customer demand source, and long-run trajectory — is an operationally specific formulation that avoids vague 'understand the business' platitudes. Anti_scope correctly distinguishes shallow versus genuine understanding. No direction-of-change challenge surfaced.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_02",
+      "action": "keep",
+      "rationale": "Phase 2 confirms no equivalent seed in either comparative corpus. Structural competitive barrier existence as a hard veto is foundational to this methodology's mature framework. The five named sources (brand, cost leadership, network effects, switching costs, regulatory barriers) provide sufficient operational specificity without over-constraining the evaluator. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_03",
+      "action": "modify",
+      "rationale": "Phase 2 found no equivalent seed, confirming uniqueness. However, internal review reveals that the qualitative_rule lacks a temporal anchor for 'multiple years' of erosion evidence — without one, the rule can be gamed by treating any three-quarter slippage as 'confirmed secular decline' or, conversely, dismissed by citing insufficient evidence indefinitely. Adding a minimum observation window (three full fiscal years) sharpens the rule without making it mechanical. The IBM and newspaper cases cited in the rationale both involved deterioration visible across at least five years before action; three years is the minimum defensible threshold.",
+      "modified_seed": {
+        "seed_id": "seed_03",
+        "rule_subject": "target",
+        "theme": "moat",
+        "category": "veto_line",
+        "qualitative_claim": "A structural competitive barrier that is demonstrably narrowing on a secular basis is a disqualifying condition, even if the barrier currently appears wide",
+        "quantitative_rule": null,
+        "qualitative_rule": "If evidence across a minimum of three consecutive full fiscal years shows the competitive position has been systematically losing ground — through declining market share, pricing power erosion, or successful competitive encroachment — reject the investment regardless of the apparent current competitive barrier strength; a single year of deterioration does not satisfy this criterion",
+        "severity": "veto",
+        "anti_scope": "Does not apply to temporary or cyclical competitive pressure; does not apply to deterioration observed over fewer than three full fiscal years; applies only to structural, secular erosion supported by a credible mechanism of disruption and confirmed across the minimum observation window",
+        "rationale": "A prominent practitioner's largest analytical failures — newspapers and IBM — involved structural competitive barriers that were real at purchase but eroded faster than expected. The critical diagnostic is not whether the structural competitive barrier exists today but whether it is widening or narrowing. Adding a three-year minimum observation window prevents false-positive vetoes from cyclical noise while preserving the protective intent of the rule.",
+        "evidence_strength": "consistent_pattern",
+        "supporting_section_id": "[ref_3]",
+        "supporting_profile_factor": "durable_competitive_advantage",
+        "_master": "buffett",
+        "_reintroduced_from": null,
+        "_reintroduction_rationale": null,
+        "_reintroduced_seed_commit_hash": null,
+        "_reintroduced_seed_section_id": null,
+        "_sanitized": true,
+        "_ref_map": {
+          "[ref_3]": "buffett/module-5-failure-cases-self-corrections/failure-4-ibm-2011-2018-misreading-the-moat"
+        },
+        "_static_replacements_applied": [],
+        "_revise_action": "modify",
+        "_revise_rationale": "Phase 2 found no equivalent seed, confirming uniqueness. However, internal review reveals that the qualitative_rule lacks a temporal anchor for 'multiple years' of erosion evidence — without one, the rule can be gamed by treating any three-quarter slippage as 'confirmed secular decline' or, conversely, dismissed by citing insufficient evidence indefinitely. Adding a minimum observation window (three full fiscal years) sharpens the rule without making it mechanical. The IBM and newspaper cases cited in the rationale both involved deterioration visible across at least five years before action; three years is the minimum defensible threshold."
+      }
+    },
+    {
+      "seed_id": "seed_04",
+      "action": "keep",
+      "rationale": "Phase 2 confirms no equivalent seed across comparison corpora. Pricing power as the primary operational litmus test for structural competitive barrier existence is a distinctive and falsifiable formulation — it converts a qualitative assertion ('this business has a moat') into an observable historical test ('has it raised prices above input cost inflation while maintaining volume across a cycle'). The anti_scope correctly scopes to structural capacity rather than year-by-year price movement. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_05",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent management integrity veto in the comparison corpus. The precision of anti_scope — distinguishing integrity failures from operational errors, poor capital allocation, or strategic mistakes — is critical to preventing over-application and is well-calibrated. Hard veto severity is warranted given the evidence base (Tesco, Wells Fargo). No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_06",
+      "action": "modify",
+      "rationale": "Phase 2 finds no equivalent seed. However, the quantitative_rule references `financials.five_year.market_cap_delta_per_cumulative_retained_earnings_dollar` with a five-year horizon, while the qualitative_rule and anti_scope specify 'multi-year cumulative patterns.' These are inconsistent: five years may include a single extended bear market that depresses market cap without reflecting management's actual capital allocation quality. The data field should reference a longer or more flexible horizon — ten years or a full business cycle — to match the anti_scope's stated intent. The threshold of 1.0 is correct and remains unchanged.",
+      "modified_seed": {
+        "seed_id": "seed_06",
+        "rule_subject": "target",
+        "theme": "management_integrity",
+        "category": "quantitative_hard",
+        "qualitative_claim": "Management that retains earnings without creating equivalent or greater market value over time is destroying shareholder capital through deficient capital allocation",
+        "quantitative_rule": {
+          "metric": "market_value_created_per_retained_dollar",
+          "operator": ">=",
+          "threshold": 1.0,
+          "data_field": "financials.ten_year.market_cap_delta_per_cumulative_retained_earnings_dollar"
+        },
+        "qualitative_rule": "For every dollar of earnings cumulatively retained over a full business cycle — measured at minimum across ten years or two complete cycles, whichever is shorter — at least one dollar of incremental market capitalization should have been created; a persistent shortfall indicates management should be returning capital to owners rather than retaining it",
+        "severity": "warning",
+        "anti_scope": "Does not apply over short measurement windows, at cyclical troughs, or for businesses in legitimate long-duration investment phases; applies to multi-year cumulative patterns only and is a diagnostic flag requiring further investigation, not an automatic rejection trigger",
+        "rationale": "The retained earnings test is a specific, actionable capital allocation quality filter within this methodology — it directly connects management decision-making to shareholder outcomes. Extending the measurement horizon to ten years (from five) aligns the quantitative data field with the qualitative rule's stated multi-cycle intent and reduces distortion from single-cycle market valuation swings.",
+        "evidence_strength": "consistent_pattern",
+        "supporting_section_id": "[ref_6]",
+        "supporting_profile_factor": "capital_allocation_quality",
+        "_master": "buffett",
+        "_reintroduced_from": null,
+        "_reintroduction_rationale": null,
+        "_reintroduced_seed_commit_hash": null,
+        "_reintroduced_seed_section_id": null,
+        "_sanitized": true,
+        "_ref_map": {
+          "[ref_6]": "buffett/module-2-investment-philosophy-evolution/period-4-mature-buffett-the-float-engine-1985-2015"
+        },
+        "_static_replacements_applied": [],
+        "_revise_action": "modify",
+        "_revise_rationale": "Phase 2 finds no equivalent seed. However, the quantitative_rule references `financials.five_year.market_cap_delta_per_cumulative_retained_earnings_dollar` with a five-year horizon, while the qualitative_rule and anti_scope specify 'multi-year cumulative patterns.' These are inconsistent: five years may include a single extended bear market that depresses market cap without reflecting management's actual capital allocation quality. The data field should reference a longer or more flexible horizon — ten years or a full business cycle — to match the anti_scope's stated intent. The threshold of 1.0 is correct and remains unchanged."
+      }
+    },
+    {
+      "seed_id": "seed_07",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent seed. The distinction between investment-entity leverage (prohibited) and operating debt or insurance float (permitted) is the methodological crux of what would otherwise appear as a contradiction. The anti_scope handles this precisely. Veto severity at the portfolio entity level is correct — forced liquidation risk is existential and non-recoverable. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_08",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent sell discipline seed. The four enumerated conditions for permissible sale — secular moat deterioration, management integrity failure, superior redeployment exceeding tax cost, or gross price premium to any reasonable intrinsic value estimate — form a complete, closed set that matches the methodology's observable behavior. The anti_scope (absence of fresh buy thesis is not sell justification) is critical and correctly stated. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_09",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent after-tax compounding seed. This seed addresses a dimension — permanent tax cost as a compounding base reduction — that is genuinely distinct from seed_08 (when to sell) and captures a quantitative consideration that must be made before finalizing any sell decision on appreciated positions. The anti_scope correctly excludes minimal-gain positions and loss positions. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_10",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent distributable economic earnings definition seed. The formula (net income + D&A − maintenance capex) is precise, actionable, and directly cites a primary source. The anti_scope correctly notes that GAAP earnings are a valid starting input, not a prohibited data source. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_11",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent valuation method constraint seed. The prohibition on formal multi-year DCF spreadsheet models as the primary conviction source is a distinctive and frequently misunderstood aspect of this methodology — it is not anti-quantitative, it is anti-false-precision. Warning severity (rather than veto) is appropriate because the rule governs process discipline rather than binary investment acceptance. The anti_scope preserving quantitative cross-checking is correct. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_12",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent sequencing rule. Quality-before-price as an explicit process ordering rule is a specific and falsifiable constraint on how analysis must be structured. A business failing qualitative screens cannot be reconsidered solely on price is the critical anti-recency-bias provision. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_13",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent dividend interpretation seed. Reading dividend payment as a signal about the exhaustion of high-return reinvestment opportunities — rather than as a positive income signal per se — is a distinctive interpretive stance that has direct implications for how the methodology ranks capital allocators. Note severity is appropriate; this is a diagnostic lens, not a screen. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_14",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent downside-scenario valuation requirement. The rule that the purchase price must imply an acceptable return under a materially conservative downside earnings scenario — not only the base case — is a critical margin of safety operationalization that goes beyond simply requiring a discount to fair value. Warning severity and the anti_scope (does not require deep-discount prices for exceptional businesses) are correctly calibrated. No modification warranted.",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_15",
+      "action": "keep",
+      "rationale": "Phase 2 finds no equivalent institutional imperative resistance seed. Identifying documented management resistance to empire-building and peer imitation pressure as a positive quality signal is a distinctive positive-screen contribution that complements the negative management integrity veto in seed_05. Note severity is appropriate — this is an upside quality indicator, not a pass/fail gate. No modification warranted.",
+      "modified_seed": null
+    }
+  ],
+  "new_seeds": [
+    {
+      "seed_id": "seed_16",
+      "rule_subject": "target",
+      "theme": "moat",
+      "category": "quantitative_hard",
+      "qualitative_claim": "Sustained high returns on invested capital over a full business cycle are the primary quantitative signature that a structural competitive barrier is operative",
+      "quantitative_rule": {
+        "metric": "average_return_on_invested_capital_ex_goodwill",
+        "operator": ">=",
+        "threshold": 0.15,
+        "data_field": "financials.ten_year.average_roic_ex_goodwill"
+      },
+      "qualitative_rule": "Screen for businesses whose average return on invested capital — calculated before goodwill and intangible amortization, over a full decade — materially exceeds a reasonable estimate of the cost of capital; a business consistently earning 15% or more on tangible invested capital in a competitive economy is producing objective evidence that a structural barrier protects its returns; absent this, any claimed structural competitive barrier requires extraordinary additional evidence before acceptance",
+      "severity": "warning",
+      "anti_scope": "Does not apply to financial businesses or insurance operations where ROIC as defined is not a structurally comparable metric; does not apply to businesses in early multi-year reinvestment cycles where current ROIC is deliberately suppressed by growth capex; requires decade-long averages to smooth acquisition accounting distortions and cyclical variation; the 15% threshold is a diagnostic trigger for investigation, not a mechanical pass/fail gate",
+      "rationale": "Sustained high ROIC is the quantitative manifestation of structural competitive advantage — a business compounding capital at materially above-market rates over a decade is providing falsifiable, financial-statement-grounded evidence that competitive forces have not eroded its returns. This seed bridges the qualitative moat existence assessment in seed_02 with a directly observable financial output, creating a cross-validation channel: if the qualitative moat assessment is affirmative but ten-year average ROIC is below 15%, the qualitative assessment requires heightened scrutiny and explicit explanation of the divergence.",
+      "evidence_strength": "consistent_pattern",
+      "supporting_section_id": "[ref_16]",
+      "supporting_profile_factor": "durable_competitive_advantage",
+      "_master": "buffett",
+      "_reintroduced_from": null,
+      "_reintroduction_rationale": null,
+      "_reintroduced_seed_commit_hash": null,
+      "_reintroduced_seed_section_id": null,
+      "_sanitized": true,
+      "_ref_map": {
+        "[ref_16]": "buffett/module-3-core-principles-system/tier-1-iron-laws-never-violated/tier-2-strong-preferences-rarely-violated"
+      },
+      "_static_replacements_applied": [],
+      "_revise_action": "new"
+    }
+  ],
+  "process_critique": [
+    {
+      "critique_type": "phase_design_issue",
+      "critique_content": "The Phase 2 pairwise comparison returned 'different_rule_subject' at confidence=1.0 for every pair in the visible output, including cross-master pairs that share the same theme (e.g., two moat-themed seeds from different masters). This suggests the comparison was performing categorical triage — routing on rule_subject taxonomy — rather than semantic content comparison. Cross-master pairs within the same theme are precisely where the most informative signal lives: complementarity (two masters reinforce the same rule from different angles) and productive tension (two masters apply the same concept differently). A theme-scoped deep comparison pass for within-theme cross-master pairs would give revising masters substantially richer input than a blanket 'different_rule_subject' verdict.",
+      "proposed_fix": "Add a Phase 2b sub-pass that re-runs pairwise comparison restricted to pairs sharing the same theme field, with a richer comparison schema that outputs: (a) equivalent, (b) complementary — same conclusion different mechanism, (c) tension — same domain different conclusion, (d) orthogonal — genuinely different despite shared theme. This would surface actionable signals for revision without inflating the full pairwise matrix."
+    },
+    {
+      "critique_type": "schema_limitation",
+      "critique_content": "The current schema has no field to express inter-seed dependency or sequencing within the same master's seed set. Several seeds in this methodology form explicit chains: seed_12 (quality before price) must precede seed_14 (downside valuation), and seed_02 (moat existence) logically gates seed_03 (moat direction) and seed_16 (ROIC verification). When seeds are synthesized in later phases, the absence of declared dependency relationships increases the risk that downstream systems apply individual rules without preserving their designed evaluation order.",
+      "proposed_fix": "Add an optional 'prerequisites' field to the seed schema — an array of seed_ids that must return affirmative before this seed is evaluated. This would make evaluation sequencing explicit at the data level rather than relying on downstream prompt engineering to infer it from rule text."
+    },
+    {
+      "critique_type": "rule_clarification_needed",
+      "critique_content": "The 'severity' field currently uses: veto, warning, note. In practice, seeds labeled 'warning' cover two structurally different behaviors: (a) 'flag this investment for heightened scrutiny before proceeding' and (b) 'this is a positive quality signal whose absence is not disqualifying but whose presence is meaningful.' Seeds like seed_04 (pricing power) and seed_15 (institutional imperative resistance) are closer to type (b), while seeds like seed_14 (downside scenario valuation) and seed_08 (sell discipline) are closer to type (a). Collapsing both into 'warning' loses the behavioral distinction when rules are applied in a decision pipeline.",
+      "proposed_fix": "Split 'warning' into 'required_check' (must be assessed; failure triggers heightened scrutiny or rejection consideration) and 'positive_signal' (presence is additive quality evidence; absence is not disqualifying). 'Note' severity could be deprecated in favor of 'positive_signal' to reduce ambiguity."
+    }
+  ],
+  "_fallback_used": false,
+  "attempts": [
+    {
+      "attempt": 0,
+      "error": "parse_fail"
+    },
+    {
+      "attempt": 1,
+      "returncode": 0
+    }
+  ],
+  "error": null
+}

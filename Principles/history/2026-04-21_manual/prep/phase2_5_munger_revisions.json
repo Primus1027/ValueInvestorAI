@@ -1,0 +1,174 @@
+{
+  "master": "munger",
+  "revisions": [
+    {
+      "seed_id": "seed_01",
+      "action": "keep",
+      "rationale": "Phase 2 全部对照对均返回 different_rule_subject，无跨框架等价冲突。反向推理作为本方法论的主干原则（master principle），其 veto 严重性与操作化规定（书面枚举失败模式）是本框架的独特入口，与 Buffett 框架的分析流程构型不重叠。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_02",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。管理层诚信绝对否决线在本框架中系 Tier-1 铁律，措辞上已明确将不诚实（integrity breach）与不称职（incompetence）区分，anti_scope 划定准确。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_03",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。本 seed 的 rule_subject=self（约束投资载体自身资本结构）而非 target（被投对象筛选），已在 anti_scope 中清晰划定边界，是本方法论关于可召回杠杆的独特自我约束条款。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_04",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。将能力圈操作化为'跨学科模型格'（lattice）是本框架的标志性差异化表述，与通用'只投熟悉行业'不同——要求优势机制必须能被多学科模型解释。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_05",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。分析师偏见审计清单（含多因素汇合效应）在本框架中承载独立的流程节点，severity=warning 与其可覆盖性（偏见被识别后仍可继续）相符。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_06",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。社会验证作为买入信号的否决，与 seed_05 的偏见审计形成层次关系（一般审计 vs. 特定信号否决），二者不重复。监控行为（允许）与证据使用（禁止）的区分在 anti_scope 中已精确表述。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_07",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。激励结构优先于性格评估是本框架的核心认识论立场，severity=warning（而非 veto）反映了激励结构可与性格并存的复合评价体系，层级设定合理。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_08",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。要求识别正反馈循环机制（而非仅陈述护城河存在）是本框架对 moat 分析的操作化要求，anti_scope 已澄清'可收窄但须有机制'。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_09",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。宏观预测依赖的否决是本框架的认识论立场，非单纯风险管理规则——明确以'过度自信本身是人类误判'为基础，具有独立论证链。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_10",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。定价权作为特许经营价值的实证测试，操作化方向（历史成本压力期的定价行为）比纯定性断言更可检验。anti_scope 已处理主动低价策略的例外情形。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_11",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。拒绝'便宜但经济结构差'是本框架与纯净资产折价投资传统的决定性分野，severity=veto 与其 Tier-1 地位相符。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_12",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。合取谬误校正（要求显式计算复合假设概率）是本框架将认知偏差分析直接嵌入决策流程的具体机制，定量阈值（>2）提供可执行触发条件。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_13",
+      "action": "modify",
+      "rationale": "Phase 2 无等价冲突，但内部审查发现 severity=note 低估了本条在质量筛选中的权重。维护性资本支出陷阱识别在本框架中是资本回报质量评估的核心区分点——将侵蚀性再投资（仅防守现有回报）与增值性再投资（赚取超额回报）区分，是判定'真实自由现金流质量'的必要步骤。设为 note 意味着可忽略，与其在框架中的实际作用不符；升级为 warning 后，要求分析师必须完成区分但不强制否决结论，与其可覆盖性相符。",
+      "modified_seed": {
+        "seed_id": "seed_13",
+        "rule_subject": "target",
+        "theme": "capital_return",
+        "category": "qualitative_required",
+        "qualitative_claim": "A superior business generates cash substantially in excess of what is required merely to maintain its competitive position",
+        "quantitative_rule": null,
+        "qualitative_rule": "Separately estimate maintenance capex (spending required to prevent competitive erosion) and growth capex (spending on incremental opportunities with positive returns); businesses where maintenance capex consumes the majority of operating earnings are classified as capital intensity traps and scored unfavorably",
+        "severity": "warning",
+        "anti_scope": "Does not penalize businesses that reinvest heavily for growth at attractive returns; only penalizes businesses that reinvest heavily to avoid decline without generating incremental return — high reinvestment is good when it earns excess returns, bad when it merely sustains existing returns",
+        "rationale": "A documented methodology preference makes an explicit distinction: 'Businesses that must reinvest heavily merely to avoid decline (maintenance capex traps) are fundamentally different from businesses that reinvest heavily because they have excellent opportunities. The originating methodology disfavored the former, not the latter.' This distinction is critical for evaluating true free cash flow quality versus reported earnings. Severity upgraded from note to warning to reflect the discriminatory weight this criterion carries in quality classification.",
+        "evidence_strength": "consistent_pattern",
+        "supporting_section_id": "[ref_28]",
+        "supporting_profile_factor": "competitive_moat_durability",
+        "_master": "munger",
+        "_reintroduced_from": null,
+        "_reintroduction_rationale": null,
+        "_reintroduced_seed_commit_hash": null,
+        "_reintroduced_seed_section_id": null,
+        "_sanitized": true,
+        "_ref_map": {
+          "[ref_28]": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/tier-2-strong-preferences-default-behavior-overridable-in-extraordinary-circumst"
+        },
+        "_static_replacements_applied": [],
+        "_revise_action": "modify",
+        "_revise_rationale": "Phase 2 无等价冲突，但内部审查发现 severity=note 低估了本条在质量筛选中的权重。维护性资本支出陷阱识别在本框架中是资本回报质量评估的核心区分点——将侵蚀性再投资（仅防守现有回报）与增值性再投资（赚取超额回报）区分，是判定'真实自由现金流质量'的必要步骤。设为 note 意味着可忽略，与其在框架中的实际作用不符；升级为 warning 后，要求分析师必须完成区分但不强制否决结论，与其可覆盖性相符。"
+      }
+    },
+    {
+      "seed_id": "seed_14",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。事后归因必须命名具体判断失误（而非归咎外部）是本框架知识诚实原则的操作化实现，anti_scope 已处理外部事件与分析失误的并存关系。保留原样。",
+      "modified_seed": null
+    },
+    {
+      "seed_id": "seed_15",
+      "action": "keep",
+      "rationale": "Phase 2 无等价判定。商业模式的结构性激励对齐（服务客户与最大化盈利同路）是本框架对 seed_07（管理层激励）的目标侧延伸，二者形成层次关系：seed_07 评估管理行为驱动因素，seed_15 评估商业模式本身是否设计为两者一致。不重复，保留原样。",
+      "modified_seed": null
+    }
+  ],
+  "new_seeds": [
+    {
+      "seed_id": "seed_16",
+      "rule_subject": "decision_process",
+      "theme": "behavioral_discipline",
+      "category": "qualitative_required",
+      "qualitative_claim": "Every investment opportunity must be evaluated against the explicit opportunity cost of the best alternative available deployment of capital at the time of decision",
+      "quantitative_rule": null,
+      "qualitative_rule": "Before approving any investment, the analyst must identify the single best alternative use of the same capital currently available and state explicitly why the proposed investment is superior; an investment that is merely positive in isolation but inferior to an identifiable alternative must be declined; the question is never 'is this good enough?' but 'is this better than anything else I can do with this capital right now?'",
+      "severity": "warning",
+      "anti_scope": "Does not require exhaustive enumeration of all possible alternatives; requires only that the analyst identify the best available alternative and make a comparative judgment explicit — the standard is a binary comparison against one clearly identified alternative, not optimization across a universe of options",
+      "rationale": "The methodology's opportunity cost framework holds that mediocre investments are costly not only because they underperform but because they displace superior alternatives. A secondary methodology principle states: 'Each dollar committed to a mediocre opportunity is a dollar unavailable when a great opportunity appears; the cost of the mediocre investment is not just its own poor return, but the best foregone opportunity during the holding period.' This principle is absent from the current seed set, which addresses what to reject in absolute terms (seeds 02, 06, 09, 11) but does not address the relative standard against which any given investment must compete. The omission creates a gap: a seed may pass all veto screens yet still be inferior to what the analyst could otherwise do with the capital.",
+      "evidence_strength": "consistent_pattern",
+      "supporting_section_id": "[ref_31]",
+      "supporting_profile_factor": "inversion_stress_test",
+      "_master": "munger",
+      "_reintroduced_from": null,
+      "_reintroduction_rationale": null,
+      "_reintroduced_seed_commit_hash": null,
+      "_reintroduced_seed_section_id": null,
+      "_sanitized": true,
+      "_ref_map": {
+        "[ref_31]": "munger/soul-document-charlie-munger-c-master/version-11-soul-forging-document-for-ai-value-investing-system/module-1-identity-origins/module-2-investment-philosophy-evolution/module-3-core-principles-system/module-4-decision-reasoning-chains/module-5-failure-cases-self-corrections/module-6-differentiation-boundaries/module-7-behavioral-rules-self-check-checklist/the-checklist-methodology"
+      },
+      "_static_replacements_applied": [],
+      "_revise_action": "new"
+    }
+  ],
+  "process_critique": [
+    {
+      "critique_type": "phase_design_issue",
+      "critique_content": "Phase 2 的 pairwise 等价判定目前仅检测'是否等价/重复'，返回的 brief_reason 类别（different_rule_subject 等）是结构性描述而非语义性描述。这导致两个覆盖同一核心直觉但从不同分析层次切入的 seed（例如：一条从流程角度要求反向推理，另一条从目标角度要求护城河机制可解释）可能既不被判为等价、也不被标记为'互补'或'主从关系'。当 Phase 3 聚类时，这些语义上强相关的 seed 可能被误分入不同簇，削弱合并或层级化的机会。",
+      "proposed_fix": "在 Phase 2 输出中增加一个可选字段 relationship_type，取值为 equivalent / complementary / subsumption（A 覆盖 B）/ independent，并附简短 rationale。即使该字段非强制，其存在也能为 Phase 3 聚类提供更细粒度的信号，减少仅凭 rule_subject 差异就判为完全独立的过度分割。"
+    },
+    {
+      "critique_type": "schema_limitation",
+      "critique_content": "当前 seed schema 的 severity 字段仅有四级（veto / warning / note / 以及隐含的 informational），但不同框架对同一严重性等级的实际触发条件可能有结构性差异：A 框架的 warning 可能等价于 B 框架的 veto（因为 A 框架总体门槛更高）。跨框架比较时，纯 severity 标签会产生误导性的等价判断。",
+      "proposed_fix": "在 Phase 1 schema 中增加一个可选字段 severity_rationale，要求作者用一句话说明当前 severity 级别的设定依据（例如'此条被设为 warning 而非 veto 是因为在极端情形下有记录的例外'）。这样 Phase 2 的等价判定可以同时比较 severity 标签和 severity_rationale，避免仅凭标签文字做出过强的等价或不等价结论。"
+    },
+    {
+      "critique_type": "conflict_resolution_gap",
+      "critique_content": "Phase 2 目前只做等价/不等价的二元判定，缺乏对'方向性冲突'的显式检测机制。两条来自不同框架的 seed 可能在表面上 rule_subject 不同（因此被判为 not equivalent），但在底层逻辑上存在实质性张力（例如：一条要求定量阈值严格，另一条要求定性灵活判断用于同一评估步骤）。这类冲突在当前流程中不可见，只能在 Phase 3 综合时被动发现。",
+      "proposed_fix": "在 Phase 2 的 pairwise 输出中增加一个 directional_conflict 布尔字段及 conflict_axis 描述字段，专门标记'虽不等价但在同一决策轴上方向相反'的配对。这不要求仲裁（仲裁留给 Phase 3），仅要求显式标注，以便综合阶段优先处理这些张力点。"
+    }
+  ],
+  "_fallback_used": false,
+  "attempts": [
+    {
+      "attempt": 0,
+      "returncode": 0
+    }
+  ],
+  "error": null
+}

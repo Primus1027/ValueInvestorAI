@@ -1,0 +1,10 @@
+{
+  "debate_id": "2026-04-21_manual",
+  "total_clusters_voted": 28,
+  "consensus_modes": {
+    "no_threshold": 24,
+    "same_magnitude": 4
+  },
+  "manual_review_count": 0,
+  "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase3b_quant_votes.jsonl"
+}

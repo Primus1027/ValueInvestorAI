@@ -1,0 +1,65 @@
+{
+  "debate_id": "2026-04-21_manual",
+  "total_disputes": 3,
+  "convergence_stats": {
+    "converged": 0,
+    "narrowed": 0,
+    "unchanged": 3,
+    "error": 0
+  },
+  "transcript_paths": [
+    "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_munger_seed_10.md",
+    "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_duan_seed_10.md",
+    "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_munger_seed_09.md"
+  ],
+  "seed_uid_to_transcript": {
+    "buffett/seed_04": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_munger_seed_10.md",
+    "munger/seed_10": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_munger_seed_10.md",
+    "duan/seed_12": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_munger_seed_10.md",
+    "buffett/seed_15": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_duan_seed_10.md",
+    "duan/seed_10": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_duan_seed_10.md",
+    "munger/seed_09": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_munger_seed_09.md",
+    "duan/seed_14": "/Users/ying/Documents/Desktop/ValueInvestorAI/Principles/history/2026-04-21_manual/debate_transcript_dispute_munger_seed_09.md"
+  },
+  "disputes": [
+    {
+      "dispute_id": "dispute_munger_seed_10",
+      "root_master": "munger",
+      "root_seed_id": "seed_10",
+      "canonical_claim": "The ability to raise prices without losing meaningful customer volume is the primary operational litmus test of whether a real structural competitive ",
+      "dispute_type": "severity",
+      "convergence": "unchanged",
+      "final_positions_by_master": {
+        "buffett": "定价权是判断结构性竞争壁垒是否真实存在的首要操作性验证标准（severity: warning）。本框架认为，企业能否在完整商业周期内将价格提升至高于成本通胀水平，同时维持或增长销售量，是将\"存在护城河\"这一定性断言转化为可观测历史事实的关键测试。这一判断来源于方法论核心实践者在2010年正式听证中明确陈述\"定价权比优秀管理层更重要\"，并在1988年某领先消费品牌投资案中将全球涨价且销量稳健作为投资核心依据。若定价权缺失，任何结构性壁垒声明均需提供额外特殊佐证方可成立。",
+        "munger": "定价权是特许经营价值的首要实证测试，severity 为 warning。核心主张：企业须具备在成本压力期将价格涨幅超越投入成本增幅、且不触发客户实质性流失的结构性能力，方可认定具有真实特许价值。若历史上系统性吸收成本而非转嫁，则判定为缺乏定价权。核心论据：消费者对产品的溢价支付意愿是其超越商品属性的直接行为证明；当企业能提价而客户不离去，这一事实本身即证伪了\"无差异商品\"假设，并验证了结构性竞争壁垒的真实存在。Anti-scope 明确：不要求定价权被频繁行使，主动低价运营者（战略性选择不涨价...",
+        "duan": "C方立场：定价权是结构性竞争壁垒深度的行为层锚点，严重度为note。\n\n核心主张：结构性壁垒评估须验证企业历史上是否存在成功涨价且核心客户粘性未显著下降的案例；若定价权缺失，应降低壁垒评级。\n\n核心论据：某高端消费品的典型案例揭示了一个反直觉现象——涨价后消费者购买意愿反而增强，因为价格本身就是品牌价值的组成部分。这说明定价权不仅是盈利能力指标，更是壁垒深度的行为实证。C框架将其置于三维验证体系（心智首选 + 傻瓜测试 + 定价权）的行为层，与纯存在性判断形成互补。例外：渗透期以价换量的早期企业..."
+      }
+    },
+    {
+      "dispute_id": "dispute_duan_seed_10",
+      "root_master": "duan",
+      "root_seed_id": "seed_10",
+      "canonical_claim": "Management that demonstrably resists the institutional imperative — willing to hold excess cash, decline available acquisitions, and defy peer behavio",
+      "dispute_type": "severity",
+      "convergence": "unchanged",
+      "final_positions_by_master": {
+        "buffett": "【Framework B 立场】\n\n核心主张：管理层主动抵制\"机构惯性\"——在经济回报不足时拒绝可用并购、持有超额现金、拒绝跟风同业——构成显著正向质量信号（严重度：note，即加分项而非否决门槛）。\n\n核心论据：组织天然倾向于吸收可用资本、模仿同业行为，无论回报是否充分。能够识别并抵制这一力量的管理层极为稀有。其价值不在于公开声明，而在于历史行为记录中可观测的\"蓄意不作为\"模式——有资本可部署却选择克制。这种管理层在本框架评估中享有实质性质量溢价。",
+        "munger": "管理层在回报不足时主动持现、拒绝可得并购、抵制同业跟风，是资本配置自律的稀缺正向信号，本方评级为 note 级加分项，无量化阈值，不构成投资否决条件。核心论据在于：企业普遍面临将可用资本部署出去的组织惯性压力，唯有行为记录——而非公开声明——方能验证管理层真正以股东长期利益为先的立场。此项信号在同质可比标的中具有显著分层效力，应结合具体历史实例加以评估，而非依赖意图表述。",
+        "duan": "核心主张（warning 级）：管理层资本配置决策必须以股东长期利益为导向，不以短期业绩或自身利益驱动——评判标准为行为记录，非公开声明。\n\n核心论据：该框架将\"管理层是否在为股东着想\"列为持续监控的核心检验问题，历史决策模式（合理时机的回购/分红执行、薪酬克制、拒绝无关并购）是唯一可信的评估依据。需注意：此原则不适用于再投资机会充足的高成长期企业，也不约束具有合理战略逻辑的并购行为——anti_scope 的精确划定正是该框架的方法论贡献。"
+      }
+    },
+    {
+      "dispute_id": "dispute_munger_seed_09",
+      "root_master": "munger",
+      "root_seed_id": "seed_09",
+      "canonical_claim": "Any investment thesis whose validity is contingent on a specific macroeconomic prediction being correct must be rejected",
+      "dispute_type": "severity",
+      "convergence": "unchanged",
+      "final_positions_by_master": {
+        "buffett": "宏观预测依赖的投资论文应予否决（否决级）。若价值实现依赖利率、汇率或经济周期时点的特定走向，投资者承担的是宏观预测风险而非商业风险——前者系统性胜率从未得到证明，构成不可接受的单点失败。理解宏观背景是允许的；以宏观预测为论文成立之前提，是不允许的。",
+        "munger": "**核心主张（否决级）**：凡投资论题的成立需依赖特定宏观预测正确——包括利率走向、汇率变动、大宗商品价格、GDP轨迹或信用周期时机——必须以单点失败风险为由直接否决，严重度为 veto。\n\n**核心论据**：此立场非风险管理层面的审慎，而是认识论层面的断言——宏观预测能力从未被系统性验证，投资者对其赋予的置信度本身即构成人类认知偏误的典型形态。适格的投资标的须在多种宏观情境下均能创造价值；只在特定宏观环境下成立的论题，其\"分析\"外表掩盖的是隐性的宏观赌注。",
+        "duan": "本框架将此定性为 note 级操作规范，而非绝对否决。投资决策的核心触发依据必须是公司基本面本身，宏观走向与市场时机预测不得列为关键条件——直接引语为证：\"我不看宏观，也不预测市场，我只关心这家公司本身。\"宏观环境可作行业背景参考，逆向投资中识别市场极度悲观情绪的信号亦不受约束。核心区分：宏观是背景知识，不是投资触发条件。"
+      }
+    }
+  ]
+}

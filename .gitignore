@@ -32,3 +32,20 @@ env/
 # Data (large files tracked separately)
 *.sqlite
 *.db
+
+# Principles Board Debate — runtime scratch + logs
+# prep/ is the orchestrator's scratch area. Per-phase outputs live here
+# transiently and are archived to Principles/history/{debate_id}/prep/ at
+# phaseF. Never commit prep/ working state.
+prep/phase_state.json
+prep/last_debate_state.json
+prep/process_critique.jsonl
+prep/phase1_original_backup/
+prep/context_*.json
+prep/phase*.jsonl
+prep/phase*.json
+prep/phase*.md
+prep/soul_index*.json
+prep/soul_prompt_toc_*.json
+# Debug logs from LLM runs
+Principles/logs/

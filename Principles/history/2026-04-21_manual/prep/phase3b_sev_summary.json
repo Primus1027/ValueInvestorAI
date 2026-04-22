@@ -1,0 +1,11 @@
+{
+  "debate_id": "2026-04-21_manual",
+  "total_clusters": 33,
+  "layer0_severity_counts": {
+    "veto": 7,
+    "warning": 21,
+    "note": 5
+  },
+  "floored_due_to_negation_count": 0,
+  "output_path": "/Users/ying/Documents/Desktop/ValueInvestorAI/prep/phase3b_sev_votes.jsonl"
+}

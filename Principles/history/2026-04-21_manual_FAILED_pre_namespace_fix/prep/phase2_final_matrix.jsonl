@@ -1,0 +1,435 @@
+{"pair_id": "seed_01-seed_03", "seed_ids": ["seed_01", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_04", "seed_ids": ["seed_01", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_05", "seed_ids": ["seed_01", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_06", "seed_ids": ["seed_01", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_11", "seed_ids": ["seed_01", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_12", "seed_ids": ["seed_01", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_13", "seed_ids": ["seed_01", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_14", "seed_ids": ["seed_01", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_02", "seed_ids": ["seed_01", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_03", "seed_ids": ["seed_01", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_06", "seed_ids": ["seed_01", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_07", "seed_ids": ["seed_01", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_10", "seed_ids": ["seed_01", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_13", "seed_ids": ["seed_01", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_14", "seed_ids": ["seed_01", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_15", "seed_ids": ["seed_01", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_03", "seed_ids": ["seed_02", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_04", "seed_ids": ["seed_02", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_05", "seed_ids": ["seed_02", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_06", "seed_ids": ["seed_02", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_11", "seed_ids": ["seed_02", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_12", "seed_ids": ["seed_02", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_13", "seed_ids": ["seed_02", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_14", "seed_ids": ["seed_02", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_02", "seed_ids": ["seed_02", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_03", "seed_ids": ["seed_02", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_06", "seed_ids": ["seed_02", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_07", "seed_ids": ["seed_02", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_10", "seed_ids": ["seed_02", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_13", "seed_ids": ["seed_02", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_14", "seed_ids": ["seed_02", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_15", "seed_ids": ["seed_02", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_05", "seed_ids": ["seed_03", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_06", "seed_ids": ["seed_03", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_07", "seed_ids": ["seed_03", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_08", "seed_ids": ["seed_03", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_09", "seed_ids": ["seed_03", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_10", "seed_ids": ["seed_03", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_15", "seed_ids": ["seed_03", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_01", "seed_ids": ["seed_03", "seed_01"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_03", "seed_ids": ["seed_03", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_04", "seed_ids": ["seed_03", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_05", "seed_ids": ["seed_03", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_08", "seed_ids": ["seed_03", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_09", "seed_ids": ["seed_03", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_11", "seed_ids": ["seed_03", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_12", "seed_ids": ["seed_03", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_13", "seed_ids": ["seed_03", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_05", "seed_ids": ["seed_04", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_06", "seed_ids": ["seed_04", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_07", "seed_ids": ["seed_04", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_08", "seed_ids": ["seed_04", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_09", "seed_ids": ["seed_04", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_10", "seed_ids": ["seed_04", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_15", "seed_ids": ["seed_04", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_01", "seed_ids": ["seed_04", "seed_01"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_03", "seed_ids": ["seed_04", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_04", "seed_ids": ["seed_04", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_05", "seed_ids": ["seed_04", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_08", "seed_ids": ["seed_04", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_09", "seed_ids": ["seed_04", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_11", "seed_ids": ["seed_04", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_12", "seed_ids": ["seed_04", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_13", "seed_ids": ["seed_04", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_07", "seed_ids": ["seed_05", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_08", "seed_ids": ["seed_05", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_09", "seed_ids": ["seed_05", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_10", "seed_ids": ["seed_05", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_11", "seed_ids": ["seed_05", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_12", "seed_ids": ["seed_05", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_13", "seed_ids": ["seed_05", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_14", "seed_ids": ["seed_05", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_15", "seed_ids": ["seed_05", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_01", "seed_ids": ["seed_05", "seed_01"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_02", "seed_ids": ["seed_05", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_04", "seed_ids": ["seed_05", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_05", "seed_ids": ["seed_05", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_06", "seed_ids": ["seed_05", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_07", "seed_ids": ["seed_05", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_08", "seed_ids": ["seed_05", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_09", "seed_ids": ["seed_05", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_10", "seed_ids": ["seed_05", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_11", "seed_ids": ["seed_05", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_12", "seed_ids": ["seed_05", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_14", "seed_ids": ["seed_05", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_15", "seed_ids": ["seed_05", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_07", "seed_ids": ["seed_06", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_08", "seed_ids": ["seed_06", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_09", "seed_ids": ["seed_06", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_10", "seed_ids": ["seed_06", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_11", "seed_ids": ["seed_06", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_12", "seed_ids": ["seed_06", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_13", "seed_ids": ["seed_06", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_14", "seed_ids": ["seed_06", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_15", "seed_ids": ["seed_06", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_01", "seed_ids": ["seed_06", "seed_01"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_02", "seed_ids": ["seed_06", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_04", "seed_ids": ["seed_06", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_05", "seed_ids": ["seed_06", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_06", "seed_ids": ["seed_06", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_07", "seed_ids": ["seed_06", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_08", "seed_ids": ["seed_06", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_09", "seed_ids": ["seed_06", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_10", "seed_ids": ["seed_06", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_11", "seed_ids": ["seed_06", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_12", "seed_ids": ["seed_06", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_14", "seed_ids": ["seed_06", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_15", "seed_ids": ["seed_06", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_11", "seed_ids": ["seed_07", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_12", "seed_ids": ["seed_07", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_13", "seed_ids": ["seed_07", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_14", "seed_ids": ["seed_07", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_02", "seed_ids": ["seed_07", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_03", "seed_ids": ["seed_07", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_06", "seed_ids": ["seed_07", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_07", "seed_ids": ["seed_07", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_10", "seed_ids": ["seed_07", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_13", "seed_ids": ["seed_07", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_14", "seed_ids": ["seed_07", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_15", "seed_ids": ["seed_07", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_11", "seed_ids": ["seed_08", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_12", "seed_ids": ["seed_08", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_13", "seed_ids": ["seed_08", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_14", "seed_ids": ["seed_08", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_02", "seed_ids": ["seed_08", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_03", "seed_ids": ["seed_08", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_06", "seed_ids": ["seed_08", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_07", "seed_ids": ["seed_08", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_10", "seed_ids": ["seed_08", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_13", "seed_ids": ["seed_08", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_14", "seed_ids": ["seed_08", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_15", "seed_ids": ["seed_08", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_11", "seed_ids": ["seed_09", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_12", "seed_ids": ["seed_09", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_13", "seed_ids": ["seed_09", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_14", "seed_ids": ["seed_09", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_02", "seed_ids": ["seed_09", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_03", "seed_ids": ["seed_09", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_06", "seed_ids": ["seed_09", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_07", "seed_ids": ["seed_09", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_10", "seed_ids": ["seed_09", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_13", "seed_ids": ["seed_09", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_14", "seed_ids": ["seed_09", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_15", "seed_ids": ["seed_09", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_11", "seed_ids": ["seed_10", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_12", "seed_ids": ["seed_10", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_13", "seed_ids": ["seed_10", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_14", "seed_ids": ["seed_10", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_02", "seed_ids": ["seed_10", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_03", "seed_ids": ["seed_10", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_06", "seed_ids": ["seed_10", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_07", "seed_ids": ["seed_10", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_10", "seed_ids": ["seed_10", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_13", "seed_ids": ["seed_10", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_14", "seed_ids": ["seed_10", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_15", "seed_ids": ["seed_10", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_15", "seed_ids": ["seed_11", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_01", "seed_ids": ["seed_11", "seed_01"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_03", "seed_ids": ["seed_11", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_04", "seed_ids": ["seed_11", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_05", "seed_ids": ["seed_11", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_08", "seed_ids": ["seed_11", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_09", "seed_ids": ["seed_11", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_11", "seed_ids": ["seed_11", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_12", "seed_ids": ["seed_11", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_13", "seed_ids": ["seed_11", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_15", "seed_ids": ["seed_12", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_01", "seed_ids": ["seed_12", "seed_01"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_03", "seed_ids": ["seed_12", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_04", "seed_ids": ["seed_12", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_05", "seed_ids": ["seed_12", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_08", "seed_ids": ["seed_12", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_09", "seed_ids": ["seed_12", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_11", "seed_ids": ["seed_12", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_12", "seed_ids": ["seed_12", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_13", "seed_ids": ["seed_12", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_15", "seed_ids": ["seed_13", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_01", "seed_ids": ["seed_13", "seed_01"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_03", "seed_ids": ["seed_13", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_04", "seed_ids": ["seed_13", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_05", "seed_ids": ["seed_13", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_08", "seed_ids": ["seed_13", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_09", "seed_ids": ["seed_13", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_11", "seed_ids": ["seed_13", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_12", "seed_ids": ["seed_13", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_13", "seed_ids": ["seed_13", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_15", "seed_ids": ["seed_14", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_01", "seed_ids": ["seed_14", "seed_01"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_03", "seed_ids": ["seed_14", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_04", "seed_ids": ["seed_14", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_05", "seed_ids": ["seed_14", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_08", "seed_ids": ["seed_14", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_09", "seed_ids": ["seed_14", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_11", "seed_ids": ["seed_14", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_12", "seed_ids": ["seed_14", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_14-seed_13", "seed_ids": ["seed_14", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_15-seed_02", "seed_ids": ["seed_15", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_15-seed_03", "seed_ids": ["seed_15", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_15-seed_06", "seed_ids": ["seed_15", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_15-seed_07", "seed_ids": ["seed_15", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_15-seed_10", "seed_ids": ["seed_15", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_15-seed_13", "seed_ids": ["seed_15", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_15-seed_14", "seed_ids": ["seed_15", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_15-seed_15", "seed_ids": ["seed_15", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_02", "seed_ids": ["seed_01", "seed_02"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_03", "seed_ids": ["seed_01", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_06", "seed_ids": ["seed_01", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_07", "seed_ids": ["seed_01", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_10", "seed_ids": ["seed_01", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_13", "seed_ids": ["seed_01", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_14", "seed_ids": ["seed_01", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_15", "seed_ids": ["seed_01", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_03", "seed_ids": ["seed_02", "seed_03"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_04", "seed_ids": ["seed_02", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_05", "seed_ids": ["seed_02", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_08", "seed_ids": ["seed_02", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_09", "seed_ids": ["seed_02", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_11", "seed_ids": ["seed_02", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_12", "seed_ids": ["seed_02", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_02-seed_13", "seed_ids": ["seed_02", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_04", "seed_ids": ["seed_03", "seed_04"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_05", "seed_ids": ["seed_03", "seed_05"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_06", "seed_ids": ["seed_03", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_07", "seed_ids": ["seed_03", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_08", "seed_ids": ["seed_03", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_09", "seed_ids": ["seed_03", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_10", "seed_ids": ["seed_03", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_11", "seed_ids": ["seed_03", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_12", "seed_ids": ["seed_03", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_14", "seed_ids": ["seed_03", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_03-seed_15", "seed_ids": ["seed_03", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_06", "seed_ids": ["seed_04", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_07", "seed_ids": ["seed_04", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_10", "seed_ids": ["seed_04", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_13", "seed_ids": ["seed_04", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_14", "seed_ids": ["seed_04", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_04-seed_15", "seed_ids": ["seed_04", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_06", "seed_ids": ["seed_05", "seed_06"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_07", "seed_ids": ["seed_05", "seed_07"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_10", "seed_ids": ["seed_05", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_13", "seed_ids": ["seed_05", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_14", "seed_ids": ["seed_05", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_05-seed_15", "seed_ids": ["seed_05", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_08", "seed_ids": ["seed_06", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_09", "seed_ids": ["seed_06", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_11", "seed_ids": ["seed_06", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_12", "seed_ids": ["seed_06", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_06-seed_13", "seed_ids": ["seed_06", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_08", "seed_ids": ["seed_07", "seed_08"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_09", "seed_ids": ["seed_07", "seed_09"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_11", "seed_ids": ["seed_07", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_12", "seed_ids": ["seed_07", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_07-seed_13", "seed_ids": ["seed_07", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_10", "seed_ids": ["seed_08", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_13", "seed_ids": ["seed_08", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_14", "seed_ids": ["seed_08", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_08-seed_15", "seed_ids": ["seed_08", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_10", "seed_ids": ["seed_09", "seed_10"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_13", "seed_ids": ["seed_09", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_14", "seed_ids": ["seed_09", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_09-seed_15", "seed_ids": ["seed_09", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_11", "seed_ids": ["seed_10", "seed_11"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_12", "seed_ids": ["seed_10", "seed_12"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_10-seed_13", "seed_ids": ["seed_10", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_13", "seed_ids": ["seed_11", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_14", "seed_ids": ["seed_11", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_11-seed_15", "seed_ids": ["seed_11", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_13", "seed_ids": ["seed_12", "seed_13"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_14", "seed_ids": ["seed_12", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_12-seed_15", "seed_ids": ["seed_12", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_14", "seed_ids": ["seed_13", "seed_14"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_13-seed_15", "seed_ids": ["seed_13", "seed_15"], "equivalent": false, "confidence": 1.0, "brief_reason": "different_rule_subject", "skipped_llm": true}
+{"pair_id": "seed_01-seed_02", "seed_ids": ["seed_01", "seed_02"], "equivalent": false, "confidence": 0.88, "brief_reason": "A考察能否简洁表达商业模式（输出侧清晰度门槛），B要求亲身认知而非依赖报告（知识来源质量），触发场景实质不同"}
+{"pair_id": "seed_01-seed_07", "seed_ids": ["seed_01", "seed_07"], "equivalent": false, "confidence": 0.97, "brief_reason": "触发场景本质不同：A约束可理解性门槛，B约束估值方法复杂度"}
+{"pair_id": "seed_01-seed_08", "seed_ids": ["seed_01", "seed_08"], "equivalent": false, "confidence": 0.97, "brief_reason": "触发场景实质不同：A约束认知门槛（能否解释商业模式），B约束心理韧性（能否承受流动性丧失）"}
+{"pair_id": "seed_01-seed_09", "seed_ids": ["seed_01", "seed_09"], "equivalent": false, "confidence": 0.97, "brief_reason": "触发场景完全不同：A约束进入分析的前提条件，B约束卖出时机的判断标准"}
+{"pair_id": "seed_01-seed_10", "seed_ids": ["seed_01", "seed_10"], "equivalent": false, "confidence": 0.97, "brief_reason": "触发场景实质不同：A约束认知边界（商业模式理解），B约束预测依赖（宏观/市场预测）"}
+{"pair_id": "seed_01-seed_15", "seed_ids": ["seed_01", "seed_15"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束认知边界（能否说清盈利模式），B约束估值回报门槛（预期收益vs无风险利率），主题与触发场景均不同"}
+{"pair_id": "seed_01-seed_01", "seed_ids": ["seed_01", "seed_01"], "equivalent": false, "confidence": 0.93, "brief_reason": "A 是「可理解性门槛」（能否简单说清盈利模式），B 是「逆向推演协议」（列举失败模式），触发场景与认知任务本质不同"}
+{"pair_id": "seed_01-seed_04", "seed_ids": ["seed_01", "seed_04"], "equivalent": false, "confidence": 0.82, "brief_reason": "A测商业模式能否向外行简述；B测竞争优势能否用分析框架解释——测试对象与受众均不同"}
+{"pair_id": "seed_01-seed_05", "seed_ids": ["seed_01", "seed_05"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束能力边界（circle_of_competence），B约束认知偏差审计（behavioral_discipline），触发场景与目标完全不同"}
+{"pair_id": "seed_01-seed_08", "seed_ids": ["seed_01", "seed_08"], "equivalent": false, "confidence": 0.97, "brief_reason": "A拒绝原因是商业模式不可理解（能力圈），B拒绝原因是依赖他人跟买（行为纪律），触发场景本质不同"}
+{"pair_id": "seed_01-seed_09", "seed_ids": ["seed_01", "seed_09"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题与触发场景完全不同：A约束分析准入（能力圈），B约束决策驱动因素（宏观预测）"}
+{"pair_id": "seed_01-seed_11", "seed_ids": ["seed_01", "seed_11"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束分析入口资质（可解释性），B要求评估多因素叠加崩溃风险；触发场景与判断目的完全不同"}
+{"pair_id": "seed_01-seed_12", "seed_ids": ["seed_01", "seed_12"], "equivalent": false, "confidence": 0.95, "brief_reason": "触发场景本质不同：A约束商业模式可解释性（能力圈入口），B约束多假设叠加的论点脆弱性（论题质量）"}
+{"pair_id": "seed_02-seed_07", "seed_ids": ["seed_02", "seed_07"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题完全不同：A约束认知获取方式（能力圈），B约束估值论证方法（安全边际）"}
+{"pair_id": "seed_02-seed_08", "seed_ids": ["seed_02", "seed_08"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束认知来源（能力圈），B约束持仓心理（行为纪律）"}
+{"pair_id": "seed_02-seed_09", "seed_ids": ["seed_02", "seed_09"], "equivalent": false, "confidence": 0.98, "brief_reason": "A约束认知获取方式（能力圈），B约束卖出触发条件（行为纪律），情境与主张完全不同"}
+{"pair_id": "seed_02-seed_10", "seed_ids": ["seed_02", "seed_10"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题与触发场景均不同：A约束认知来源（能力圈），B约束预测依赖（行为纪律）"}
+{"pair_id": "seed_02-seed_15", "seed_ids": ["seed_02", "seed_15"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A讲能力圈/亲身认知，B讲机会成本/回报门槛，触发场景与核心主张均不相关"}
+{"pair_id": "seed_02-seed_01", "seed_ids": ["seed_02", "seed_01"], "equivalent": false, "confidence": 0.97, "brief_reason": "A要求第一手认知视角，B要求系统性反向推理排错，主题与触发逻辑均不同"}
+{"pair_id": "seed_02-seed_04", "seed_ids": ["seed_02", "seed_04"], "equivalent": false, "confidence": 0.85, "brief_reason": "A要求亲身视角认知（非报告），B要求跨学科框架解释竞争优势，知识来源机制实质不同"}
+{"pair_id": "seed_02-seed_05", "seed_ids": ["seed_02", "seed_05"], "equivalent": false, "confidence": 0.95, "brief_reason": "触发场景实质不同：A约束知识来源（亲身认知 vs 报告），B约束推理过程（偏差审计）"}
+{"pair_id": "seed_02-seed_08", "seed_ids": ["seed_02", "seed_08"], "equivalent": false, "confidence": 0.95, "brief_reason": "A要求知识来源为亲身认知而非报告；B拒绝以他人买入为核心论据；触发场景与核心主张均不同"}
+{"pair_id": "seed_02-seed_09", "seed_ids": ["seed_02", "seed_09"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束认知来源（能力圈/亲身理解），B约束决策驱动因素（禁用宏观预测）"}
+{"pair_id": "seed_02-seed_11", "seed_ids": ["seed_02", "seed_11"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束认知来源（亲身体验>报告），B约束风险评估（多空头因素汇合），主题与触发场景均不同"}
+{"pair_id": "seed_02-seed_12", "seed_ids": ["seed_02", "seed_12"], "equivalent": false, "confidence": 0.97, "brief_reason": "触发场景实质不同：A约束知识来源（亲身认知 vs 研究报告），B约束论点结构（多假设叠加则标记脆弱），两者互无交叉"}
+{"pair_id": "seed_03-seed_04", "seed_ids": ["seed_03", "seed_04"], "equivalent": false, "confidence": 0.95, "brief_reason": "A考察护城河/商业模式鲁棒性，B考察管理层道德操守，主题与触发场景均不同"}
+{"pair_id": "seed_03-seed_11", "seed_ids": ["seed_03", "seed_11"], "equivalent": false, "confidence": 0.95, "brief_reason": "触发场景实质不同：A考察管理层依赖性（护城河韧性），B考察技术预测依赖性（能力圈边界）"}
+{"pair_id": "seed_03-seed_12", "seed_ids": ["seed_03", "seed_12"], "equivalent": false, "confidence": 0.95, "brief_reason": "A考验管理层无关性（护城河稳健性），B考验品牌心智占位，触发场景与衡量维度实质不同"}
+{"pair_id": "seed_03-seed_13", "seed_ids": ["seed_03", "seed_13"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A考察护城河强度，B考察管理层利益对齐，触发场景与约束内容均不同"}
+{"pair_id": "seed_03-seed_14", "seed_ids": ["seed_03", "seed_14"], "equivalent": false, "confidence": 0.78, "brief_reason": "A考察护城河抗管理层退化的耐久性，B要求竞争力持续增强的成长性，静态底线≠动态上行要求"}
+{"pair_id": "seed_03-seed_02", "seed_ids": ["seed_03", "seed_02"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A论护城河/商业模式韧性，B论管理层诚信一票否决"}
+{"pair_id": "seed_03-seed_06", "seed_ids": ["seed_03", "seed_06"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题完全不同：A论护城河（商业模式抗管理层风险），B论管理层评估方法论，场景与核心主张均不重叠"}
+{"pair_id": "seed_03-seed_07", "seed_ids": ["seed_03", "seed_07"], "equivalent": false, "confidence": 0.92, "brief_reason": "A考察管理层独立性（护城河深度），B考察定价权验证机制，触发场景实质不同"}
+{"pair_id": "seed_03-seed_10", "seed_ids": ["seed_03", "seed_10"], "equivalent": false, "confidence": 0.82, "brief_reason": "A考察管理层依赖度(护城河韧性)，B考察长期经济结构质量，维度不同"}
+{"pair_id": "seed_03-seed_14", "seed_ids": ["seed_03", "seed_14"], "equivalent": false, "confidence": 0.92, "brief_reason": "A讲护城河（管理层独立性），B讲资本回报结构（再投资需求），触发场景实质不同"}
+{"pair_id": "seed_03-seed_15", "seed_ids": ["seed_03", "seed_15"], "equivalent": false, "confidence": 0.92, "brief_reason": "A考察管理层无关性（护城河强度），B考察利益激励结构对齐，是两个独立维度"}
+{"pair_id": "seed_04-seed_11", "seed_ids": ["seed_04", "seed_11"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题完全不同：A约束管理层诚信，B约束能力圈边界；触发场景无交集"}
+{"pair_id": "seed_04-seed_12", "seed_ids": ["seed_04", "seed_12"], "equivalent": false, "confidence": 0.98, "brief_reason": "主题完全不同：A约束管理层诚信，B约束品牌心智占位（护城河），触发场景无交集"}
+{"pair_id": "seed_04-seed_13", "seed_ids": ["seed_04", "seed_13"], "equivalent": false, "confidence": 0.92, "brief_reason": "A是过往行为否决信号，B是激励结构对齐要求，触发场景本质不同"}
+{"pair_id": "seed_04-seed_14", "seed_ids": ["seed_04", "seed_14"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束管理层诚信行为，B约束护城河理解判断，触发场景本质不同"}
+{"pair_id": "seed_04-seed_02", "seed_ids": ["seed_04", "seed_02"], "equivalent": false, "confidence": 0.82, "brief_reason": "触发场景实质不同：A 约束短期主义决策，B 约束欺骗/不诚信行为；两者可独立存在"}
+{"pair_id": "seed_04-seed_06", "seed_ids": ["seed_04", "seed_06"], "equivalent": false, "confidence": 0.88, "brief_reason": "A是基于过往行为的否决触发规则，B是评估管理层时应锚定激励结构而非品格声誉的方法论，方向与触发场景均不同"}
+{"pair_id": "seed_04-seed_07", "seed_ids": ["seed_04", "seed_07"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题完全不同：A约束管理层诚信一票否决，B验证护城河定价权；触发场景本质各异"}
+{"pair_id": "seed_04-seed_10", "seed_ids": ["seed_04", "seed_10"], "equivalent": false, "confidence": 0.95, "brief_reason": "触发场景本质不同：A约束管理层短视行为（诚信），B约束企业长期经济结构（基本面）"}
+{"pair_id": "seed_04-seed_14", "seed_ids": ["seed_04", "seed_14"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束管理层诚信，B约束资本回报结构质量"}
+{"pair_id": "seed_04-seed_15", "seed_ids": ["seed_04", "seed_15"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束管理层行为（诚信/短长期取舍），B约束商业模式结构激励设计，触发场景与判断维度实质不同"}
+{"pair_id": "seed_05-seed_06", "seed_ids": ["seed_05", "seed_06"], "equivalent": false, "confidence": 0.97, "brief_reason": "A禁止用杠杆做多，B禁止建空头，约束行为方向不同"}
+{"pair_id": "seed_05-seed_03", "seed_ids": ["seed_05", "seed_03"], "equivalent": true, "confidence": 0.7, "brief_reason": "两条均禁止自身使用可导致被迫清仓的杠杆参与权益投资，核心方向/主体/情境一致；A更绝对，B限定强制赎回场景，属范围差异"}
+{"pair_id": "seed_05-seed_13", "seed_ids": ["seed_05", "seed_13"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束资金来源（禁止借贷），B约束归因方式（错误归己）；触发场景完全不同"}
+{"pair_id": "seed_06-seed_03", "seed_ids": ["seed_06", "seed_03"], "equivalent": false, "confidence": 0.88, "brief_reason": "A禁止空头头寸（方向性做空行为），B禁止可能触发强制平仓的杠杆（持仓结构风险），触发场景实质不同"}
+{"pair_id": "seed_06-seed_13", "seed_ids": ["seed_06", "seed_13"], "equivalent": false, "confidence": 0.97, "brief_reason": "A禁止做空（仓位行为约束），B要求归因于自身判断（认知归因约束），触发场景和约束内容本质不同"}
+{"pair_id": "seed_07-seed_08", "seed_ids": ["seed_07", "seed_08"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束估值分析方法，B约束持仓心理承受力，主题与触发场景均不同"}
+{"pair_id": "seed_07-seed_09", "seed_ids": ["seed_07", "seed_09"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束估值方法论（买入判断），B约束卖出触发条件，场景与方向均不同"}
+{"pair_id": "seed_07-seed_10", "seed_ids": ["seed_07", "seed_10"], "equivalent": false, "confidence": 0.95, "brief_reason": "触发场景实质不同：A约束估值方法论复杂度（DCF多情景→缓冲不足），B约束输入依据类型（禁用宏观/市场预测）"}
+{"pair_id": "seed_07-seed_15", "seed_ids": ["seed_07", "seed_15"], "equivalent": false, "confidence": 0.88, "brief_reason": "触发场景实质不同：A约束分析方法复杂度，B约束绝对回报溢价；可能各自独立触发或不触发"}
+{"pair_id": "seed_07-seed_01", "seed_ids": ["seed_07", "seed_01"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束估值方法充分性，B要求失败模式枚举优先于价值分析，主题与触发场景均不同"}
+{"pair_id": "seed_07-seed_04", "seed_ids": ["seed_07", "seed_04"], "equivalent": false, "confidence": 0.93, "brief_reason": "触发场景实质不同：A约束估值方法复杂度（DCF建模），B约束竞争优势可解释性（能力圈）"}
+{"pair_id": "seed_07-seed_05", "seed_ids": ["seed_07", "seed_05"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束估值方法论，B约束认知偏差审计；触发场景实质不同"}
+{"pair_id": "seed_07-seed_08", "seed_ids": ["seed_07", "seed_08"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束估值方法论（DCF情景依赖），B约束投资逻辑来源（从众行为），主题与触发场景实质不同"}
+{"pair_id": "seed_07-seed_09", "seed_ids": ["seed_07", "seed_09"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束估值模型复杂度信号，B约束宏观预测驱动决策，触发情境与主题均不同"}
+{"pair_id": "seed_07-seed_11", "seed_ids": ["seed_07", "seed_11"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束估值方法论（DCF缓冲不足），B约束风险识别流程（多因素汇合灾难性失败）；主题和触发场景均不同"}
+{"pair_id": "seed_07-seed_12", "seed_ids": ["seed_07", "seed_12"], "equivalent": false, "confidence": 0.75, "brief_reason": "触发场景不同：A约束的是DCF建模复杂度信号，B约束的是假设结构联合脆弱性信号"}
+{"pair_id": "seed_08-seed_09", "seed_ids": ["seed_08", "seed_09"], "equivalent": false, "confidence": 0.82, "brief_reason": "A是买入前的持仓意志预检（极端流动性场景），B是卖出触发条件（论点破裂 vs 价格下跌）；决策阶段与情境均不同"}
+{"pair_id": "seed_08-seed_10", "seed_ids": ["seed_08", "seed_10"], "equivalent": false, "confidence": 0.88, "brief_reason": "A约束持有期情绪稳定性，B约束决策依据来源，触发场景实质不同"}
+{"pair_id": "seed_08-seed_15", "seed_ids": ["seed_08", "seed_15"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束行为纪律（恐慌抛售冲动），B约束机会成本（预期回报vs无风险利率），触发场景实质不同"}
+{"pair_id": "seed_08-seed_01", "seed_ids": ["seed_08", "seed_01"], "equivalent": false, "confidence": 0.85, "brief_reason": "A考察持仓心理韧性（情绪测试），B要求系统性失败模式枚举（分析协议），触发场景本质不同"}
+{"pair_id": "seed_08-seed_04", "seed_ids": ["seed_08", "seed_04"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束行为纪律（情绪稳定性），B约束分析能力（能力圈框架），主题与触发场景均不同"}
+{"pair_id": "seed_08-seed_05", "seed_ids": ["seed_08", "seed_05"], "equivalent": false, "confidence": 0.88, "brief_reason": "A检验情绪定力（恐慌抛售），B审计分析偏误（认知偏差），触发场景实质不同"}
+{"pair_id": "seed_08-seed_08", "seed_ids": ["seed_08", "seed_08"], "equivalent": false, "confidence": 0.82, "brief_reason": "A测试投资人自身持仓恐慌情绪；B拒绝以他人买入为主要依据的论点——触发场景与诊断维度不同"}
+{"pair_id": "seed_08-seed_09", "seed_ids": ["seed_08", "seed_09"], "equivalent": false, "confidence": 0.92, "brief_reason": "A约束的是持有恐慌冲动（流动性心理测试），B约束的是宏观预测驱动决策（分析输入过滤），触发场景实质不同"}
+{"pair_id": "seed_08-seed_11", "seed_ids": ["seed_08", "seed_11"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束投资人心理纪律（会否恐慌），B约束论题对多因素灾难性汇合的风险评估，场景与核心主张均不同"}
+{"pair_id": "seed_08-seed_12", "seed_ids": ["seed_08", "seed_12"], "equivalent": false, "confidence": 0.92, "brief_reason": "A测恐慌抛售的心理稳定性，B测假设叠加的结构脆弱性，触发场景实质不同"}
+{"pair_id": "seed_09-seed_10", "seed_ids": ["seed_09", "seed_10"], "equivalent": false, "confidence": 0.82, "brief_reason": "A约束卖出触发条件（价格≠理由），B约束决策依据来源（宏观/短期趋势不得为核心），场景与约束维度不同"}
+{"pair_id": "seed_09-seed_15", "seed_ids": ["seed_09", "seed_15"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束卖出时机（行为纪律），B约束买入估值门槛（机会成本），触发场景实质不同"}
+{"pair_id": "seed_09-seed_01", "seed_ids": ["seed_09", "seed_01"], "equivalent": false, "confidence": 0.93, "brief_reason": "A约束卖出触发条件（论点破裂才卖），B约束买入前分析流程（先枚举失败模式），触发场景实质不同"}
+{"pair_id": "seed_09-seed_04", "seed_ids": ["seed_09", "seed_04"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束卖出时机（行为纪律），B约束分析前提（能力圈），主题与触发场景均不同"}
+{"pair_id": "seed_09-seed_05", "seed_ids": ["seed_09", "seed_05"], "equivalent": false, "confidence": 0.93, "brief_reason": "A约束卖出触发条件（论点破裂vs价格下跌），B约束决策前认知偏差审查流程，触发场景与规则内容实质不同"}
+{"pair_id": "seed_09-seed_08", "seed_ids": ["seed_09", "seed_08"], "equivalent": false, "confidence": 0.92, "brief_reason": "A约束卖出时机（跌价≠卖出信号），B约束买入论点质量（跟风≠有效依据），触发场景一出一入，实质不同"}
+{"pair_id": "seed_09-seed_09", "seed_ids": ["seed_09", "seed_09"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束卖出触发条件（论点破裂 vs 价格），B约束决策输入来源（禁用宏观预测），触发场景实质不同"}
+{"pair_id": "seed_09-seed_11", "seed_ids": ["seed_09", "seed_11"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束卖出触发条件（论点破裂≠价格下跌），B要求评估多因素汇合导致灾难性失败风险，场景与方向均不同"}
+{"pair_id": "seed_09-seed_12", "seed_ids": ["seed_09", "seed_12"], "equivalent": false, "confidence": 0.95, "brief_reason": "A讨论卖出时机（价格跌不卖），B讨论买入前分析质量（多假设并立则标记脆弱），场景实质不同"}
+{"pair_id": "seed_10-seed_15", "seed_ids": ["seed_10", "seed_15"], "equivalent": false, "confidence": 0.97, "brief_reason": "A禁止宏观/市场预测驱动决策；B要求回报优于无风险利率，触发场景与约束内容均不同"}
+{"pair_id": "seed_10-seed_01", "seed_ids": ["seed_10", "seed_01"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束决策依据来源（禁用宏观/短期预测），B规定分析流程顺序（先枚举失败模式），触发场景实质不同"}
+{"pair_id": "seed_10-seed_04", "seed_ids": ["seed_10", "seed_04"], "equivalent": false, "confidence": 0.95, "brief_reason": "A禁止宏观/市场预测作为决策依据；B要求能用跨学科框架解释竞争优势，触发场景与核心约束完全不同"}
+{"pair_id": "seed_10-seed_05", "seed_ids": ["seed_10", "seed_05"], "equivalent": false, "confidence": 0.92, "brief_reason": "A约束宏观预测不得作为核心依据；B约束认知偏差审计流程，触发场景与主张内容均不同"}
+{"pair_id": "seed_10-seed_08", "seed_ids": ["seed_10", "seed_08"], "equivalent": false, "confidence": 0.82, "brief_reason": "A禁止以宏观预测/市场时机为核心依据，B禁止以他人跟风买入为核心依据，触发场景实质不同"}
+{"pair_id": "seed_10-seed_09", "seed_ids": ["seed_10", "seed_09"], "equivalent": true, "confidence": 0.92, "brief_reason": "同一决策流程约束，均禁止以宏观预测为核心依据，B为A的英文简化表述"}
+{"pair_id": "seed_10-seed_11", "seed_ids": ["seed_10", "seed_11"], "equivalent": false, "confidence": 0.95, "brief_reason": "A禁止宏观预测驱动决策；B要求评估多因素负向汇合风险，触发场景与主张方向均不同"}
+{"pair_id": "seed_10-seed_12", "seed_ids": ["seed_10", "seed_12"], "equivalent": false, "confidence": 0.88, "brief_reason": "A约束信息来源（禁用宏观/短期预测），B约束假设结构（多独立关键假设并发则标记脆弱），触发场景实质不同"}
+{"pair_id": "seed_11-seed_12", "seed_ids": ["seed_11", "seed_12"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束能力圈（拒绝技术依赖标的），B评估护城河（品牌心智占位）"}
+{"pair_id": "seed_11-seed_13", "seed_ids": ["seed_11", "seed_13"], "equivalent": false, "confidence": 0.98, "brief_reason": "主题不同：A约束能力圈/科技预测，B约束管理层持股对齐，触发场景完全不同"}
+{"pair_id": "seed_11-seed_14", "seed_ids": ["seed_11", "seed_14"], "equivalent": false, "confidence": 0.82, "brief_reason": "触发场景实质不同：A约束能力圈（需预测技术突破），B约束护城河持续增强的确信度"}
+{"pair_id": "seed_11-seed_02", "seed_ids": ["seed_11", "seed_02"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束能力圈/技术可判断性，B约束管理层诚信"}
+{"pair_id": "seed_11-seed_06", "seed_ids": ["seed_11", "seed_06"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束能力圈/科技可预测性，B约束管理层评估方法论"}
+{"pair_id": "seed_11-seed_07", "seed_ids": ["seed_11", "seed_07"], "equivalent": false, "confidence": 0.93, "brief_reason": "A约束能力边界（禁止预测科学突破），B约束护城河验证标准（定价权测试）；主题不同、触发场景不同"}
+{"pair_id": "seed_11-seed_10", "seed_ids": ["seed_11", "seed_10"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束能力边界（科技预测），B约束经济质量（结构性差economics）；触发场景实质不同"}
+{"pair_id": "seed_11-seed_14", "seed_ids": ["seed_11", "seed_14"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束能力圈/科技可预测性，B约束资本再投资效率，主题与触发场景均不同"}
+{"pair_id": "seed_11-seed_15", "seed_ids": ["seed_11", "seed_15"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束「能否预测技术路径」（认知边界），B要求「客户利益与利润路径激励一致」（商业模式结构），主题与触发场景均不同"}
+{"pair_id": "seed_12-seed_13", "seed_ids": ["seed_12", "seed_13"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A讲品牌护城河，B讲管理层利益对齐，触发场景与核心观点均不同"}
+{"pair_id": "seed_12-seed_14", "seed_ids": ["seed_12", "seed_14"], "equivalent": false, "confidence": 0.92, "brief_reason": "A要求品牌心智第一（静态品牌护城河），B要求长期竞争力持续增强可判断（动态竞争力轨迹），触发场景实质不同"}
+{"pair_id": "seed_12-seed_02", "seed_ids": ["seed_12", "seed_02"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A评估护城河/品牌心智，B评估管理层诚信，触发场景与约束维度均不同"}
+{"pair_id": "seed_12-seed_06", "seed_ids": ["seed_12", "seed_06"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A论护城河（品牌心智），B论管理层评估方法；方向与场景均无重叠"}
+{"pair_id": "seed_12-seed_07", "seed_ids": ["seed_12", "seed_07"], "equivalent": false, "confidence": 0.92, "brief_reason": "A说品牌心智占位（认知层），B说涨价不失客（定价权层），触发场景实质不同"}
+{"pair_id": "seed_12-seed_10", "seed_ids": ["seed_12", "seed_10"], "equivalent": false, "confidence": 0.97, "brief_reason": "A说品牌心智占位（护城河），B说经济结构差则拒绝（估值/买入决策），主题与触发场景均不同"}
+{"pair_id": "seed_12-seed_14", "seed_ids": ["seed_12", "seed_14"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A讲品牌心智护城河，B讲资本再投入效率；触发场景实质不同"}
+{"pair_id": "seed_12-seed_15", "seed_ids": ["seed_12", "seed_15"], "equivalent": false, "confidence": 0.92, "brief_reason": "A约束品牌心智占位（护城河来源），B约束激励结构对齐（护城河机制），触发场景实质不同"}
+{"pair_id": "seed_13-seed_14", "seed_ids": ["seed_13", "seed_14"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束管理层持股对齐利益，B约束投资人对护城河的认知判断"}
+{"pair_id": "seed_13-seed_02", "seed_ids": ["seed_13", "seed_02"], "equivalent": false, "confidence": 0.95, "brief_reason": "A要求利益对齐（持股），B要求诚实底线（不欺诈），触发场景与管理层评估维度根本不同"}
+{"pair_id": "seed_13-seed_06", "seed_ids": ["seed_13", "seed_06"], "equivalent": false, "confidence": 0.88, "brief_reason": "A要求股权持有（利益对齐），B要求薪酬结构分析（评估方法），方向与内容实质不同"}
+{"pair_id": "seed_13-seed_07", "seed_ids": ["seed_13", "seed_07"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束管理层持股利益对齐，B验证护城河定价权，主题与触发场景均不同"}
+{"pair_id": "seed_13-seed_10", "seed_ids": ["seed_13", "seed_10"], "equivalent": false, "confidence": 0.98, "brief_reason": "主题完全不同：A约束管理层持股对齐激励，B约束经济结构不佳时禁止买入"}
+{"pair_id": "seed_13-seed_14", "seed_ids": ["seed_13", "seed_14"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题完全不同：A论管理层持股对齐利益，B论资本再投入结构性劣势"}
+{"pair_id": "seed_13-seed_15", "seed_ids": ["seed_13", "seed_15"], "equivalent": false, "confidence": 0.93, "brief_reason": "对齐主体不同：A是管理层与股东利益对齐（持股激励），B是客户服务与盈利路径对齐（商业模式结构）"}
+{"pair_id": "seed_14-seed_02", "seed_ids": ["seed_14", "seed_02"], "equivalent": false, "confidence": 0.97, "brief_reason": "触发场景完全不同：A 判断竞争壁垒可理解性，B 判断管理层诚信；主题 moat vs management_integrity，实质两回事"}
+{"pair_id": "seed_14-seed_06", "seed_ids": ["seed_14", "seed_06"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A讨论护城河理解门槛→投资决策；B讨论管理层评估方法论，触发场景完全不同"}
+{"pair_id": "seed_14-seed_07", "seed_ids": ["seed_14", "seed_07"], "equivalent": false, "confidence": 0.82, "brief_reason": "A是投资人认知确信度门槛（能否判断竞争力趋势），B是定价权作为护城河存在的实证验证标准，触发场景实质不同"}
+{"pair_id": "seed_14-seed_10", "seed_ids": ["seed_14", "seed_10"], "equivalent": false, "confidence": 0.82, "brief_reason": "A触发于认知不足（无法判断），B触发于已确认结构性差经济；一为认知门槛，一为事实判定"}
+{"pair_id": "seed_14-seed_14", "seed_ids": ["seed_14", "seed_14"], "equivalent": false, "confidence": 0.87, "brief_reason": "A约束投资者认知判断（对护城河持续性须有信心），B描述业务结构质量（再投资效率信号），触发场景本质不同"}
+{"pair_id": "seed_14-seed_15", "seed_ids": ["seed_14", "seed_15"], "equivalent": false, "confidence": 0.88, "brief_reason": "A关注投资人对竞争力可否有信心判断（认知门槛），B关注商业模式激励结构是否对齐（结构属性），触发场景实质不同"}
+{"pair_id": "seed_15-seed_01", "seed_ids": ["seed_15", "seed_01"], "equivalent": false, "confidence": 0.95, "brief_reason": "A讨论机会成本/回报率门槛，B讨论决策前必须做失败模式枚举，主题与触发场景均不同"}
+{"pair_id": "seed_15-seed_04", "seed_ids": ["seed_15", "seed_04"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束估值回报门槛（机会成本），B约束竞争优势可解释性（能力圈），主题与触发场景均不同"}
+{"pair_id": "seed_15-seed_05", "seed_ids": ["seed_15", "seed_05"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题完全不同：A约束估值回报门槛（机会成本），B要求认知偏误审计（行为纪律），触发场景与核心判断均不同"}
+{"pair_id": "seed_15-seed_08", "seed_ids": ["seed_15", "seed_08"], "equivalent": false, "confidence": 0.97, "brief_reason": "触发场景实质不同：A约束预期回报/估值充足性（机会成本），B约束证据质量/拒绝羊群效应（行为纪律），两者互不蕴含"}
+{"pair_id": "seed_15-seed_09", "seed_ids": ["seed_15", "seed_09"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A讨论机会成本与估值缓冲，B约束宏观预测驱动决策，情境与方向均不同"}
+{"pair_id": "seed_15-seed_11", "seed_ids": ["seed_15", "seed_11"], "equivalent": false, "confidence": 0.97, "brief_reason": "A关注机会成本/预期回报充足性，B关注多因素汇合导致灾难性失败风险，主题与触发场景均不同"}
+{"pair_id": "seed_15-seed_12", "seed_ids": ["seed_15", "seed_12"], "equivalent": false, "confidence": 0.95, "brief_reason": "A讨论预期回报vs无风险利率（机会成本/估值），B讨论多假设并发脆弱性（结构风险），触发场景与核心观点均不同"}
+{"pair_id": "seed_01-seed_04", "seed_ids": ["seed_01", "seed_04"], "equivalent": false, "confidence": 0.95, "brief_reason": "A要求反向推理穷举失败模式，B要求跨学科框架解释竞争优势，触发场景与认知任务本质不同"}
+{"pair_id": "seed_01-seed_05", "seed_ids": ["seed_01", "seed_05"], "equivalent": false, "confidence": 0.82, "brief_reason": "A审查论题客观失败模式，B审查分析师主观认知偏差，检查对象本质不同"}
+{"pair_id": "seed_01-seed_08", "seed_ids": ["seed_01", "seed_08"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束分析顺序（先穷举失败模式），B约束证据类型（拒绝从众型支撑），触发场景与处方根本不同"}
+{"pair_id": "seed_01-seed_09", "seed_ids": ["seed_01", "seed_09"], "equivalent": false, "confidence": 0.97, "brief_reason": "A要求系统性枚举失败模式，B禁止宏观预测驱动决策，触发场景与约束内容完全不同"}
+{"pair_id": "seed_01-seed_11", "seed_ids": ["seed_01", "seed_11"], "equivalent": false, "confidence": 0.82, "brief_reason": "A要求枚举所有失败模式的系统性协议；B专指多因素汇合的复合放大效应，属A的子集而非等价"}
+{"pair_id": "seed_01-seed_12", "seed_ids": ["seed_01", "seed_12"], "equivalent": false, "confidence": 0.88, "brief_reason": "A要求分析前枚举所有失败模式（流程协议），B识别多独立假设并发的脆弱结构（模式分类），触发场景与操作目的实质不同"}
+{"pair_id": "seed_02-seed_06", "seed_ids": ["seed_02", "seed_06"], "equivalent": false, "confidence": 0.95, "brief_reason": "A说诚信证伪即否决；B说评估应锚定激励结构而非声誉，方向与方法论均不同"}
+{"pair_id": "seed_02-seed_07", "seed_ids": ["seed_02", "seed_07"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A判定管理层诚信，B验证护城河真实性；触发场景与核心观点均无交集"}
+{"pair_id": "seed_02-seed_10", "seed_ids": ["seed_02", "seed_10"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束管理层诚信，B约束长期经济结构；触发场景实质不同"}
+{"pair_id": "seed_02-seed_14", "seed_ids": ["seed_02", "seed_14"], "equivalent": false, "confidence": 0.98, "brief_reason": "主题完全不同：A 约束管理层诚信，B 评估资本再投资效率"}
+{"pair_id": "seed_02-seed_15", "seed_ids": ["seed_02", "seed_15"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束管理层诚信（一票否决），B约束商业模式激励结构（护城河），主题与触发场景均不同"}
+{"pair_id": "seed_03-seed_13", "seed_ids": ["seed_03", "seed_13"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束杠杆使用（财务强度），B要求归因于自身判断（行为纪律）"}
+{"pair_id": "seed_04-seed_05", "seed_ids": ["seed_04", "seed_05"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束分析可行性（能力圈框架），B约束认知偏差审计（行为纪律），主题与触发场景均不同"}
+{"pair_id": "seed_04-seed_08", "seed_ids": ["seed_04", "seed_08"], "equivalent": false, "confidence": 0.97, "brief_reason": "触发场景实质不同：A约束分析能力边界（能否理解护城河），B约束论证质量（禁止以他人跟买为主证）"}
+{"pair_id": "seed_04-seed_09", "seed_ids": ["seed_04", "seed_09"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束分析可行性（能力圈/跨学科框架），B约束决策驱动因素（禁止宏观预测），主题与触发场景均不同"}
+{"pair_id": "seed_04-seed_11", "seed_ids": ["seed_04", "seed_11"], "equivalent": false, "confidence": 0.97, "brief_reason": "A判定投资是否可分析（能力圈入口门槛），B要求评估多重负面因素汇合的灾难风险；触发场景与核心主张完全不同"}
+{"pair_id": "seed_04-seed_12", "seed_ids": ["seed_04", "seed_12"], "equivalent": false, "confidence": 0.95, "brief_reason": "触发场景本质不同：A约束「能力圈/可分析性」，B约束「牛市论据的假设堆叠脆弱性」"}
+{"pair_id": "seed_05-seed_08", "seed_ids": ["seed_05", "seed_08"], "equivalent": false, "confidence": 0.95, "brief_reason": "A要求审计所有偏见，B专门拒绝从众依赖型论据；触发场景和约束内容实质不同"}
+{"pair_id": "seed_05-seed_09", "seed_ids": ["seed_05", "seed_09"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束认知偏差审计流程，B禁止宏观预测驱动决策，触发场景与内容实质不同"}
+{"pair_id": "seed_05-seed_11", "seed_ids": ["seed_05", "seed_11"], "equivalent": false, "confidence": 0.92, "brief_reason": "A审查认知偏差污染，B评估多因素汇合的灾难性失败风险，触发场景实质不同"}
+{"pair_id": "seed_05-seed_12", "seed_ids": ["seed_05", "seed_12"], "equivalent": false, "confidence": 0.95, "brief_reason": "A审查认知偏见污染，B标记多假设并存脆弱性，触发场景与关注点本质不同"}
+{"pair_id": "seed_06-seed_07", "seed_ids": ["seed_06", "seed_07"], "equivalent": false, "confidence": 0.97, "brief_reason": "主题不同：A约束管理层评估方法，B约束护城河验证方法，触发场景与判断对象均不同"}
+{"pair_id": "seed_06-seed_10", "seed_ids": ["seed_06", "seed_10"], "equivalent": false, "confidence": 0.98, "brief_reason": "主题完全不同：A约束管理层评估方法论，B约束劣质经济模型的买入决策"}
+{"pair_id": "seed_06-seed_14", "seed_ids": ["seed_06", "seed_14"], "equivalent": false, "confidence": 0.98, "brief_reason": "主题不同：A论管理层激励评估，B论资本密集型商业模式质量，场景与约束对象的维度完全不同"}
+{"pair_id": "seed_06-seed_15", "seed_ids": ["seed_06", "seed_15"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束管理层激励结构评估，B约束商业模式激励对齐，触发场景与核心主体实质不同"}
+{"pair_id": "seed_07-seed_10", "seed_ids": ["seed_07", "seed_10"], "equivalent": false, "confidence": 0.95, "brief_reason": "A论证护城河验证方法（提价能力），B论述估值拒绝条件（差经济不买），主题与触发场景均不同"}
+{"pair_id": "seed_07-seed_14", "seed_ids": ["seed_07", "seed_14"], "equivalent": false, "confidence": 0.95, "brief_reason": "A考察护城河（提价能力），B考察资本效率（再投资需求），触发场景与核心关注点实质不同"}
+{"pair_id": "seed_07-seed_15", "seed_ids": ["seed_07", "seed_15"], "equivalent": false, "confidence": 0.92, "brief_reason": "A验证护城河真实性（定价权），B要求激励结构对齐，触发场景与判断维度本质不同"}
+{"pair_id": "seed_08-seed_09", "seed_ids": ["seed_08", "seed_09"], "equivalent": false, "confidence": 0.95, "brief_reason": "触发场景不同：A禁止以他人买入（羊群行为）作为核心依据；B禁止以宏观预测驱动决策，两者约束的信息来源类型本质不同"}
+{"pair_id": "seed_08-seed_11", "seed_ids": ["seed_08", "seed_11"], "equivalent": false, "confidence": 0.97, "brief_reason": "A约束社会跟风证据（行为纪律），B要求评估多因素负向汇合风险（护城河/失败概率），触发场景与核心主张完全不同"}
+{"pair_id": "seed_08-seed_12", "seed_ids": ["seed_08", "seed_12"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束跟风他人买入行为，B约束多重假设并发依赖，触发场景本质不同"}
+{"pair_id": "seed_09-seed_11", "seed_ids": ["seed_09", "seed_11"], "equivalent": false, "confidence": 0.97, "brief_reason": "A禁止宏观预测驱动决策；B要求评估多因素负向汇合风险，方向与触发场景均不同"}
+{"pair_id": "seed_09-seed_12", "seed_ids": ["seed_09", "seed_12"], "equivalent": false, "confidence": 0.95, "brief_reason": "A约束宏观预测驱动决策，B约束多重假设叠加的牛市论证，触发场景实质不同"}
+{"pair_id": "seed_10-seed_14", "seed_ids": ["seed_10", "seed_14"], "equivalent": false, "confidence": 0.82, "brief_reason": "A是购买禁令（禁止行动）；B是相对质量比较，触发场景和主张类型均不同"}
+{"pair_id": "seed_10-seed_15", "seed_ids": ["seed_10", "seed_15"], "equivalent": false, "confidence": 0.95, "brief_reason": "A讨论价格与经济结构的买入禁止；B讨论激励对齐与护城河质量，触发场景与主张方向均不同"}
+{"pair_id": "seed_11-seed_12", "seed_ids": ["seed_11", "seed_12"], "equivalent": false, "confidence": 0.78, "brief_reason": "A分析空头情境下负面力量互相强化的收敛风险；B分析多头情境下多重独立假设同时成立的脆弱性——触发场景一负一正，实质不同"}
+{"pair_id": "seed_14-seed_15", "seed_ids": ["seed_14", "seed_15"], "equivalent": false, "confidence": 0.95, "brief_reason": "主题完全不同：A判断资本再投入效率（现金回报），B判断商业模式激励结构对齐（护城河），触发场景本质相异"}
